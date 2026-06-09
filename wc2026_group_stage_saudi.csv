@@ -1,0 +1,73 @@
+﻿Match_No,Group,Team_A,Team_B,ET_Date,ET_Day,ET_Time,Saudi_Date,Saudi_Day,Saudi_Time,Saudi_Time_24h,Venue_City
+1,A,Mexico,South Africa,2026-06-11,Thursday,03:00 PM,2026-06-11,Thursday,10:00 PM,22:00,Mexico City
+2,A,South Korea,Czechia,2026-06-11,Thursday,10:00 PM,2026-06-12,Friday,05:00 AM,05:00,Guadalajara
+3,A,Czechia,South Africa,2026-06-18,Thursday,12:00 PM,2026-06-18,Thursday,07:00 PM,19:00,Atlanta
+4,A,Mexico,South Korea,2026-06-18,Thursday,09:00 PM,2026-06-19,Friday,04:00 AM,04:00,Guadalajara
+5,A,Czechia,Mexico,2026-06-24,Wednesday,09:00 PM,2026-06-25,Thursday,04:00 AM,04:00,Mexico City
+6,A,South Africa,South Korea,2026-06-24,Wednesday,09:00 PM,2026-06-25,Thursday,04:00 AM,04:00,Monterrey
+7,B,Canada,Bosnia & Herzegovina,2026-06-12,Friday,03:00 PM,2026-06-12,Friday,10:00 PM,22:00,Toronto
+8,B,Qatar,Switzerland,2026-06-13,Saturday,03:00 PM,2026-06-13,Saturday,10:00 PM,22:00,Santa Clara
+9,B,Switzerland,Bosnia & Herzegovina,2026-06-18,Thursday,03:00 PM,2026-06-18,Thursday,10:00 PM,22:00,Inglewood
+10,B,Canada,Qatar,2026-06-18,Thursday,06:00 PM,2026-06-19,Friday,01:00 AM,01:00,Vancouver
+11,B,Switzerland,Canada,2026-06-24,Wednesday,03:00 PM,2026-06-24,Wednesday,10:00 PM,22:00,Vancouver
+12,B,Bosnia & Herzegovina,Qatar,2026-06-24,Wednesday,03:00 PM,2026-06-24,Wednesday,10:00 PM,22:00,Seattle
+13,C,Brazil,Morocco,2026-06-13,Saturday,06:00 PM,2026-06-14,Sunday,01:00 AM,01:00,East Rutherford
+14,C,Haiti,Scotland,2026-06-13,Saturday,09:00 PM,2026-06-14,Sunday,04:00 AM,04:00,Foxboro
+15,C,Scotland,Morocco,2026-06-19,Friday,06:00 PM,2026-06-20,Saturday,01:00 AM,01:00,Foxboro
+16,C,Brazil,Haiti,2026-06-19,Friday,08:30 PM,2026-06-20,Saturday,03:30 AM,03:30,Philadelphia
+17,C,Scotland,Brazil,2026-06-24,Wednesday,06:00 PM,2026-06-25,Thursday,01:00 AM,01:00,Miami
+18,C,Morocco,Haiti,2026-06-24,Wednesday,06:00 PM,2026-06-25,Thursday,01:00 AM,01:00,Atlanta
+19,D,United States,Paraguay,2026-06-12,Friday,09:00 PM,2026-06-13,Saturday,04:00 AM,04:00,Inglewood
+20,D,Australia,Turkiye,2026-06-14,Sunday,12:00 AM,2026-06-14,Sunday,07:00 AM,07:00,Vancouver
+21,D,United States,Australia,2026-06-19,Friday,03:00 PM,2026-06-19,Friday,10:00 PM,22:00,Seattle
+22,D,Turkiye,Paraguay,2026-06-19,Friday,11:00 PM,2026-06-20,Saturday,06:00 AM,06:00,Santa Clara
+23,D,Turkiye,United States,2026-06-25,Thursday,10:00 PM,2026-06-26,Friday,05:00 AM,05:00,Inglewood
+24,D,Paraguay,Australia,2026-06-25,Thursday,10:00 PM,2026-06-26,Friday,05:00 AM,05:00,Santa Clara
+25,E,Germany,Curacao,2026-06-14,Sunday,01:00 PM,2026-06-14,Sunday,08:00 PM,20:00,Houston
+26,E,Ivory Coast,Ecuador,2026-06-14,Sunday,07:00 PM,2026-06-15,Monday,02:00 AM,02:00,Philadelphia
+27,E,Germany,Ivory Coast,2026-06-20,Saturday,04:00 PM,2026-06-20,Saturday,11:00 PM,23:00,Toronto
+28,E,Ecuador,Curacao,2026-06-20,Saturday,08:00 PM,2026-06-21,Sunday,03:00 AM,03:00,Kansas City
+29,E,Curacao,Ivory Coast,2026-06-25,Thursday,04:00 PM,2026-06-25,Thursday,11:00 PM,23:00,Philadelphia
+30,E,Ecuador,Germany,2026-06-25,Thursday,04:00 PM,2026-06-25,Thursday,11:00 PM,23:00,East Rutherford
+31,F,Netherlands,Japan,2026-06-14,Sunday,04:00 PM,2026-06-14,Sunday,11:00 PM,23:00,Arlington
+32,F,Sweden,Tunisia,2026-06-14,Sunday,10:00 PM,2026-06-15,Monday,05:00 AM,05:00,Monterrey
+33,F,Netherlands,Sweden,2026-06-20,Saturday,01:00 PM,2026-06-20,Saturday,08:00 PM,20:00,Houston
+34,F,Tunisia,Japan,2026-06-21,Sunday,12:00 AM,2026-06-21,Sunday,07:00 AM,07:00,Monterrey
+35,F,Japan,Sweden,2026-06-25,Thursday,07:00 PM,2026-06-26,Friday,02:00 AM,02:00,Arlington
+36,F,Tunisia,Netherlands,2026-06-25,Thursday,07:00 PM,2026-06-26,Friday,02:00 AM,02:00,Kansas City
+37,G,Belgium,Egypt,2026-06-15,Monday,03:00 PM,2026-06-15,Monday,10:00 PM,22:00,Seattle
+38,G,Iran,New Zealand,2026-06-15,Monday,09:00 PM,2026-06-16,Tuesday,04:00 AM,04:00,Inglewood
+39,G,Belgium,Iran,2026-06-21,Sunday,03:00 PM,2026-06-21,Sunday,10:00 PM,22:00,Inglewood
+40,G,New Zealand,Egypt,2026-06-21,Sunday,09:00 PM,2026-06-22,Monday,04:00 AM,04:00,Vancouver
+41,G,Egypt,Iran,2026-06-26,Friday,11:00 PM,2026-06-27,Saturday,06:00 AM,06:00,Seattle
+42,G,New Zealand,Belgium,2026-06-26,Friday,11:00 PM,2026-06-27,Saturday,06:00 AM,06:00,Vancouver
+43,H,Spain,Cape Verde,2026-06-15,Monday,12:00 PM,2026-06-15,Monday,07:00 PM,19:00,Atlanta
+44,H,Saudi Arabia,Uruguay,2026-06-15,Monday,06:00 PM,2026-06-16,Tuesday,01:00 AM,01:00,Miami
+45,H,Spain,Saudi Arabia,2026-06-21,Sunday,12:00 PM,2026-06-21,Sunday,07:00 PM,19:00,Atlanta
+46,H,Uruguay,Cape Verde,2026-06-21,Sunday,06:00 PM,2026-06-22,Monday,01:00 AM,01:00,Miami
+47,H,Cape Verde,Saudi Arabia,2026-06-26,Friday,08:00 PM,2026-06-27,Saturday,03:00 AM,03:00,Houston
+48,H,Uruguay,Spain,2026-06-26,Friday,08:00 PM,2026-06-27,Saturday,03:00 AM,03:00,Guadalajara
+49,I,France,Senegal,2026-06-16,Tuesday,03:00 PM,2026-06-16,Tuesday,10:00 PM,22:00,East Rutherford
+50,I,Iraq,Norway,2026-06-16,Tuesday,06:00 PM,2026-06-17,Wednesday,01:00 AM,01:00,Foxborough
+51,I,France,Iraq,2026-06-22,Monday,05:00 PM,2026-06-23,Tuesday,12:00 AM,00:00,Philadelphia
+52,I,Norway,Senegal,2026-06-22,Monday,08:00 PM,2026-06-23,Tuesday,03:00 AM,03:00,East Rutherford
+53,I,Norway,France,2026-06-26,Friday,03:00 PM,2026-06-26,Friday,10:00 PM,22:00,Foxborough
+54,I,Senegal,Iraq,2026-06-26,Friday,03:00 PM,2026-06-26,Friday,10:00 PM,22:00,Toronto
+55,J,Argentina,Algeria,2026-06-16,Tuesday,09:00 PM,2026-06-17,Wednesday,04:00 AM,04:00,Kansas City
+56,J,Austria,Jordan,2026-06-17,Wednesday,12:00 AM,2026-06-17,Wednesday,07:00 AM,07:00,Santa Clara
+57,J,Argentina,Austria,2026-06-22,Monday,01:00 PM,2026-06-22,Monday,08:00 PM,20:00,Arlington
+58,J,Jordan,Algeria,2026-06-22,Monday,11:00 PM,2026-06-23,Tuesday,06:00 AM,06:00,Santa Clara
+59,J,Jordan,Argentina,2026-06-27,Saturday,10:00 PM,2026-06-28,Sunday,05:00 AM,05:00,Arlington
+60,J,Algeria,Austria,2026-06-27,Saturday,10:00 PM,2026-06-28,Sunday,05:00 AM,05:00,Kansas City
+61,K,Portugal,DR Congo,2026-06-17,Wednesday,01:00 PM,2026-06-17,Wednesday,08:00 PM,20:00,Houston
+62,K,Uzbekistan,Colombia,2026-06-17,Wednesday,10:00 PM,2026-06-18,Thursday,05:00 AM,05:00,Mexico City
+63,K,Portugal,Uzbekistan,2026-06-23,Tuesday,01:00 PM,2026-06-23,Tuesday,08:00 PM,20:00,Houston
+64,K,Colombia,DR Congo,2026-06-23,Tuesday,10:00 PM,2026-06-24,Wednesday,05:00 AM,05:00,Guadalajara
+65,K,Colombia,Portugal,2026-06-27,Saturday,07:30 PM,2026-06-28,Sunday,02:30 AM,02:30,Miami
+66,K,DR Congo,Uzbekistan,2026-06-27,Saturday,07:30 PM,2026-06-28,Sunday,02:30 AM,02:30,Atlanta
+67,L,England,Croatia,2026-06-17,Wednesday,04:00 PM,2026-06-17,Wednesday,11:00 PM,23:00,Arlington
+68,L,Ghana,Panama,2026-06-17,Wednesday,07:00 PM,2026-06-18,Thursday,02:00 AM,02:00,Philadelphia
+69,L,England,Ghana,2026-06-23,Tuesday,04:00 PM,2026-06-23,Tuesday,11:00 PM,23:00,Boston
+70,L,Panama,Croatia,2026-06-23,Tuesday,07:00 PM,2026-06-24,Wednesday,02:00 AM,02:00,Toronto
+71,L,Panama,England,2026-06-27,Saturday,05:00 PM,2026-06-28,Sunday,12:00 AM,00:00,East Rutherford
+72,L,Croatia,Ghana,2026-06-27,Saturday,05:00 PM,2026-06-28,Sunday,12:00 AM,00:00,Philadelphia

@@ -70,7 +70,38 @@
   .ksa-card .when b{color:var(--ksa);font-size:1.3em;display:block;margin-top:2px}
   .ksa-card .meta{margin-top:8px;color:var(--muted);font-size:12.5px;font-weight:600;position:relative;z-index:1}
 
-  .days{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;margin-top:28px}
+  /* Tabs */
+  .tabs{display:flex;justify-content:center;margin:28px auto 6px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:5px;max-width:520px;gap:4px}
+  .tab{flex:1;padding:11px 22px;border-radius:999px;font-family:'Cairo';font-weight:800;font-size:15px;color:var(--muted);background:transparent;border:0;cursor:pointer;transition:all .25s;font-family:'Cairo',sans-serif}
+  .tab.active{background:linear-gradient(180deg,var(--gold),#a78a3e);color:#1a1205;box-shadow:0 4px 14px rgba(205,171,87,.35)}
+  .tab:hover:not(.active){color:var(--gold-soft)}
+  .subtabs{display:flex;justify-content:center;margin:22px auto 18px;gap:10px;max-width:420px}
+  .subtab{flex:1;padding:9px 18px;border-radius:12px;font-family:'Cairo',sans-serif;font-weight:700;font-size:14px;color:var(--gold-soft);background:rgba(205,171,87,.06);border:1px solid var(--line);cursor:pointer;transition:all .25s}
+  .subtab.active{background:linear-gradient(180deg,rgba(44,107,107,.32),rgba(44,107,107,.10));border-color:var(--teal-soft);color:#fff;box-shadow:0 4px 14px rgba(44,107,107,.25)}
+  .view{display:none}
+  .view.active{display:block}
+
+  /* Groups */
+  .groups-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:6px}
+  .group-card{background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.7));border:1px solid var(--panel-edge);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+  .group-card.has-ksa{border-color:rgba(30,196,106,.55);box-shadow:0 0 0 1px rgba(30,196,106,.18),var(--shadow)}
+  .group-head{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;background:linear-gradient(90deg,rgba(44,107,107,.22),transparent);border-bottom:1px solid var(--line)}
+  .group-head .gname{font-family:'Cairo';font-weight:900;font-size:17px}
+  .group-head .glabel{color:var(--gold);font-family:'Rakkas',serif;font-size:26px;line-height:1}
+  .group-teams{padding:6px 8px 12px;display:flex;flex-direction:column}
+  .gt{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;cursor:pointer;transition:background .2s,transform .15s;background:transparent;border:0;color:var(--ink);width:100%;text-align:right;font-family:inherit}
+  .gt + .gt{border-top:1px solid rgba(255,255,255,.045)}
+  .gt:hover{background:rgba(205,171,87,.08);transform:translateX(-2px)}
+  .gt .fl{font-size:22px;line-height:1}
+  .gt .fl svg{width:26px;height:17px;border-radius:2px;vertical-align:-3px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+  .gt .tn{font-family:'Cairo';font-weight:800;font-size:15.5px;flex:1}
+  .gt .arrow{color:var(--gold);opacity:.5;font-size:14px}
+  .gt:hover .arrow{opacity:1}
+  .gt.is-ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
+  .gt.is-ksa .tn{color:#fff;font-weight:900}
+  .gt.tbd{opacity:.4;cursor:default;pointer-events:none}
+
+  .days{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;margin-top:14px}
   .day{background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.7));border:1px solid var(--panel-edge);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
   .day.is-today{border-color:var(--gold);box-shadow:0 0 0 2px rgba(205,171,87,.4),var(--shadow)}
   .day-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:14px 18px;background:linear-gradient(90deg,rgba(44,107,107,.22),transparent);border-bottom:1px solid var(--line)}
@@ -89,10 +120,39 @@
   .m .teams .fl svg{width:23px;height:15px;border-radius:2px;vertical-align:-2px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
   .m .teams .x{color:var(--muted);font-weight:700;font-size:13px;margin:0 1px}
   .m .teams .mk{margin-inline-start:auto;font-size:14px;padding-inline-start:6px}
+  .m .gpill{font-size:10.5px;font-weight:800;color:var(--gold);background:rgba(205,171,87,.10);border:1px solid var(--line);padding:2px 8px;border-radius:999px;letter-spacing:1px;margin-inline-start:auto}
   .m .note{font-size:11.5px;color:var(--muted);font-weight:600}
   .m.ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
   .m.ksa .time{color:#bdfcd8}.m.ksa .teams{color:#fff;font-weight:900}
   .mk.star{color:var(--gold)}.mk.kstar{color:var(--ksa)}.mk.cres{color:var(--teal-soft)}
+
+  /* Modal */
+  .modal{display:none;position:fixed;inset:0;z-index:50;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);animation:fadeIn .2s ease}
+  .modal.open{display:flex}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+  .modal-card{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1.5px solid var(--gold);border-radius:22px;max-width:540px;width:100%;max-height:85vh;overflow:auto;box-shadow:var(--shadow);position:relative;animation:slideUp .25s ease}
+  .modal-card.ksa{border-color:var(--ksa);box-shadow:0 0 0 2px rgba(30,196,106,.25),var(--shadow)}
+  .modal-head{padding:26px 22px 18px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(205,171,87,.10),transparent)}
+  .modal-card.ksa .modal-head{background:linear-gradient(180deg,rgba(30,196,106,.14),transparent)}
+  .modal-head .fl{font-size:58px;line-height:1;display:inline-block;margin-bottom:8px}
+  .modal-head .fl svg{width:78px;height:52px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+  .modal-head .mn{font-family:'Rakkas',serif;font-size:34px;background:linear-gradient(180deg,#fff,var(--gold-soft) 60%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+  .modal-card.ksa .modal-head .mn{background:linear-gradient(180deg,#fff,#7ef0ad 55%,var(--ksa));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .modal-head .mg{margin-top:6px;color:var(--gold-soft);font-weight:800;font-size:12.5px;letter-spacing:3px;font-family:'Tajawal'}
+  .modal-close{position:absolute;top:12px;left:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--gold-soft);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+  .modal-close:hover{background:rgba(205,171,87,.15);color:#fff}
+  .modal-matches{padding:14px 16px 20px;display:flex;flex-direction:column;gap:10px}
+  .mm{padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.025);border:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:6px}
+  .mm-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}
+  .mm-when{font-family:'Cairo';font-weight:800;font-size:13.5px;color:var(--gold-soft)}
+  .mm-time{font-weight:900;color:#fff;font-size:15px}
+  .mm-time small{color:var(--muted);font-weight:600;margin-inline-start:4px;font-size:11px}
+  .mm-opp{font-family:'Cairo';font-weight:800;font-size:16px;display:flex;align-items:center;gap:9px}
+  .mm-opp .vs{color:var(--muted);font-weight:700;font-size:13px}
+  .mm-opp .fl{font-size:22px;line-height:1}
+  .mm-opp .fl svg{width:26px;height:17px;border-radius:2px;vertical-align:-3px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+  .mm-venue{color:var(--muted);font-size:12px;font-weight:600}
 
   .signoff{margin-top:40px;text-align:center}
   .signoff .chip{display: inline-block;}
@@ -100,15 +160,14 @@
   .signoff .tag{margin-top:14px;font-family:'Rakkas',serif;font-size:clamp(20px,2.6vw,30px);color:var(--ksa)}
   .signoff .tag2{margin-top:4px;font-family:'Cairo';font-weight:800;font-size:14px;color:var(--gold-soft);letter-spacing:1px}
 
-  @media print{body{background:#fff;color:#111}.day,.ksa-card,.brand-badge,.signoff .chip{box-shadow:none}.hero h1{-webkit-text-fill-color:#0c8a45}}
-  @media (max-width:760px){.ksa-grid{grid-template-columns:1fr}.days{grid-template-columns:1fr}}
+  @media print{body{background:#fff;color:#111}.day,.ksa-card,.brand-badge,.signoff .chip,.group-card{box-shadow:none}.hero h1{-webkit-text-fill-color:#0c8a45}.tabs,.subtabs,.modal{display:none}}
+  @media (max-width:760px){.ksa-grid{grid-template-columns:1fr}.days{grid-template-columns:1fr}.tabs{max-width:100%}.tab{padding:10px 12px;font-size:14px}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
     <div class="brand-badge"><img src="Tesh_logo.png" alt="تِش"></div>
-    <!-- <div class="present">تـقـدّم لـكـم</div> -->
     <div class="kicker">FIFA WORLD CUP 2026</div>
     <h1>كأس العالم 2026</h1>
     <div class="slogan">
@@ -124,8 +183,31 @@
   <div class="ksa-grid" id="ksaGrid"></div>
 
   <div class="divider"><span class="ln"></span><svg class="motif" viewBox="0 0 120 30" aria-hidden="true"><g fill="var(--gold)"><path d="M60 1 L69 9 L60 17 L51 9 Z"/><path d="M49 14 L57 21 L49 28 L41 21 Z" opacity=".85"/><path d="M71 14 L79 21 L71 28 L63 21 Z" opacity=".85"/></g></svg><span class="ln r"></span></div>
-  <div class="feature-title">الجدول الكامل لأهم المباريات</div>
-  <div class="days" id="days"></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" data-view="important" role="tab">أهم المباريات</button>
+    <button class="tab active" data-view="all" role="tab">كل المباريات</button>
+  </div>
+
+  <div id="view-important" class="view">
+    <div class="feature-title">الجدول الكامل لأهم المباريات</div>
+    <div class="days" id="impDays"></div>
+  </div>
+
+  <div id="view-all" class="view active">
+    <div class="subtabs" role="tablist">
+      <button class="subtab active" data-sub="matches" role="tab">المباريات</button>
+      <button class="subtab" data-sub="groups" role="tab">المجموعات</button>
+    </div>
+    <div id="sub-matches" class="view active">
+      <div class="feature-title">كل مباريات <span>دور المجموعات</span></div>
+      <div class="days" id="allDays"></div>
+    </div>
+    <div id="sub-groups" class="view">
+      <div class="feature-title">مجموعات <span>كأس العالم</span></div>
+      <div class="groups-grid" id="groupsGrid"></div>
+    </div>
+  </div>
 
   <div class="signoff">
     <div class="chip"><img src="Tesh_logo.png" alt="تِش"></div>
@@ -134,92 +216,304 @@
   </div>
 </div>
 
+<div class="modal" id="teamModal" role="dialog" aria-modal="true" aria-labelledby="mTeamName">
+  <div class="modal-card" id="modalCard">
+    <button class="modal-close" id="modalClose" aria-label="إغلاق">✕</button>
+    <div class="modal-head">
+      <span class="fl" id="mTeamFlag"></span>
+      <div class="mn" id="mTeamName"></div>
+      <div class="mg" id="mTeamGroup"></div>
+    </div>
+    <div class="modal-matches" id="mTeamMatches"></div>
+  </div>
+</div>
+
 <script>
+/* ========= Flags ========= */
 const ENG='<svg viewBox="0 0 5 3"><rect width="5" height="3" fill="#fff"/><rect x="2" width="1" height="3" fill="#ce1124"/><rect y="1" width="5" height="1" fill="#ce1124"/></svg>';
 const SCO='<svg viewBox="0 0 5 3"><rect width="5" height="3" fill="#0065bd"/><path d="M0 0 L5 3 M5 0 L0 3" stroke="#fff" stroke-width="0.55"/></svg>';
 const F={ksa:'🇸🇦',bra:'🇧🇷',mar:'🇲🇦',qat:'🇶🇦',sui:'🇨🇭',egy:'🇪🇬',bel:'🇧🇪',uru:'🇺🇾',
 esp:'🇪🇸',cpv:'🇨🇻',fra:'🇫🇷',sen:'🇸🇳',irq:'🇮🇶',nor:'🇳🇴',arg:'🇦🇷',alg:'🇩🇿',aut:'🇦🇹',
 jor:'🇯🇴',por:'🇵🇹',cod:'🇨🇩',eng:ENG,cro:'🇭🇷',gha:'🇬🇭',ger:'🇩🇪',ned:'🇳🇱',jpn:'🇯🇵',
 swe:'🇸🇪',tun:'🇹🇳',mex:'🇲🇽',kor:'🇰🇷',can:'🇨🇦',irn:'🇮🇷',nzl:'🇳🇿',col:'🇨🇴',uzb:'🇺🇿',
-pan:'🇵🇦',rsa:'🇿🇦',sco:SCO,hai:'🇭🇹',ecu:'🇪🇨',civ:'🇨🇮',cuw:'🇨🇼',bih:'🇧🇦'};
+pan:'🇵🇦',rsa:'🇿🇦',sco:SCO,hai:'🇭🇹',ecu:'🇪🇨',civ:'🇨🇮',cuw:'🇨🇼',bih:'🇧🇦',
+cze:'🇨🇿',usa:'🇺🇸',par:'🇵🇾',aus:'🇦🇺',tur:'🇹🇷',tbd:'⚪'};
 
-const KSA=[
- {tag:'الجولة 1',a:'السعودية',fa:F.ksa,b:'أوروغواي',fb:F.uru,day:'الثلاثاء',date:'16 يونيو',time:'1:00 فجراً',meta:'ميامي · المجموعة الثامنة'},
- {tag:'الجولة 2',a:'السعودية',fa:F.ksa,b:'إسبانيا',fb:F.esp,day:'الأحد',date:'21 يونيو',time:'7:00 مساءً',meta:'أتلانتا · قمة المجموعة'},
- {tag:'الجولة 3',a:'السعودية',fa:F.ksa,b:'الرأس الأخضر',fb:F.cpv,day:'السبت',date:'27 يونيو',time:'3:00 فجراً',meta:'هيوستن · الجولة الحاسمة'}];
+/* ========= Team Arabic names ========= */
+const TN={ksa:'السعودية',bra:'البرازيل',mar:'المغرب',qat:'قطر',sui:'سويسرا',egy:'مصر',
+bel:'بلجيكا',uru:'أوروغواي',esp:'إسبانيا',cpv:'الرأس الأخضر',fra:'فرنسا',sen:'السنغال',
+irq:'العراق',nor:'النرويج',arg:'الأرجنتين',alg:'الجزائر',aut:'النمسا',jor:'الأردن',
+por:'البرتغال',cod:'الكونغو الد.',eng:'إنجلترا',cro:'كرواتيا',gha:'غانا',ger:'ألمانيا',
+ned:'هولندا',tun:'تونس',mex:'المكسيك',can:'كندا',irn:'إيران',nzl:'نيوزيلندا',
+col:'كولومبيا',uzb:'أوزبكستان',pan:'بنما',rsa:'جنوب أفريقيا',sco:'اسكتلندا',hai:'هايتي',
+ecu:'الإكوادور',civ:'ساحل العاج',cuw:'كوراساو',bih:'البوسنة',
+cze:'التشيك',usa:'الولايات المتحدة',par:'باراغواي',aus:'أستراليا',tur:'تركيا',
+kor:'كوريا الجنوبية',jpn:'اليابان',swe:'السويد',tbd:'يحدد لاحقاً'};
 
-const DAYS=[
- {d:'الخميس',dt:'11 يونيو',iso:'2026-06-11',m:[{t:'10:00م',a:'المكسيك',fa:F.mex,b:'جنوب أفريقيا',fb:F.rsa,tier:'top',n:'مباراة الافتتاح'}]},
- {d:'السبت',dt:'13 يونيو',iso:'2026-06-13',m:[{t:'10:00م',a:'قطر',fa:F.qat,b:'سويسرا',fb:F.sui,tier:'arab',n:'أولى مباريات المنتخب العنابي'}]},
- {d:'الأحد',dt:'14 يونيو',iso:'2026-06-14',m:[
-   {t:'1:00ف',a:'البرازيل',fa:F.bra,b:'المغرب',fb:F.mar,tier:'top',n:'قمة المجموعة السيليساو مع أسود الأطلس'},
-   {t:'8:00م',a:'ألمانيا',fa:F.ger,b:'كوراساو',fb:F.cuw,tier:'top'}]},
- {d:'الإثنين',dt:'15 يونيو',iso:'2026-06-15',m:[
-   {t:'7:00م',a:'إسبانيا',fa:F.esp,b:'الرأس الأخضر',fb:F.cpv,tier:'top'},
-   {t:'10:00م',a:'بلجيكا',fa:F.bel,b:'مصر',fb:F.egy,tier:'arab',n:'أولى مباريات الفراعنة'}]},
- {d:'الثلاثاء',dt:'16 يونيو',iso:'2026-06-16',m:[
-   {t:'1:00ف',a:'السعودية',fa:F.ksa,b:'أوروغواي',fb:F.uru,tier:'ksa',n:'أولى مباريات الأخضر'},
-   {t:'10:00م',a:'فرنسا',fa:F.fra,b:'السنغال',fb:F.sen,tier:'top'}]},
- {d:'الأربعاء',dt:'17 يونيو',iso:'2026-06-17',m:[
-   {t:'1:00ف',a:'العراق',fa:F.irq,b:'النرويج',fb:F.nor,tier:'arab'},
-   {t:'4:00ف',a:'الأرجنتين',fa:F.arg,b:'الجزائر',fb:F.alg,tier:'top',n:'راقصو التانجو بقيادة ميسي في مواجهة محاربو الصحراء'},
-   {t:'8:00م',a:'البرتغال',fa:F.por,b:'الكونغو الد.',fb:F.cod,tier:'top',n:'سيليساو أوروبا بقيادة رونالدو'},
-   {t:'11:00م',a:'إنجلترا',fa:F.eng,b:'كرواتيا',fb:F.cro,tier:'top'}]},
- {d:'الجمعة',dt:'19 يونيو',iso:'2026-06-19',m:[{t:'1:00ف',a:'كندا',fa:F.can,b:'قطر',fb:F.qat,tier:'arab'}]},
- {d:'السبت',dt:'20 يونيو',iso:'2026-06-20',m:[
-   {t:'1:00ف',a:'اسكتلندا',fa:F.sco,b:'المغرب',fb:F.mar,tier:'arab'},
-   {t:'4:00ف',a:'البرازيل',fa:F.bra,b:'هايتي',fb:F.hai,tier:'top'},
-   {t:'11:00م',a:'ألمانيا',fa:F.ger,b:'ساحل العاج',fb:F.civ,tier:'top'}]},
- {d:'الأحد',dt:'21 يونيو',iso:'2026-06-21',m:[
-   {t:'7:00م',a:'السعودية',fa:F.ksa,b:'إسبانيا',fb:F.esp,tier:'ksa',n:'مبارة القمة للأخضر'},
-   {t:'10:00م',a:'بلجيكا',fa:F.bel,b:'إيران',fb:F.irn,tier:'top'}]},
- {d:'الإثنين',dt:'22 يونيو',iso:'2026-06-22',m:[
-   {t:'4:00ف',a:'نيوزيلندا',fa:F.nzl,b:'مصر',fb:F.egy,tier:'arab'},
-   {t:'8:00م',a:'الأرجنتين',fa:F.arg,b:'النمسا',fb:F.aut,tier:'top',n:'راقصو التانجو بقيادة ميسي'}]},
- {d:'الثلاثاء',dt:'23 يونيو',iso:'2026-06-23',m:[
-   {t:'12:00ص',a:'فرنسا',fa:F.fra,b:'العراق',fb:F.irq,tier:'top',n:'منتخب الديوك بقيادة امبابي في مواجهة أسود الرافدين'},
-   {t:'6:00ص',a:'الأردن',fa:F.jor,b:'الجزائر',fb:F.alg,tier:'arab',n:'ديربي عربي بين النشامى و محاربو الصحراء'},
-   {t:'8:00م',a:'البرتغال',fa:F.por,b:'أوزبكستان',fb:F.uzb,tier:'top',n:'سيليساو أوروبا بقيادة رونالدو'},
-   {t:'11:00م',a:'إنجلترا',fa:F.eng,b:'غانا',fb:F.gha,tier:'top'}]},
- {d:'الأربعاء',dt:'24 يونيو',iso:'2026-06-24',m:[{t:'10:00م',a:'البوسنة',fa:F.bih,b:'قطر',fb:F.qat,tier:'arab'}]},
- {d:'الخميس',dt:'25 يونيو',iso:'2026-06-25',m:[
-   {t:'1:00ف',a:'اسكتلندا',fa:F.sco,b:'البرازيل',fb:F.bra,tier:'top'},
-   {t:'1:00ف',a:'المغرب',fa:F.mar,b:'هايتي',fb:F.hai,tier:'arab'},
-   {t:'11:00م',a:'الإكوادور',fa:F.ecu,b:'ألمانيا',fb:F.ger,tier:'top'}]},
- {d:'الجمعة',dt:'26 يونيو',iso:'2026-06-26',m:[
-   {t:'2:00ف',a:'تونس',fa:F.tun,b:'هولندا',fb:F.ned,tier:'arab'},
-   {t:'10:00م',a:'النرويج',fa:F.nor,b:'فرنسا',fb:F.fra,tier:'top'},
-   {t:'10:00م',a:'السنغال',fa:F.sen,b:'العراق',fb:F.irq,tier:'arab'}]},
- {d:'السبت',dt:'27 يونيو',iso:'2026-06-27',m:[
-   {t:'3:00ف',a:'السعودية',fa:F.ksa,b:'الرأس الأخضر',fb:F.cpv,tier:'ksa',n:'الجولة الحاسمة للتأهل'},
-   {t:'3:00ف',a:'أوروغواي',fa:F.uru,b:'إسبانيا',fb:F.esp,tier:'norm',n:'مجموعة الأخضر'},
-   {t:'6:00ص',a:'مصر',fa:F.egy,b:'إيران',fb:F.irn,tier:'arab'}]},
- {d:'الأحد',dt:'28 يونيو',iso:'2026-06-28',m:[
-   {t:'12:00ص',a:'بنما',fa:F.pan,b:'إنجلترا',fb:F.eng,tier:'top'},
-   {t:'2:30ف',a:'كولومبيا',fa:F.col,b:'البرتغال',fb:F.por,tier:'top',n:'سيليساو أوروبا بقيادة رونالدو'},
-   {t:'5:00ف',a:'الأردن',fa:F.jor,b:'الأرجنتين',fb:F.arg,tier:'top',n:'ميسي في مواجهة النشامى'}]}];
+/* ========= Groups (key = group letter, teams = 4 codes) =========
+   Group H confirmed from official meta. Other groupings inferred from
+   match pairings; team-to-letter assignment should be verified vs fifa.com. */
+const GROUPS=[
+  {key:'A', name:'الأولى',     teams:['mex','rsa','kor','cze']},
+  {key:'B', name:'الثانية',    teams:['can','bih','qat','sui']},
+  {key:'C', name:'الثالثة',    teams:['bra','mar','hai','sco']},
+  {key:'D', name:'الرابعة',    teams:['usa','par','aus','tur']},
+  {key:'E', name:'الخامسة',    teams:['ger','cuw','civ','ecu']},
+  {key:'F', name:'السادسة',    teams:['ned','jpn','swe','tun']},
+  {key:'G', name:'السابعة',    teams:['bel','egy','irn','nzl']},
+  {key:'H', name:'الثامنة',    teams:['ksa','esp','uru','cpv']},
+  {key:'I', name:'التاسعة',    teams:['fra','sen','irq','nor']},
+  {key:'J', name:'العاشرة',    teams:['arg','alg','aut','jor']},
+  {key:'K', name:'الحادية عشرة',teams:['por','cod','uzb','col']},
+  {key:'L', name:'الثانية عشرة',teams:['eng','cro','gha','pan']}
+];
 
+/* ========= All group-stage matches =========
+   imp:1 = appears in "أهم المباريات" view (curated highlights with notes)
+   Times are Saudi Arabia time. Venues from FIFA published schedule. */
+const M=[
+ // ===== Group A =====
+ {iso:'2026-06-11',d:'الخميس',dt:'11 يونيو',t:'10:00م',a:'mex',b:'rsa',g:'A',tier:'top',imp:1,n:'مباراة الافتتاح',v:'مكسيكو سيتي'},
+ {iso:'2026-06-12',d:'الجمعة',dt:'12 يونيو',t:'5:00ص',a:'kor',b:'cze',g:'A',tier:'norm',v:'غوادالاخارا'},
+ {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'7:00م',a:'cze',b:'rsa',g:'A',tier:'norm',v:'أتلانتا'},
+ {iso:'2026-06-19',d:'الجمعة',dt:'19 يونيو',t:'4:00ف',a:'mex',b:'kor',g:'A',tier:'norm',v:'غوادالاخارا'},
+ {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'4:00ف',a:'cze',b:'mex',g:'A',tier:'norm',v:'مكسيكو سيتي'},
+ {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'4:00ف',a:'rsa',b:'kor',g:'A',tier:'norm',v:'مونتيري'},
+
+ // ===== Group B =====
+ {iso:'2026-06-12',d:'الجمعة',dt:'12 يونيو',t:'10:00م',a:'can',b:'bih',g:'B',tier:'norm',v:'تورنتو'},
+ {iso:'2026-06-13',d:'السبت',dt:'13 يونيو',t:'10:00م',a:'qat',b:'sui',g:'B',tier:'arab',imp:1,n:'أولى مباريات المنتخب العنابي',v:'سانتا كلارا'},
+ {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'10:00م',a:'sui',b:'bih',g:'B',tier:'norm',v:'إنغلوود'},
+ {iso:'2026-06-19',d:'الجمعة',dt:'19 يونيو',t:'1:00ف',a:'can',b:'qat',g:'B',tier:'arab',imp:1,v:'فانكوفر'},
+ {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'10:00م',a:'sui',b:'can',g:'B',tier:'norm',v:'فانكوفر'},
+ {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'10:00م',a:'bih',b:'qat',g:'B',tier:'arab',imp:1,v:'سياتل'},
+
+ // ===== Group C =====
+ {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'1:00ف',a:'bra',b:'mar',g:'C',tier:'top',imp:1,n:'قمة المجموعة السيليساو مع أسود الأطلس',v:'إيست رذرفورد'},
+ {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'4:00ف',a:'hai',b:'sco',g:'C',tier:'norm',v:'فوكسبورو'},
+ {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'1:00ف',a:'sco',b:'mar',g:'C',tier:'arab',imp:1,v:'فوكسبورو'},
+ {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'3:30ف',a:'bra',b:'hai',g:'C',tier:'top',imp:1,v:'فيلادلفيا'},
+ {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'1:00ف',a:'sco',b:'bra',g:'C',tier:'top',imp:1,v:'ميامي'},
+ {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'1:00ف',a:'mar',b:'hai',g:'C',tier:'arab',imp:1,v:'أتلانتا'},
+
+ // ===== Group D =====
+ {iso:'2026-06-13',d:'السبت',dt:'13 يونيو',t:'4:00ف',a:'usa',b:'par',g:'D',tier:'norm',v:'إنغلوود'},
+ {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'7:00ص',a:'aus',b:'tur',g:'D',tier:'norm',v:'فانكوفر'},
+ {iso:'2026-06-19',d:'الجمعة',dt:'19 يونيو',t:'10:00م',a:'usa',b:'aus',g:'D',tier:'norm',v:'سياتل'},
+ {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'6:00ص',a:'tur',b:'par',g:'D',tier:'norm',v:'سانتا كلارا'},
+ {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'5:00ص',a:'tur',b:'usa',g:'D',tier:'norm',v:'إنغلوود'},
+ {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'5:00ص',a:'par',b:'aus',g:'D',tier:'norm',v:'سانتا كلارا'},
+
+ // ===== Group E =====
+ {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'8:00م',a:'ger',b:'cuw',g:'E',tier:'top',imp:1,v:'هيوستن'},
+ {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'2:00ف',a:'civ',b:'ecu',g:'E',tier:'norm',v:'فيلادلفيا'},
+ {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'11:00م',a:'ger',b:'civ',g:'E',tier:'top',imp:1,v:'تورنتو'},
+ {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'3:00ف',a:'ecu',b:'cuw',g:'E',tier:'norm',v:'كانساس سيتي'},
+ {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'11:00م',a:'cuw',b:'civ',g:'E',tier:'norm',v:'فيلادلفيا'},
+ {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'11:00م',a:'ecu',b:'ger',g:'E',tier:'top',imp:1,v:'إيست رذرفورد'},
+
+ // ===== Group F =====
+ {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'11:00م',a:'ned',b:'jpn',g:'F',tier:'norm',v:'أرلينغتون'},
+ {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'5:00ص',a:'swe',b:'tun',g:'F',tier:'arab',v:'مونتيري'},
+ {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'8:00م',a:'ned',b:'swe',g:'F',tier:'norm',v:'هيوستن'},
+ {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'7:00ص',a:'tun',b:'jpn',g:'F',tier:'arab',v:'مونتيري'},
+ {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'2:00ف',a:'jpn',b:'swe',g:'F',tier:'norm',v:'أرلينغتون'},
+ {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'2:00ف',a:'tun',b:'ned',g:'F',tier:'arab',imp:1,v:'كانساس سيتي'},
+
+ // ===== Group G =====
+ {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'10:00م',a:'bel',b:'egy',g:'G',tier:'arab',imp:1,n:'أولى مباريات الفراعنة',v:'سياتل'},
+ {iso:'2026-06-16',d:'الثلاثاء',dt:'16 يونيو',t:'4:00ف',a:'irn',b:'nzl',g:'G',tier:'norm',v:'إنغلوود'},
+ {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'10:00م',a:'bel',b:'irn',g:'G',tier:'top',imp:1,v:'إنغلوود'},
+ {iso:'2026-06-22',d:'الإثنين',dt:'22 يونيو',t:'4:00ف',a:'nzl',b:'egy',g:'G',tier:'arab',imp:1,v:'فانكوفر'},
+ {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'6:00ص',a:'egy',b:'irn',g:'G',tier:'arab',imp:1,v:'سياتل'},
+ {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'6:00ص',a:'nzl',b:'bel',g:'G',tier:'norm',v:'فانكوفر'},
+
+ // ===== Group H (مجموعة الأخضر) =====
+ {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'7:00م',a:'esp',b:'cpv',g:'H',tier:'top',imp:1,v:'أتلانتا'},
+ {iso:'2026-06-16',d:'الثلاثاء',dt:'16 يونيو',t:'1:00ف',a:'ksa',b:'uru',g:'H',tier:'ksa',imp:1,n:'أولى مباريات الأخضر',v:'ميامي'},
+ {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'7:00م',a:'esp',b:'ksa',g:'H',tier:'ksa',imp:1,n:'مبارة القمة للأخضر',v:'أتلانتا'},
+ {iso:'2026-06-22',d:'الإثنين',dt:'22 يونيو',t:'1:00ف',a:'uru',b:'cpv',g:'H',tier:'norm',v:'ميامي'},
+ {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'3:00ف',a:'cpv',b:'ksa',g:'H',tier:'ksa',imp:1,n:'الجولة الحاسمة للتأهل',v:'هيوستن'},
+ {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'3:00ف',a:'uru',b:'esp',g:'H',tier:'top',imp:1,n:'مجموعة الأخضر',v:'غوادالاخارا'},
+
+ // ===== Group I =====
+ {iso:'2026-06-16',d:'الثلاثاء',dt:'16 يونيو',t:'10:00م',a:'fra',b:'sen',g:'I',tier:'top',imp:1,v:'إيست رذرفورد'},
+ {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'1:00ف',a:'irq',b:'nor',g:'I',tier:'arab',imp:1,v:'فوكسبورو'},
+ {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'12:00ص',a:'fra',b:'irq',g:'I',tier:'top',imp:1,n:'منتخب الديوك بقيادة امبابي في مواجهة أسود الرافدين',v:'فيلادلفيا'},
+ {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'3:00ف',a:'nor',b:'sen',g:'I',tier:'norm',v:'إيست رذرفورد'},
+ {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'10:00م',a:'nor',b:'fra',g:'I',tier:'top',imp:1,v:'فوكسبورو'},
+ {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'10:00م',a:'sen',b:'irq',g:'I',tier:'arab',imp:1,v:'تورنتو'},
+
+ // ===== Group J =====
+ {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'4:00ف',a:'arg',b:'alg',g:'J',tier:'top',imp:1,n:'راقصو التانجو بقيادة ميسي في مواجهة محاربو الصحراء',v:'كانساس سيتي'},
+ {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'7:00ص',a:'aut',b:'jor',g:'J',tier:'arab',v:'سانتا كلارا'},
+ {iso:'2026-06-22',d:'الإثنين',dt:'22 يونيو',t:'8:00م',a:'arg',b:'aut',g:'J',tier:'top',imp:1,n:'راقصو التانجو بقيادة ميسي',v:'أرلينغتون'},
+ {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'6:00ص',a:'jor',b:'alg',g:'J',tier:'arab',imp:1,n:'ديربي عربي بين النشامى و محاربو الصحراء',v:'سانتا كلارا'},
+ {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'5:00ص',a:'jor',b:'arg',g:'J',tier:'top',imp:1,n:'ميسي في مواجهة النشامى',v:'أرلينغتون'},
+ {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'5:00ص',a:'alg',b:'aut',g:'J',tier:'arab',v:'كانساس سيتي'},
+
+ // ===== Group K =====
+ {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'8:00م',a:'por',b:'cod',g:'K',tier:'top',imp:1,n:'سيليساو أوروبا بقيادة رونالدو',v:'هيوستن'},
+ {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'5:00ص',a:'uzb',b:'col',g:'K',tier:'norm',v:'مكسيكو سيتي'},
+ {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'8:00م',a:'por',b:'uzb',g:'K',tier:'top',imp:1,n:'سيليساو أوروبا بقيادة رونالدو',v:'هيوستن'},
+ {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'5:00ص',a:'col',b:'cod',g:'K',tier:'norm',v:'غوادالاخارا'},
+ {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'2:30ف',a:'col',b:'por',g:'K',tier:'top',imp:1,n:'سيليساو أوروبا بقيادة رونالدو',v:'ميامي'},
+ {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'2:30ف',a:'cod',b:'uzb',g:'K',tier:'norm',v:'أتلانتا'},
+
+ // ===== Group L =====
+ {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'11:00م',a:'eng',b:'cro',g:'L',tier:'top',imp:1,v:'أرلينغتون'},
+ {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'2:00ف',a:'gha',b:'pan',g:'L',tier:'norm',v:'فيلادلفيا'},
+ {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'11:00م',a:'eng',b:'gha',g:'L',tier:'top',imp:1,v:'بوسطن'},
+ {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'2:00ف',a:'pan',b:'cro',g:'L',tier:'norm',v:'تورنتو'},
+ {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'12:00ص',a:'pan',b:'eng',g:'L',tier:'top',imp:1,v:'إيست رذرفورد'},
+ {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'12:00ص',a:'cro',b:'gha',g:'L',tier:'norm',v:'فيلادلفيا'}
+];
+
+/* ========= KSA highlight cards ========= */
+const KSA_CARDS=[
+ {tag:'الجولة 1',a:'ksa',b:'uru',day:'الثلاثاء',date:'16 يونيو',time:'1:00 فجراً',meta:'ميامي · المجموعة الثامنة'},
+ {tag:'الجولة 2',a:'ksa',b:'esp',day:'الأحد',date:'21 يونيو',time:'7:00 مساءً',meta:'أتلانتا · قمة المجموعة'},
+ {tag:'الجولة 3',a:'ksa',b:'cpv',day:'السبت',date:'27 يونيو',time:'3:00 فجراً',meta:'هيوستن · الجولة الحاسمة'}];
+
+/* ========= Helpers ========= */
+function flag(c){return F[c]||F.tbd;}
+function tname(c){return TN[c]||'—';}
+function period(t){
+  if(t==='12:00ص')return['12:00','منتصف الليل'];
+  const num=t.replace(/[فمص]$/,''),s=t.slice(-1);
+  return [num, s==='ف'?'فجراً':s==='ص'?'صباحاً':s==='م'?'مساءً':''];
+}
+function timeKey(t){
+  // For sorting: convert to 24h-ish key. ف=after midnight (00-06), ص=morning, م=evening
+  const num=t.replace(/[فمص]$/,'');const s=t.slice(-1);
+  const[h,m]=num.split(':').map(Number);
+  let H=h;
+  if(s==='ف')H=h===12?0:h;       // فجر: 12=midnight, 1-6 early morning
+  else if(s==='ص')H=h;            // morning 6-11
+  else if(s==='م')H=h<12?h+12:h;  // evening 12-11pm
+  return H*60+(m||0);
+}
+function mkMark(tier){
+  return tier==='ksa'?'<span class="mk kstar">★</span>':
+         tier==='top'?'<span class="mk star">★</span>':
+         tier==='arab'?'<span class="mk cres">☾</span>':'';
+}
+
+/* ========= Render KSA cards ========= */
 const kg=document.getElementById('ksaGrid');
-KSA.forEach(k=>{kg.insertAdjacentHTML('beforeend',`
+KSA_CARDS.forEach(k=>{kg.insertAdjacentHTML('beforeend',`
   <div class="ksa-card"><div class="tag">${k.tag} · الأخضر</div>
-    <div class="vs"><span class="fl">${k.fa}</span> ${k.a} <em>×</em> ${k.b} <span class="fl">${k.fb}</span></div>
+    <div class="vs"><span class="fl">${flag(k.a)}</span> ${tname(k.a)} <em>×</em> ${tname(k.b)} <span class="fl">${flag(k.b)}</span></div>
     <div class="when">${k.day} ${k.date}<b>${k.time}</b></div><div class="meta">${k.meta}</div></div>`);});
 
-function period(t){if(t==='12:00ص')return['12:00','منتصف الليل'];
-  const num=t.replace(/[فمص]$/,''),s=t.slice(-1);
-  return [num, s==='ف'?'فجراً':s==='ص'?'صباحاً':s==='م'?'مساءً':''];}
+/* ========= Render day-by-day matches ========= */
 const today=new Date().toISOString().slice(0,10);
-const wrap=document.getElementById('days');
-DAYS.forEach(day=>{
-  const isToday=day.iso===today;let rows='';
-  day.m.forEach(mt=>{const[num,per]=period(mt.t);
-    let mk= mt.tier==='ksa'?'<span class="mk kstar">★</span>': mt.tier==='top'?'<span class="mk star">★</span>': mt.tier==='arab'?'<span class="mk cres">☾</span>':'';
-    rows+=`<div class="m ${mt.tier}"><div class="time">${num}<small>${per}</small></div>
-      <div class="info"><div class="teams"><span class="fl">${mt.fa}</span> ${mt.a} <span class="x">×</span> <span class="fl">${mt.fb}</span> ${mt.b}${mk}</div>
-      ${mt.n?`<div class="note">${mt.n}</div>`:''}</div></div>`;});
-  wrap.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
-    <div class="day-head"><span class="dname">${day.d}${isToday?'<span class="today-pill">اليوم</span>':''}</span><span class="ddate">${day.dt}</span></div>
-    <div class="matches">${rows}</div></div>`);});
+
+function renderDays(containerId, matches, opts){
+  const showGroup = !!(opts&&opts.showGroup);
+  const cont = document.getElementById(containerId);
+  cont.innerHTML='';
+  // group by iso
+  const byDay={};
+  matches.forEach(m=>{(byDay[m.iso]=byDay[m.iso]||[]).push(m);});
+  const isos = Object.keys(byDay).sort();
+  isos.forEach(iso=>{
+    const arr = byDay[iso].sort((x,y)=>timeKey(x.t)-timeKey(y.t));
+    const day = arr[0];
+    const isToday = iso===today;
+    let rows='';
+    arr.forEach(mt=>{
+      const[num,per]=period(mt.t);
+      const mk = mkMark(mt.tier);
+      const trail = showGroup
+        ? `<span class="gpill">المجموعة ${mt.g}</span>`
+        : mk;
+      rows+=`<div class="m ${mt.tier}"><div class="time">${num}<small>${per}</small></div>
+        <div class="info"><div class="teams"><span class="fl">${flag(mt.a)}</span> ${tname(mt.a)} <span class="x">×</span> <span class="fl">${flag(mt.b)}</span> ${tname(mt.b)}${trail}</div>
+        ${(!showGroup && mt.n)?`<div class="note">${mt.n}</div>`:''}</div></div>`;
+    });
+    cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
+      <div class="day-head"><span class="dname">${day.d}${isToday?'<span class="today-pill">اليوم</span>':''}</span><span class="ddate">${day.dt}</span></div>
+      <div class="matches">${rows}</div></div>`);
+  });
+}
+
+renderDays('impDays', M.filter(m=>m.imp), {showGroup:false});
+renderDays('allDays', M, {showGroup:true});
+
+/* ========= Render Groups view ========= */
+const gg=document.getElementById('groupsGrid');
+GROUPS.forEach(G=>{
+  const hasKsa = G.teams.includes('ksa');
+  const rows = G.teams.map(c=>{
+    if(c==='tbd') return `<div class="gt tbd"><span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span></div>`;
+    const ksaCls = c==='ksa'?' is-ksa':'';
+    return `<button class="gt${ksaCls}" data-team="${c}" data-group="${G.key}">
+        <span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span><span class="arrow">←</span>
+      </button>`;
+  }).join('');
+  gg.insertAdjacentHTML('beforeend',`<div class="group-card ${hasKsa?'has-ksa':''}">
+    <div class="group-head"><span class="gname">المجموعة ${G.name}</span><span class="glabel">${G.key}</span></div>
+    <div class="group-teams">${rows}</div></div>`);
+});
+
+/* ========= Main + Sub tab switching ========= */
+function switchView(name){
+  document.querySelectorAll('.tabs .tab').forEach(b=>b.classList.toggle('active', b.dataset.view===name));
+  document.getElementById('view-important').classList.toggle('active', name==='important');
+  document.getElementById('view-all').classList.toggle('active', name==='all');
+}
+function switchSub(name){
+  document.querySelectorAll('.subtabs .subtab').forEach(b=>b.classList.toggle('active', b.dataset.sub===name));
+  document.getElementById('sub-matches').classList.toggle('active', name==='matches');
+  document.getElementById('sub-groups').classList.toggle('active', name==='groups');
+}
+document.querySelectorAll('.tabs .tab').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
+document.querySelectorAll('.subtabs .subtab').forEach(b=>b.addEventListener('click',()=>switchSub(b.dataset.sub)));
+
+/* ========= Team modal ========= */
+const modal=document.getElementById('teamModal');
+const mCard=document.getElementById('modalCard');
+const mFlag=document.getElementById('mTeamFlag');
+const mName=document.getElementById('mTeamName');
+const mGroup=document.getElementById('mTeamGroup');
+const mList=document.getElementById('mTeamMatches');
+
+function openTeam(code, groupKey){
+  const matches = M.filter(x=>x.a===code||x.b===code)
+                   .sort((x,y)=> x.iso===y.iso ? timeKey(x.t)-timeKey(y.t) : x.iso.localeCompare(y.iso));
+  mFlag.innerHTML = flag(code);
+  mName.textContent = tname(code);
+  mGroup.textContent = `المجموعة ${groupKey}`;
+  mCard.classList.toggle('ksa', code==='ksa');
+  if(!matches.length){
+    mList.innerHTML = `<div class="mm"><div class="mm-when">لم تُضف مباريات بعد</div></div>`;
+  }else{
+    mList.innerHTML = matches.map(mt=>{
+      const opp = (mt.a===code)?mt.b:mt.a;
+      const[num,per]=period(mt.t);
+      return `<div class="mm">
+        <div class="mm-top">
+          <div class="mm-when">${mt.d} · ${mt.dt}</div>
+          <div class="mm-time">${num}<small>${per}</small></div>
+        </div>
+        <div class="mm-opp"><span class="vs">ضد</span><span class="fl">${flag(opp)}</span>${tname(opp)}</div>
+        ${mt.v?`<div class="mm-venue">📍 ${mt.v}</div>`:''}
+      </div>`;
+    }).join('');
+  }
+  modal.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){modal.classList.remove('open');document.body.style.overflow='';}
+
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+document.querySelectorAll('.gt[data-team]').forEach(btn=>{
+  btn.addEventListener('click',()=>openTeam(btn.dataset.team, btn.dataset.group));
+});
 </script>
 </body>
 </html>
