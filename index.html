@@ -29,7 +29,17 @@
   .divider .ln{height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold))}
   .divider .ln.r{background:linear-gradient(270deg,transparent,var(--gold))}
 
-  header.hero{text-align:center;padding:34px 20px 8px;position:relative}
+  header.hero{text-align:center;padding:34px 20px 8px;position:relative;isolation:isolate}
+  header.hero::before{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:url('tesh-background.jpg') center 55% / cover no-repeat;
+    filter:blur(3px) saturate(.9) brightness(.6);
+    transform:scale(1.08);
+  }
+  header.hero::after{
+    content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(5,17,14,.35) 0%,rgba(5,17,14,.20) 40%,rgba(5,17,14,.70) 85%,var(--bg) 100%);
+  }
   .brand-badge{display:inline-block;margin:0 auto 8px;}
   .brand-badge img{height: 140px; width: auto; display: block;}
   .present{font-family:'Tajawal';font-weight:700;font-size:12px;letter-spacing:4px;color:var(--muted);margin:6px 0 14px}
@@ -140,8 +150,9 @@
   .modal-head .mn{font-family:'Rakkas',serif;font-size:34px;background:linear-gradient(180deg,#fff,var(--gold-soft) 60%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
   .modal-card.ksa .modal-head .mn{background:linear-gradient(180deg,#fff,#7ef0ad 55%,var(--ksa));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .modal-head .mg{margin-top:6px;color:var(--gold-soft);font-weight:800;font-size:12.5px;letter-spacing:3px;font-family:'Tajawal'}
-  .modal-close{position:absolute;top:12px;left:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--gold-soft);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+  .modal-close{position:absolute;top:12px;left:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--gold-soft);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:2}
   .modal-close:hover{background:rgba(205,171,87,.15);color:#fff}
+  .modal-brand{position:absolute;top:14px;right:16px;height:48px;width:auto;z-index:2;filter:drop-shadow(0 3px 8px rgba(205,171,87,.4));pointer-events:none}
   .modal-matches{padding:14px 16px 20px;display:flex;flex-direction:column;gap:10px}
   .mm{padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.025);border:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:6px}
   .mm-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}
@@ -219,6 +230,7 @@
 <div class="modal" id="teamModal" role="dialog" aria-modal="true" aria-labelledby="mTeamName">
   <div class="modal-card" id="modalCard">
     <button class="modal-close" id="modalClose" aria-label="إغلاق">✕</button>
+    <img class="modal-brand" src="Tesh_logo.png" alt="تِش" aria-hidden="true">
     <div class="modal-head">
       <span class="fl" id="mTeamFlag"></span>
       <div class="mn" id="mTeamName"></div>
