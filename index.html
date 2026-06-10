@@ -180,14 +180,8 @@
     .tabs{max-width:100%}
     .tab{padding:10px 12px;font-size:14px}
     header.hero::before{background-size:100% 100%;background-position:center center;transform:none}
-    .m{grid-template-columns:50px 1fr;gap:8px;padding:10px 6px}
-    .m .time{font-size:14px}
-    .m .time small{font-size:9.5px}
-    .m .teams{font-size:13.5px;gap:4px;flex-wrap:nowrap;justify-content:flex-end}
-    .m .teams .fl{font-size:17px}
-    .m .gpill{font-size:9.5px;padding:1.5px 7px;letter-spacing:.5px}
-    .m .g-row{margin-bottom:6px}
   }
+  .m .teams .t{display:inline-flex;align-items:center;gap:6px;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -450,8 +444,10 @@ function renderDays(containerId, matches, opts){
       const mk = mkMark(mt.tier);
       const groupRow = showGroup ? `<div class="g-row"><span class="gpill">المجموعة ${mt.g}</span></div>` : '';
       const trail = showGroup ? '' : mk;
+      const tA = `<span class="t"><span class="fl">${flag(mt.a)}</span> ${tname(mt.a)}</span>`;
+      const tB = `<span class="t"><span class="fl">${flag(mt.b)}</span> ${tname(mt.b)}</span>`;
       rows+=`<div class="m ${mt.tier}"><div class="time">${num}<small>${per}</small></div>
-        <div class="info">${groupRow}<div class="teams"><span class="fl">${flag(mt.a)}</span> ${tname(mt.a)} <span class="x">×</span> <span class="fl">${flag(mt.b)}</span> ${tname(mt.b)}${trail}</div>
+        <div class="info">${groupRow}<div class="teams">${tA}<span class="x">×</span>${tB}${trail}</div>
         ${(!showGroup && mt.n)?`<div class="note">${mt.n}</div>`:''}</div></div>`;
     });
     cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
