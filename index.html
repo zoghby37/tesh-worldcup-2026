@@ -33,12 +33,12 @@
   header.hero::before{
     content:"";position:absolute;inset:0;z-index:-1;
     background:url('tesh-background.jpg') center 55% / cover no-repeat;
-    filter:blur(3px) saturate(.9) brightness(.6);
+    filter:blur(4px);
     transform:scale(1.08);
   }
   header.hero::after{
     content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
-    background:linear-gradient(180deg,rgba(5,17,14,.35) 0%,rgba(5,17,14,.20) 40%,rgba(5,17,14,.70) 85%,var(--bg) 100%);
+    background:linear-gradient(180deg,transparent 0%,transparent 70%,var(--bg) 100%);
   }
   .brand-badge{display:inline-block;margin:0 auto 8px;}
   .brand-badge img{height: 140px; width: auto; display: block;}
