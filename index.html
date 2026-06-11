@@ -124,7 +124,7 @@
   .day-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:14px 18px;background:linear-gradient(90deg,rgba(44,107,107,.22),transparent);border-bottom:1px solid var(--line)}
   .day-head .dname{font-family:'Cairo';font-weight:900;font-size:19px}
   .day-head .ddate{color:var(--gold);font-weight:700;font-size:14px}
-  .today-pill{font-size:11px;font-weight:800;background:var(--gold);color:#1a1205;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-inline-start:8px}
+  .today-pill{display:inline-block;font-size:11px;font-weight:800;background:var(--gold);color:#1a1205;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-inline-start:10px;vertical-align:middle}
   .matches{padding:8px 10px 12px;display:flex;flex-direction:column}
   .m{display:grid;grid-template-columns:56px 1fr;align-items:center;gap:12px;padding:11px 10px;border-radius:12px;transition:background .2s}
   .m + .m{border-top:1px solid rgba(255,255,255,.045)}
@@ -424,7 +424,7 @@ function timeKey(t){
 function mkMark(tier){
   return tier==='ksa'?'<span class="mk kstar">★</span>':
          tier==='top'?'<span class="mk star">★</span>':
-         tier==='arab'?'<span class="mk cres">☾</span>':'';
+         tier==='arab'?'<span class="mk cres">★</span>':'';
 }
 
 /* ========= Render KSA cards ========= */
