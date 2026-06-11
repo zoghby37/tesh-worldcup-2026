@@ -29,16 +29,8 @@
   .divider .ln{height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold))}
   .divider .ln.r{background:linear-gradient(270deg,transparent,var(--gold))}
 
-  header.hero{text-align:center;padding:24px 20px 28px;position:relative;isolation:isolate;
-    min-height:clamp(420px,72vh,640px);display:flex;flex-direction:column;justify-content:flex-end}
-  header.hero::before{
-    content:"";position:absolute;inset:0;z-index:-1;
-    background:url('hero-new.png') center center / cover no-repeat;
-  }
-  header.hero::after{
-    content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
-    background:linear-gradient(180deg,transparent 0%,transparent 88%,var(--bg) 100%);
-  }
+  header.hero{margin:0;padding:0;position:relative;line-height:0}
+  .hero-img{width:100%;height:auto;display:block}
   .brand-badge{display:inline-block;margin:0 auto 8px;}
   .brand-badge img{height: 140px; width: auto; display: block;}
   .present{font-family:'Tajawal';font-weight:700;font-size:12px;letter-spacing:4px;color:var(--muted);margin:6px 0 14px}
@@ -193,14 +185,15 @@
     .days{grid-template-columns:1fr}
     .tabs{max-width:100%}
     .tab{padding:10px 12px;font-size:14px}
-    header.hero::before{background-size:100% 100%;background-position:center center;transform:none}
   }
   .m .teams .t{display:inline-flex;align-items:center;gap:6px;flex-shrink:0}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="hero" aria-label="تِش · كأس العالم 2026"></header>
+  <header class="hero">
+    <img class="hero-img" src="hero-new.png" alt="تِش · كأس العالم 2026">
+  </header>
 
   <div class="cta-wrap">
     <a class="cta-book" href="https://wa.me/966559973180" target="_blank" rel="noopener" aria-label="احجز معنا عبر واتساب">
