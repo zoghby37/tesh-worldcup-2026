@@ -29,8 +29,13 @@
   .divider .ln{height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold))}
   .divider .ln.r{background:linear-gradient(270deg,transparent,var(--gold))}
 
-  header.hero{margin:0;padding:0;position:relative;line-height:0}
+  header.hero{margin:0;padding:0;position:relative;line-height:0;overflow:hidden}
   .hero-img{width:100%;height:auto;display:block}
+  header.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;pointer-events:none;
+    background:linear-gradient(180deg,transparent 0%,rgba(5,17,14,.4) 55%,var(--bg) 100%)}
+  header.hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;z-index:2;pointer-events:none;
+    background:linear-gradient(90deg,transparent 0%,var(--gold) 50%,transparent 100%);
+    box-shadow:0 0 14px rgba(205,171,87,.45)}
   .brand-badge{display:inline-block;margin:0 auto 8px;}
   .brand-badge img{height: 140px; width: auto; display: block;}
   .present{font-family:'Tajawal';font-weight:700;font-size:12px;letter-spacing:4px;color:var(--muted);margin:6px 0 14px}
