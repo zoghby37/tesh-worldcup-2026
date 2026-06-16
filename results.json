@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T21:42:59+00:00",
+  "lastUpdated": "2026-06-16T23:11:18+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -106,9 +106,9 @@
       "minute": null
     },
     "irq_nor": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "PAUSED",
+      "homeScore": 1,
+      "awayScore": 2,
       "minute": null
     },
     "arg_alg": {
@@ -818,25 +818,25 @@
         "pts": 3
       },
       {
-        "team": "irq",
-        "played": 0,
-        "won": 0,
+        "team": "nor",
+        "played": 1,
+        "won": 1,
         "drawn": 0,
         "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "pts": 3
       },
       {
-        "team": "nor",
-        "played": 0,
+        "team": "irq",
+        "played": 1,
         "won": 0,
         "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
         "pts": 0
       },
       {
