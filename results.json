@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T18:58:18+00:00",
+  "lastUpdated": "2026-06-16T21:42:59+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -100,9 +100,9 @@
       "minute": null
     },
     "fra_sen": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "FINISHED",
+      "homeScore": 3,
+      "awayScore": 1,
       "minute": null
     },
     "irq_nor": {
@@ -808,14 +808,14 @@
     "I": [
       {
         "team": "fra",
-        "played": 0,
-        "won": 0,
+        "played": 1,
+        "won": 1,
         "drawn": 0,
         "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
       },
       {
         "team": "irq",
@@ -841,13 +841,13 @@
       },
       {
         "team": "sen",
-        "played": 0,
+        "played": 1,
         "won": 0,
         "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       }
     ],
