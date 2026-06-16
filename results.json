@@ -1,435 +1,435 @@
 {
-  "lastUpdated": "2026-06-16T14:53:53+00:00",
+  "lastUpdated": "2026-06-16T18:58:18+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
-    "2026-06-11_mex_rsa": {
+    "mex_rsa": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-12_kor_cze": {
+    "kor_cze": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-12_can_bih": {
+    "can_bih": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-13_usa_par": {
+    "usa_par": {
       "status": "FINISHED",
       "homeScore": 4,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-13_qat_sui": {
+    "qat_sui": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-13_bra_mar": {
+    "bra_mar": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-14_hai_sco": {
+    "hai_sco": {
       "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-14_aus_tur": {
+    "aus_tur": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-14_ger_cuw": {
+    "ger_cuw": {
       "status": "FINISHED",
       "homeScore": 7,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-14_ned_jpn": {
+    "ned_jpn": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 2,
       "minute": null
     },
-    "2026-06-14_civ_ecu": {
+    "civ_ecu": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-15_swe_tun": {
+    "swe_tun": {
       "status": "FINISHED",
       "homeScore": 5,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-15_esp_cpv": {
+    "esp_cpv": {
       "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-15_bel_egy": {
+    "bel_egy": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-15_ksa_uru": {
+    "ksa_uru": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-16_irn_nzl": {
+    "irn_nzl": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 2,
       "minute": null
     },
-    "2026-06-16_fra_sen": {
+    "fra_sen": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-16_irq_nor": {
+    "irq_nor": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_arg_alg": {
+    "arg_alg": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_aut_jor": {
+    "aut_jor": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_por_cod": {
+    "por_cod": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_eng_cro": {
+    "eng_cro": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_gha_pan": {
+    "gha_pan": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_uzb_col": {
+    "uzb_col": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_cze_rsa": {
+    "cze_rsa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_sui_bih": {
+    "sui_bih": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_can_qat": {
+    "can_qat": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-19_mex_kor": {
+    "mex_kor": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-19_usa_aus": {
+    "usa_aus": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-19_sco_mar": {
+    "sco_mar": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_bra_hai": {
+    "bra_hai": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_tur_par": {
+    "tur_par": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_ned_swe": {
+    "ned_swe": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_ger_civ": {
+    "ger_civ": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_ecu_cuw": {
+    "ecu_cuw": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_tun_jpn": {
+    "tun_jpn": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_esp_ksa": {
+    "esp_ksa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_bel_irn": {
+    "bel_irn": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_uru_cpv": {
+    "uru_cpv": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-22_nzl_egy": {
+    "nzl_egy": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-22_arg_aut": {
+    "arg_aut": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-22_fra_irq": {
+    "fra_irq": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_nor_sen": {
+    "nor_sen": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_jor_alg": {
+    "jor_alg": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_por_uzb": {
+    "por_uzb": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_eng_gha": {
+    "eng_gha": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_pan_cro": {
+    "pan_cro": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_col_cod": {
+    "col_cod": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_sui_can": {
+    "sui_can": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_bih_qat": {
+    "bih_qat": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_mar_hai": {
+    "mar_hai": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_sco_bra": {
+    "sco_bra": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_cze_mex": {
+    "cze_mex": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_rsa_kor": {
+    "rsa_kor": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_ecu_ger": {
+    "ecu_ger": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_cuw_civ": {
+    "cuw_civ": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_tun_ned": {
+    "tun_ned": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_jpn_swe": {
+    "jpn_swe": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_tur_usa": {
+    "tur_usa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_par_aus": {
+    "par_aus": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_nor_fra": {
+    "nor_fra": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_sen_irq": {
+    "sen_irq": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_uru_esp": {
+    "uru_esp": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_cpv_ksa": {
+    "cpv_ksa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_nzl_bel": {
+    "nzl_bel": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_egy_irn": {
+    "egy_irn": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_pan_eng": {
+    "pan_eng": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_cro_gha": {
+    "cro_gha": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_col_por": {
+    "col_por": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_cod_uzb": {
+    "cod_uzb": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-28_jor_arg": {
+    "jor_arg": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-28_alg_aut": {
+    "alg_aut": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
