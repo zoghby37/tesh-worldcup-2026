@@ -1,0 +1,43 @@
+name: Fetch live scores
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub Actions cron is best-effort, may drift a few minutes.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:   # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can push the updated JSON back
+
+concurrency:
+  group: fetch-scores
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch scores
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: python scripts/fetch_scores.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results.json
+          if git diff --cached --quiet; then
+            echo "results.json unchanged — nothing to commit"
+          else
+            git commit -m "live-scores: auto-update from football-data.org"
+            git push
+          fi
