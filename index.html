@@ -97,6 +97,40 @@
   .view{display:none}
   .view.active{display:block}
 
+  /* Scores + status */
+  .m .score{font-family:'Cairo',sans-serif;font-weight:900;font-size:18px;color:var(--gold-soft);padding:0 10px;letter-spacing:.5px;white-space:nowrap}
+  .m.ksa .score{color:#fff}
+  .m .score.live{color:#ff6b6b}
+  .m .time.status-finished{color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.5px}
+  .m .time.status-live{color:#ff6b6b;font-size:12px;font-weight:800;letter-spacing:.5px;animation:livePulse 1.6s ease-in-out infinite}
+  @keyframes livePulse{0%,100%{opacity:1}50%{opacity:.55}}
+
+  /* KSA card score */
+  .ksa-card .vs em.score-em{color:#fff;font-size:.95em;font-weight:900;background:rgba(30,196,106,.15);border:1px solid rgba(30,196,106,.4);padding:2px 12px;border-radius:8px;margin:0 4px}
+  .ksa-card .when.finished b{color:var(--muted);font-size:1em}
+  .ksa-card .status-badge{display:inline-block;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-top:6px;font-family:'Tajawal'}
+  .ksa-card .status-badge.finished{background:rgba(255,255,255,.08);color:var(--muted);border:1px solid rgba(255,255,255,.1)}
+  .ksa-card .status-badge.live{background:rgba(255,107,107,.15);color:#ff6b6b;border:1px solid rgba(255,107,107,.4);animation:livePulse 1.6s ease-in-out infinite}
+
+  /* Modal match score */
+  .mm-score{font-family:'Cairo';font-weight:900;font-size:18px;color:var(--gold-soft);background:rgba(205,171,87,.10);border:1px solid rgba(205,171,87,.25);padding:3px 12px;border-radius:8px;display:inline-block;margin-top:4px}
+  .mm-score.live{color:#ff6b6b;background:rgba(255,107,107,.10);border-color:rgba(255,107,107,.3)}
+  .mm-status{font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.5px}
+  .mm-status.live{color:#ff6b6b}
+
+  /* Standings table inside group card */
+  .gt .pos{font-family:'Cairo';font-weight:900;color:var(--gold);font-size:14px;min-width:18px;text-align:center}
+  .gt.is-ksa .pos{color:var(--ksa)}
+  .gt .stats{margin-inline-start:auto;display:flex;align-items:center;gap:10px;font-family:'Tajawal'}
+  .gt .st-meta{color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.3px}
+  .gt .st-pts{color:#fff;font-weight:900;font-size:15px;background:rgba(205,171,87,.14);padding:2px 11px;border-radius:8px;border:1px solid rgba(205,171,87,.35);min-width:32px;text-align:center}
+  .gt.is-ksa .st-pts{background:rgba(30,196,106,.18);border-color:rgba(30,196,106,.5)}
+  .group-table-head{display:grid;grid-template-columns:18px 22px 1fr auto;gap:10px;padding:6px 14px 4px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:1px;font-family:'Tajawal';border-bottom:1px solid var(--line);margin-bottom:2px}
+  .group-table-head .th-pts{padding-inline-end:6px}
+
+  /* Last updated footer */
+  .updated{text-align:center;color:var(--muted);font-size:11.5px;font-weight:600;margin:14px 0 -6px;font-family:'Tajawal';letter-spacing:.3px}
+
   /* Hint banner */
   .hint{display:flex;align-items:center;gap:10px;justify-content:center;max-width:560px;margin:0 auto 18px;
     padding:11px 18px;border-radius:12px;background:rgba(205,171,87,.08);border:1px solid var(--line);
@@ -431,12 +465,56 @@ function mkMark(tier){
          tier==='arab'?'<span class="mk cres">★</span>':'';
 }
 
+/* ========= Live results (populated by fetch) ========= */
+let RESULTS = { matches: {}, standings: {}, lastUpdated: null };
+
+const LIVE_STATUSES = new Set(['IN_PLAY','PAUSED','LIVE']);
+const DONE_STATUSES = new Set(['FINISHED']);
+
+// Lookup map: "{a}_{b}" -> {status, homeScore, awayScore, minute}
+// Built from RESULTS.matches regardless of whether keys include a date prefix.
+let SCORE_MAP = {};
+function buildScoreMap(){
+  SCORE_MAP = {};
+  Object.entries(RESULTS.matches || {}).forEach(([key, val])=>{
+    const parts = key.split('_');
+    // Use only the last two segments as team pair, so both "a_b" and "yyyy-mm-dd_a_b" work
+    const pair = parts.slice(-2).join('_');
+    SCORE_MAP[pair] = val;
+  });
+}
+
+function resultFor(a, b){
+  const fwd = SCORE_MAP[`${a}_${b}`];
+  if (fwd) return { ...fwd, reversed:false };
+  const rev = SCORE_MAP[`${b}_${a}`];
+  if (rev) return { status:rev.status, homeScore:rev.awayScore, awayScore:rev.homeScore, minute:rev.minute, reversed:true };
+  return null;
+}
+
 /* ========= Render KSA cards ========= */
 const kg=document.getElementById('ksaGrid');
-KSA_CARDS.forEach(k=>{kg.insertAdjacentHTML('beforeend',`
-  <div class="ksa-card"><div class="tag">${k.tag} · الأخضر</div>
-    <div class="vs"><span class="fl">${flag(k.a)}</span> ${tname(k.a)} <em>×</em> ${tname(k.b)} <span class="fl">${flag(k.b)}</span></div>
-    <div class="when">${k.day} ${k.date}<b>${k.time}</b></div><div class="meta">${k.meta}</div></div>`);});
+function renderKSACards(){
+  kg.innerHTML='';
+  KSA_CARDS.forEach(k=>{
+    const r = resultFor(k.a, k.b);
+    let vs = `<em>×</em>`;
+    let when = `${k.day} ${k.date}<b>${k.time}</b>`;
+    let badge = '';
+    if (r && DONE_STATUSES.has(r.status)){
+      vs = `<em class="score-em">${r.homeScore} - ${r.awayScore}</em>`;
+      when = `<div class="finished">${k.day} ${k.date}<b>${k.time}</b></div>`;
+      badge = `<div class="status-badge finished">انتهت</div>`;
+    } else if (r && LIVE_STATUSES.has(r.status)){
+      vs = `<em class="score-em">${r.homeScore} - ${r.awayScore}</em>`;
+      badge = `<div class="status-badge live">مباشر${r.minute?` · ${r.minute}'`:''}</div>`;
+    }
+    kg.insertAdjacentHTML('beforeend',`
+      <div class="ksa-card"><div class="tag">${k.tag} · الأخضر</div>
+        <div class="vs"><span class="fl">${flag(k.a)}</span> ${tname(k.a)} ${vs} ${tname(k.b)} <span class="fl">${flag(k.b)}</span></div>
+        <div class="when">${when}</div><div class="meta">${k.meta}</div>${badge}</div>`);
+  });
+}
 
 /* ========= Render day-by-day matches ========= */
 const today=new Date().toISOString().slice(0,10);
@@ -445,7 +523,6 @@ function renderDays(containerId, matches, opts){
   const showGroup = !!(opts&&opts.showGroup);
   const cont = document.getElementById(containerId);
   cont.innerHTML='';
-  // group by iso
   const byDay={};
   matches.forEach(m=>{(byDay[m.iso]=byDay[m.iso]||[]).push(m);});
   const isos = Object.keys(byDay).sort();
@@ -461,8 +538,20 @@ function renderDays(containerId, matches, opts){
       const trail = showGroup ? '' : mk;
       const tA = `<span class="t"><span class="fl">${flag(mt.a)}</span> ${tname(mt.a)}</span>`;
       const tB = `<span class="t"><span class="fl">${flag(mt.b)}</span> ${tname(mt.b)}</span>`;
-      rows+=`<div class="m ${mt.tier}"><div class="time">${num}<small>${per}</small></div>
-        <div class="info">${groupRow}<div class="teams">${tA}<span class="x">×</span>${tB}${trail}</div>
+
+      const r = resultFor(mt.a, mt.b);
+      let middle = `<span class="x">×</span>`;
+      let timeBlock = `<div class="time">${num}<small>${per}</small></div>`;
+      if (r && DONE_STATUSES.has(r.status)){
+        middle = `<span class="score">${r.homeScore} - ${r.awayScore}</span>`;
+        timeBlock = `<div class="time status-finished">انتهت</div>`;
+      } else if (r && LIVE_STATUSES.has(r.status)){
+        middle = `<span class="score live">${r.homeScore} - ${r.awayScore}</span>`;
+        timeBlock = `<div class="time status-live">مباشر${r.minute?`<small>${r.minute}'</small>`:''}</div>`;
+      }
+
+      rows+=`<div class="m ${mt.tier}">${timeBlock}
+        <div class="info">${groupRow}<div class="teams">${tA}${middle}${tB}${trail}</div>
         ${(!showGroup && mt.n)?`<div class="note">${mt.n}</div>`:''}</div></div>`;
     });
     cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
@@ -471,24 +560,90 @@ function renderDays(containerId, matches, opts){
   });
 }
 
-renderDays('impDays', M.filter(m=>m.imp), {showGroup:false});
-renderDays('allDays', M, {showGroup:true});
-
 /* ========= Render Groups view ========= */
 const gg=document.getElementById('groupsGrid');
-GROUPS.forEach(G=>{
-  const hasKsa = G.teams.includes('ksa');
-  const rows = G.teams.map(c=>{
-    if(c==='tbd') return `<div class="gt tbd"><span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span></div>`;
-    const ksaCls = c==='ksa'?' is-ksa':'';
-    return `<button class="gt${ksaCls}" data-team="${c}" data-group="${G.key}">
-        <span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span><span class="arrow">←</span>
-      </button>`;
-  }).join('');
-  gg.insertAdjacentHTML('beforeend',`<div class="group-card ${hasKsa?'has-ksa':''}">
-    <div class="group-head"><span class="gname">المجموعة ${G.name}</span><span class="glabel">${G.key}</span></div>
-    <div class="group-teams">${rows}</div></div>`);
-});
+function renderGroups(){
+  gg.innerHTML='';
+  GROUPS.forEach(G=>{
+    const hasKsa = G.teams.includes('ksa');
+    const standings = RESULTS.standings && RESULTS.standings[G.key];
+    const hasData = standings && standings.length && standings.some(t=>t.played>0);
+
+    let body;
+    if (hasData){
+      const rows = standings.map((s, i)=>{
+        const isKsa = s.team==='ksa';
+        return `<button class="gt${isKsa?' is-ksa':''}" data-team="${s.team}" data-group="${G.key}">
+          <span class="pos">${i+1}</span>
+          <span class="fl">${flag(s.team)}</span>
+          <span class="tn">${tname(s.team)}</span>
+          <span class="stats">
+            <span class="st-meta">${s.played} لعب · ${s.gd>=0?'+':''}${s.gd}</span>
+            <span class="st-pts">${s.pts}</span>
+          </span>
+        </button>`;
+      }).join('');
+      body = `<div class="group-table-head"><span></span><span></span><span>المنتخب</span><span class="th-pts">نقاط</span></div>${rows}`;
+    } else {
+      body = G.teams.map(c=>{
+        if(c==='tbd') return `<div class="gt tbd"><span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span></div>`;
+        const ksaCls = c==='ksa'?' is-ksa':'';
+        return `<button class="gt${ksaCls}" data-team="${c}" data-group="${G.key}">
+            <span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span><span class="arrow">←</span>
+          </button>`;
+      }).join('');
+    }
+    gg.insertAdjacentHTML('beforeend',`<div class="group-card ${hasKsa?'has-ksa':''}">
+      <div class="group-head"><span class="gname">المجموعة ${G.name}</span><span class="glabel">${G.key}</span></div>
+      <div class="group-teams">${body}</div></div>`);
+  });
+  // Re-attach team click handlers
+  document.querySelectorAll('#groupsGrid .gt[data-team]').forEach(btn=>{
+    btn.addEventListener('click',()=>openTeam(btn.dataset.team, btn.dataset.group));
+  });
+}
+
+/* ========= Last-updated footer ========= */
+function renderUpdatedFooter(){
+  const wrap = document.querySelector('.wrap');
+  let el = document.getElementById('lastUpdated');
+  if (!el){
+    el = document.createElement('div');
+    el.id = 'lastUpdated';
+    el.className = 'updated';
+    wrap.appendChild(el);
+  }
+  if (RESULTS.lastUpdated){
+    const d = new Date(RESULTS.lastUpdated);
+    const opts = { hour:'2-digit', minute:'2-digit', day:'2-digit', month:'2-digit', timeZone:'Asia/Riyadh' };
+    el.textContent = `آخر تحديث للنتائج: ${d.toLocaleString('ar-SA', opts)} (بتوقيت السعودية)`;
+  } else {
+    el.textContent = '';
+  }
+}
+
+/* ========= Render everything ========= */
+function renderAll(){
+  renderKSACards();
+  renderDays('impDays', M.filter(m=>m.imp), {showGroup:false});
+  renderDays('allDays', M, {showGroup:true});
+  renderGroups();
+  renderUpdatedFooter();
+}
+
+renderAll();
+
+/* ========= Fetch live results and re-render ========= */
+fetch('results.json?t=' + Date.now())
+  .then(r => r.ok ? r.json() : null)
+  .then(data => {
+    if (data && data.matches){
+      RESULTS = data;
+      buildScoreMap();
+      renderAll();
+    }
+  })
+  .catch(()=>{ /* silently keep static view */ });
 
 /* ========= Main + Sub tab switching ========= */
 function switchView(name){
@@ -525,12 +680,29 @@ function openTeam(code, groupKey){
     mList.innerHTML = matches.map(mt=>{
       const opp = (mt.a===code)?mt.b:mt.a;
       const[num,per]=period(mt.t);
+      // Look up score (always pass team codes in match's natural order)
+      const r = resultFor(mt.a, mt.b);
+      // The user's team's score depends on whether they're the "home" (mt.a)
+      let scoreBlock = '';
+      let statusBlock = '';
+      if (r && DONE_STATUSES.has(r.status)){
+        const myScore  = (mt.a===code) ? r.homeScore : r.awayScore;
+        const oppScore = (mt.a===code) ? r.awayScore : r.homeScore;
+        scoreBlock = `<div class="mm-score">${myScore} - ${oppScore}</div>`;
+        statusBlock = `<span class="mm-status">انتهت</span>`;
+      } else if (r && LIVE_STATUSES.has(r.status)){
+        const myScore  = (mt.a===code) ? r.homeScore : r.awayScore;
+        const oppScore = (mt.a===code) ? r.awayScore : r.homeScore;
+        scoreBlock = `<div class="mm-score live">${myScore} - ${oppScore}</div>`;
+        statusBlock = `<span class="mm-status live">مباشر${r.minute?` · ${r.minute}'`:''}</span>`;
+      }
       return `<div class="mm">
         <div class="mm-top">
-          <div class="mm-when">${mt.d} · ${mt.dt}</div>
+          <div class="mm-when">${mt.d} · ${mt.dt} ${statusBlock}</div>
           <div class="mm-time">${num}<small>${per}</small></div>
         </div>
         <div class="mm-opp"><span class="vs">ضد</span><span class="fl">${flag(opp)}</span>${tname(opp)}</div>
+        ${scoreBlock}
         ${mt.v?`<div class="mm-venue">📍 ${mt.v}</div>`:''}
       </div>`;
     }).join('');

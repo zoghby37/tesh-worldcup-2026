@@ -38,6 +38,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "results.json unchanged — nothing to commit"
           else
-            git commit -m "live-scores: auto-update from football-data.org"
+            git commit -m "auto-update scores from football-data.org"
             git push
           fi

@@ -41,11 +41,20 @@ TEAM_CODE = {
 }
 
 
+# If the dict lookup misses and the fallback (first-3-chars-lowercased) gives
+# us something that's still wrong, force the canonical code here.
+CODE_FIXUP = {
+    "cap": "cpv",   # "Cape Verde" -> we use cpv, not cap
+    "bos": "bih",   # "Bosnia ..." -> we use bih, not bos
+}
+
+
 def code(name: str) -> str:
     """Return 3-letter team code, falling back to lowercased first 3 chars."""
     if not name:
         return "tbd"
-    return TEAM_CODE.get(name.strip(), name.strip().lower()[:3])
+    raw = TEAM_CODE.get(name.strip(), name.strip().lower()[:3])
+    return CODE_FIXUP.get(raw, raw)
 
 
 def api_get(path: str) -> dict:
@@ -71,11 +80,9 @@ def main() -> None:
             continue
         home = code(m.get("homeTeam", {}).get("name"))
         away = code(m.get("awayTeam", {}).get("name"))
-        utc = m.get("utcDate", "")
-        if not utc or "T" not in utc:
-            continue
-        date_key = utc[:10]  # "2026-06-11"
-        key = f"{date_key}_{home}_{away}"
+        # Key by team pair only — each pair plays once in the group stage,
+        # so this avoids UTC vs Saudi-time date mismatches.
+        key = f"{home}_{away}"
         ft = m.get("score", {}).get("fullTime", {}) or {}
         matches[key] = {
             "status": m.get("status", "SCHEDULED"),

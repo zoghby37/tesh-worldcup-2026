@@ -1,7 +1,993 @@
 {
-  "lastUpdated": null,
+  "lastUpdated": "2026-06-16T14:53:53+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
-  "matches": {},
-  "standings": {}
+  "matches": {
+    "2026-06-11_mex_rsa": {
+      "status": "FINISHED",
+      "homeScore": 2,
+      "awayScore": 0,
+      "minute": null
+    },
+    "2026-06-12_kor_cze": {
+      "status": "FINISHED",
+      "homeScore": 2,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-12_can_bih": {
+      "status": "FINISHED",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-13_usa_par": {
+      "status": "FINISHED",
+      "homeScore": 4,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-13_qat_sui": {
+      "status": "FINISHED",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-13_bra_mar": {
+      "status": "FINISHED",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-14_hai_sco": {
+      "status": "FINISHED",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-14_aus_tur": {
+      "status": "FINISHED",
+      "homeScore": 2,
+      "awayScore": 0,
+      "minute": null
+    },
+    "2026-06-14_ger_cuw": {
+      "status": "FINISHED",
+      "homeScore": 7,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-14_ned_jpn": {
+      "status": "FINISHED",
+      "homeScore": 2,
+      "awayScore": 2,
+      "minute": null
+    },
+    "2026-06-14_civ_ecu": {
+      "status": "FINISHED",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minute": null
+    },
+    "2026-06-15_swe_tun": {
+      "status": "FINISHED",
+      "homeScore": 5,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-15_esp_cpv": {
+      "status": "FINISHED",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minute": null
+    },
+    "2026-06-15_bel_egy": {
+      "status": "FINISHED",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-15_ksa_uru": {
+      "status": "FINISHED",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minute": null
+    },
+    "2026-06-16_irn_nzl": {
+      "status": "FINISHED",
+      "homeScore": 2,
+      "awayScore": 2,
+      "minute": null
+    },
+    "2026-06-16_fra_sen": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-16_irq_nor": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-17_arg_alg": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-17_aut_jor": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-17_por_cod": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-17_eng_cro": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-17_gha_pan": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-18_uzb_col": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-18_cze_rsa": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-18_sui_bih": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-18_can_qat": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-19_mex_kor": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-19_usa_aus": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-19_sco_mar": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-20_bra_hai": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-20_tur_par": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-20_ned_swe": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-20_ger_civ": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-21_ecu_cuw": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-21_tun_jpn": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-21_esp_ksa": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-21_bel_irn": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-21_uru_cpv": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-22_nzl_egy": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-22_arg_aut": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-22_fra_irq": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-23_nor_sen": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-23_jor_alg": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-23_por_uzb": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-23_eng_gha": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-23_pan_cro": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-24_col_cod": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-24_sui_can": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-24_bih_qat": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-24_mar_hai": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-24_sco_bra": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-25_cze_mex": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-25_rsa_kor": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-25_ecu_ger": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-25_cuw_civ": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-25_tun_ned": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-25_jpn_swe": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-26_tur_usa": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-26_par_aus": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-26_nor_fra": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-26_sen_irq": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_uru_esp": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_cpv_ksa": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_nzl_bel": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_egy_irn": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_pan_eng": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_cro_gha": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_col_por": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-27_cod_uzb": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-28_jor_arg": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    },
+    "2026-06-28_alg_aut": {
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
+      "minute": null
+    }
+  },
+  "standings": {
+    "A": [
+      {
+        "team": "mex",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 2,
+        "ga": 0,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "kor",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "cze",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "pts": 0
+      },
+      {
+        "team": "rsa",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 0,
+        "ga": 2,
+        "gd": -2,
+        "pts": 0
+      }
+    ],
+    "B": [
+      {
+        "team": "sui",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "can",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "qat",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "bih",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      }
+    ],
+    "C": [
+      {
+        "team": "sco",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "mar",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "bra",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "hai",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      }
+    ],
+    "D": [
+      {
+        "team": "usa",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
+      },
+      {
+        "team": "aus",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 2,
+        "ga": 0,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "tur",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 0,
+        "ga": 2,
+        "gd": -2,
+        "pts": 0
+      },
+      {
+        "team": "par",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "pts": 0
+      }
+    ],
+    "E": [
+      {
+        "team": "ger",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 7,
+        "ga": 1,
+        "gd": 6,
+        "pts": 3
+      },
+      {
+        "team": "civ",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 3
+      },
+      {
+        "team": "ecu",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
+      },
+      {
+        "team": "cuw",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 7,
+        "gd": -6,
+        "pts": 0
+      }
+    ],
+    "F": [
+      {
+        "team": "swe",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 5,
+        "ga": 1,
+        "gd": 4,
+        "pts": 3
+      },
+      {
+        "team": "jpn",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "ned",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "tun",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 5,
+        "gd": -4,
+        "pts": 0
+      }
+    ],
+    "G": [
+      {
+        "team": "nzl",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "irn",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "bel",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "egy",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      }
+    ],
+    "H": [
+      {
+        "team": "uru",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "ksa",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "esp",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "cpv",
+        "played": 1,
+        "won": 0,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 1
+      }
+    ],
+    "I": [
+      {
+        "team": "fra",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "irq",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "nor",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "sen",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ],
+    "J": [
+      {
+        "team": "alg",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "arg",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "jor",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "aut",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ],
+    "K": [
+      {
+        "team": "cod",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "col",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "por",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "uzb",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ],
+    "L": [
+      {
+        "team": "eng",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "gha",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "cro",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "pan",
+        "played": 0,
+        "won": 0,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 0
+      }
+    ]
+  }
 }
