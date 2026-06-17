@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T01:41:42+00:00",
+  "lastUpdated": "2026-06-17T06:51:00+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -112,15 +112,15 @@
       "minute": null
     },
     "arg_alg": {
-      "status": "IN_PLAY",
-      "homeScore": 1,
+      "status": "FINISHED",
+      "homeScore": 3,
       "awayScore": 0,
       "minute": null
     },
     "aut_jor": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "FINISHED",
+      "homeScore": 3,
+      "awayScore": 1,
       "minute": null
     },
     "por_cod": {
@@ -858,31 +858,31 @@
         "won": 1,
         "drawn": 0,
         "lost": 0,
-        "gf": 1,
+        "gf": 3,
         "ga": 0,
-        "gd": 1,
+        "gd": 3,
+        "pts": 3
+      },
+      {
+        "team": "aut",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
         "pts": 3
       },
       {
         "team": "jor",
-        "played": 0,
+        "played": 1,
         "won": 0,
         "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "team": "aut",
-        "played": 0,
-        "won": 0,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       },
       {
@@ -892,8 +892,8 @@
         "drawn": 0,
         "lost": 1,
         "gf": 0,
-        "ga": 1,
-        "gd": -1,
+        "ga": 3,
+        "gd": -3,
         "pts": 0
       }
     ],
