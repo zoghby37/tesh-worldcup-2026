@@ -633,17 +633,24 @@ function renderAll(){
 
 renderAll();
 
-/* ========= Fetch live results and re-render ========= */
-fetch('results.json?t=' + Date.now())
-  .then(r => r.ok ? r.json() : null)
-  .then(data => {
-    if (data && data.matches){
-      RESULTS = data;
-      buildScoreMap();
-      renderAll();
-    }
-  })
-  .catch(()=>{ /* silently keep static view */ });
+/* ========= Fetch live results and re-render =========
+   On load, then every 60s while the tab is visible. */
+function fetchResults(){
+  return fetch('results.json?t=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (data && data.matches){
+        RESULTS = data;
+        buildScoreMap();
+        renderAll();
+      }
+    })
+    .catch(()=>{ /* silently keep current view */ });
+}
+fetchResults();
+setInterval(()=>{ if (!document.hidden) fetchResults(); }, 60000);
+// Also fetch right when the user comes back to the tab after being away.
+document.addEventListener('visibilitychange', ()=>{ if (!document.hidden) fetchResults(); });
 
 /* ========= Main + Sub tab switching ========= */
 function switchView(name){
