@@ -1,435 +1,435 @@
 {
-  "lastUpdated": "2026-06-16T14:53:53+00:00",
+  "lastUpdated": "2026-06-17T11:44:26+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
-    "2026-06-11_mex_rsa": {
+    "mex_rsa": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-12_kor_cze": {
+    "kor_cze": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-12_can_bih": {
+    "can_bih": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-13_usa_par": {
+    "usa_par": {
       "status": "FINISHED",
       "homeScore": 4,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-13_qat_sui": {
+    "qat_sui": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-13_bra_mar": {
+    "bra_mar": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-14_hai_sco": {
+    "hai_sco": {
       "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-14_aus_tur": {
+    "aus_tur": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-14_ger_cuw": {
+    "ger_cuw": {
       "status": "FINISHED",
       "homeScore": 7,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-14_ned_jpn": {
+    "ned_jpn": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 2,
       "minute": null
     },
-    "2026-06-14_civ_ecu": {
+    "civ_ecu": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-15_swe_tun": {
+    "swe_tun": {
       "status": "FINISHED",
       "homeScore": 5,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-15_esp_cpv": {
+    "esp_cpv": {
       "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 0,
       "minute": null
     },
-    "2026-06-15_bel_egy": {
+    "bel_egy": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-15_ksa_uru": {
+    "ksa_uru": {
       "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
-    "2026-06-16_irn_nzl": {
+    "irn_nzl": {
       "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 2,
       "minute": null
     },
-    "2026-06-16_fra_sen": {
+    "fra_sen": {
+      "status": "FINISHED",
+      "homeScore": 3,
+      "awayScore": 1,
+      "minute": null
+    },
+    "irq_nor": {
+      "status": "FINISHED",
+      "homeScore": 1,
+      "awayScore": 4,
+      "minute": null
+    },
+    "arg_alg": {
+      "status": "FINISHED",
+      "homeScore": 3,
+      "awayScore": 0,
+      "minute": null
+    },
+    "aut_jor": {
+      "status": "FINISHED",
+      "homeScore": 3,
+      "awayScore": 1,
+      "minute": null
+    },
+    "por_cod": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-16_irq_nor": {
+    "eng_cro": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_arg_alg": {
+    "gha_pan": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_aut_jor": {
+    "uzb_col": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_por_cod": {
+    "cze_rsa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_eng_cro": {
+    "sui_bih": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-17_gha_pan": {
+    "can_qat": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_uzb_col": {
+    "mex_kor": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_cze_rsa": {
+    "usa_aus": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_sui_bih": {
+    "sco_mar": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-18_can_qat": {
+    "bra_hai": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-19_mex_kor": {
+    "tur_par": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-19_usa_aus": {
+    "ned_swe": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-19_sco_mar": {
+    "ger_civ": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_bra_hai": {
+    "ecu_cuw": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_tur_par": {
+    "tun_jpn": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_ned_swe": {
+    "esp_ksa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-20_ger_civ": {
+    "bel_irn": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_ecu_cuw": {
+    "uru_cpv": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_tun_jpn": {
+    "nzl_egy": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_esp_ksa": {
+    "arg_aut": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_bel_irn": {
+    "fra_irq": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-21_uru_cpv": {
+    "nor_sen": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-22_nzl_egy": {
+    "jor_alg": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-22_arg_aut": {
+    "por_uzb": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-22_fra_irq": {
+    "eng_gha": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_nor_sen": {
+    "pan_cro": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_jor_alg": {
+    "col_cod": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_por_uzb": {
+    "sui_can": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_eng_gha": {
+    "bih_qat": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-23_pan_cro": {
+    "mar_hai": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_col_cod": {
+    "sco_bra": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_sui_can": {
+    "cze_mex": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_bih_qat": {
+    "rsa_kor": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_mar_hai": {
+    "ecu_ger": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-24_sco_bra": {
+    "cuw_civ": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_cze_mex": {
+    "tun_ned": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_rsa_kor": {
+    "jpn_swe": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_ecu_ger": {
+    "tur_usa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_cuw_civ": {
+    "par_aus": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_tun_ned": {
+    "nor_fra": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-25_jpn_swe": {
+    "sen_irq": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_tur_usa": {
+    "uru_esp": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_par_aus": {
+    "cpv_ksa": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_nor_fra": {
+    "nzl_bel": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-26_sen_irq": {
+    "egy_irn": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_uru_esp": {
+    "pan_eng": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_cpv_ksa": {
+    "cro_gha": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_nzl_bel": {
+    "col_por": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_egy_irn": {
+    "cod_uzb": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_pan_eng": {
+    "jor_arg": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
     },
-    "2026-06-27_cro_gha": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
-      "minute": null
-    },
-    "2026-06-27_col_por": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
-      "minute": null
-    },
-    "2026-06-27_cod_uzb": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
-      "minute": null
-    },
-    "2026-06-28_jor_arg": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
-      "minute": null
-    },
-    "2026-06-28_alg_aut": {
+    "alg_aut": {
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
@@ -807,93 +807,93 @@
     ],
     "I": [
       {
-        "team": "fra",
-        "played": 0,
-        "won": 0,
+        "team": "nor",
+        "played": 1,
+        "won": 1,
         "drawn": 0,
         "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
+      },
+      {
+        "team": "fra",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "sen",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
         "pts": 0
       },
       {
         "team": "irq",
-        "played": 0,
+        "played": 1,
         "won": 0,
         "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "team": "nor",
-        "played": 0,
-        "won": 0,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "team": "sen",
-        "played": 0,
-        "won": 0,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
         "pts": 0
       }
     ],
     "J": [
       {
-        "team": "alg",
-        "played": 0,
-        "won": 0,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
         "team": "arg",
-        "played": 0,
-        "won": 0,
+        "played": 1,
+        "won": 1,
         "drawn": 0,
         "lost": 0,
-        "gf": 0,
+        "gf": 3,
         "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "team": "jor",
-        "played": 0,
-        "won": 0,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gd": 3,
+        "pts": 3
       },
       {
         "team": "aut",
-        "played": 0,
-        "won": 0,
+        "played": 1,
+        "won": 1,
         "drawn": 0,
         "lost": 0,
+        "gf": 3,
+        "ga": 1,
+        "gd": 2,
+        "pts": 3
+      },
+      {
+        "team": "jor",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 3,
+        "gd": -2,
+        "pts": 0
+      },
+      {
+        "team": "alg",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
+        "ga": 3,
+        "gd": -3,
         "pts": 0
       }
     ],
