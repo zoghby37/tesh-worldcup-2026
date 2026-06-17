@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T14:40:34+00:00",
+  "lastUpdated": "2026-06-17T17:38:32+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -124,9 +124,9 @@
       "minute": null
     },
     "por_cod": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "IN_PLAY",
+      "homeScore": 1,
+      "awayScore": 0,
       "minute": null
     },
     "eng_cro": {
@@ -899,29 +899,18 @@
     ],
     "K": [
       {
-        "team": "cod",
-        "played": 0,
-        "won": 0,
+        "team": "por",
+        "played": 1,
+        "won": 1,
         "drawn": 0,
         "lost": 0,
-        "gf": 0,
+        "gf": 1,
         "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gd": 1,
+        "pts": 3
       },
       {
         "team": "col",
-        "played": 0,
-        "won": 0,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
-        "team": "por",
         "played": 0,
         "won": 0,
         "drawn": 0,
@@ -940,6 +929,17 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "cod",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
         "pts": 0
       }
     ],
