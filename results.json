@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T23:11:18+00:00",
+  "lastUpdated": "2026-06-17T01:41:42+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -106,15 +106,15 @@
       "minute": null
     },
     "irq_nor": {
-      "status": "PAUSED",
+      "status": "FINISHED",
       "homeScore": 1,
-      "awayScore": 2,
+      "awayScore": 4,
       "minute": null
     },
     "arg_alg": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "IN_PLAY",
+      "homeScore": 1,
+      "awayScore": 0,
       "minute": null
     },
     "aut_jor": {
@@ -807,6 +807,17 @@
     ],
     "I": [
       {
+        "team": "nor",
+        "played": 1,
+        "won": 1,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 3
+      },
+      {
         "team": "fra",
         "played": 1,
         "won": 1,
@@ -818,28 +829,6 @@
         "pts": 3
       },
       {
-        "team": "nor",
-        "played": 1,
-        "won": 1,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 2,
-        "ga": 1,
-        "gd": 1,
-        "pts": 3
-      },
-      {
-        "team": "irq",
-        "played": 1,
-        "won": 0,
-        "drawn": 0,
-        "lost": 1,
-        "gf": 1,
-        "ga": 2,
-        "gd": -1,
-        "pts": 0
-      },
-      {
         "team": "sen",
         "played": 1,
         "won": 0,
@@ -849,30 +838,30 @@
         "ga": 3,
         "gd": -2,
         "pts": 0
+      },
+      {
+        "team": "irq",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "pts": 0
       }
     ],
     "J": [
       {
-        "team": "alg",
-        "played": 0,
-        "won": 0,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 0
-      },
-      {
         "team": "arg",
-        "played": 0,
-        "won": 0,
+        "played": 1,
+        "won": 1,
         "drawn": 0,
         "lost": 0,
-        "gf": 0,
+        "gf": 1,
         "ga": 0,
-        "gd": 0,
-        "pts": 0
+        "gd": 1,
+        "pts": 3
       },
       {
         "team": "jor",
@@ -894,6 +883,17 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
+        "pts": 0
+      },
+      {
+        "team": "alg",
+        "played": 1,
+        "won": 0,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
         "pts": 0
       }
     ],
