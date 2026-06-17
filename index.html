@@ -97,24 +97,50 @@
   .view{display:none}
   .view.active{display:block}
 
-  /* Scores + status */
-  .m .score{font-family:'Cairo',sans-serif;font-weight:900;font-size:18px;color:var(--gold-soft);padding:0 10px;letter-spacing:.5px;white-space:nowrap}
-  .m.ksa .score{color:#fff}
-  .m .score.live{color:#ff6b6b}
-  .m .time.status-finished{color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.5px}
-  .m .time.status-live{color:#ff6b6b;font-size:12px;font-weight:800;letter-spacing:.5px;animation:livePulse 1.6s ease-in-out infinite}
   @keyframes livePulse{0%,100%{opacity:1}50%{opacity:.55}}
 
-  /* KSA card score */
-  .ksa-card .vs em.score-em{color:#fff;font-size:.95em;font-weight:900;background:rgba(30,196,106,.15);border:1px solid rgba(30,196,106,.4);padding:2px 12px;border-radius:8px;margin:0 4px}
-  .ksa-card .when.finished b{color:var(--muted);font-size:1em}
+  /* New match row layout: meta header on top, stacked team rows below */
+  .m{display:flex;flex-direction:column;padding:10px 12px;border-radius:12px;gap:6px;transition:background .2s;align-items:stretch;grid-template-columns:none}
+  .m + .m{border-top:1px solid rgba(255,255,255,.045)}
+  .m:hover{background:rgba(255,255,255,.03)}
+  .m-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-bottom:4px}
+  .m-status{font-family:'Cairo',sans-serif;font-weight:800;font-size:12.5px;color:var(--muted);letter-spacing:.5px}
+  .m-status.live{color:#ff6b6b;animation:livePulse 1.6s ease-in-out infinite}
+  .m-status .small{font-size:10px;color:var(--muted);margin-inline-start:4px;font-weight:600}
+  .m-team{display:flex;align-items:center;gap:9px;padding:3px 2px}
+  .m-team .fl{font-size:18px;line-height:1;flex-shrink:0}
+  .m-team .fl svg{width:22px;height:14px;border-radius:2px;vertical-align:-2px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+  .m-team .name{font-family:'Cairo',sans-serif;font-weight:700;font-size:14px;flex:1}
+  .m-team .gscore{font-family:'Cairo',sans-serif;font-weight:900;font-size:18px;color:var(--gold-soft);min-width:26px;text-align:center}
+  .m.ksa .m-team .gscore{color:#fff}
+  .m-team .gscore.live{color:#ff6b6b}
+  .m-team .winner .name{color:#fff;font-weight:900}
+  .m-team.winner .name{color:#fff;font-weight:900}
+  .m-team.winner .gscore{color:#fff}
+  .m .note{font-size:11px;color:var(--muted);font-weight:600;padding:2px 2px 0}
+  .m.ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
+  .m.ksa .m-team .name{color:#fff;font-weight:900}
+
+  /* KSA highlight card — stacked layout with per-team score */
+  .ksa-team-row{display:flex;align-items:center;gap:12px;padding:6px 0}
+  .ksa-team-row + .ksa-team-row{border-top:1px solid rgba(255,255,255,.06)}
+  .ksa-team-row .fl{font-size:28px;line-height:1;flex-shrink:0}
+  .ksa-team-row .ksa-tn{flex:1;text-align:right;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(18px,2.1vw,24px);color:#fff}
+  .ksa-team-row .ksa-score{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(22px,2.4vw,28px);color:#fff;min-width:40px;text-align:center;background:rgba(30,196,106,.22);border:1px solid rgba(30,196,106,.5);padding:4px 12px;border-radius:10px}
   .ksa-card .status-badge{display:inline-block;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-top:6px;font-family:'Tajawal'}
   .ksa-card .status-badge.finished{background:rgba(255,255,255,.08);color:var(--muted);border:1px solid rgba(255,255,255,.1)}
   .ksa-card .status-badge.live{background:rgba(255,107,107,.15);color:#ff6b6b;border:1px solid rgba(255,107,107,.4);animation:livePulse 1.6s ease-in-out infinite}
 
-  /* Modal match score */
-  .mm-score{font-family:'Cairo';font-weight:900;font-size:18px;color:var(--gold-soft);background:rgba(205,171,87,.10);border:1px solid rgba(205,171,87,.25);padding:3px 12px;border-radius:8px;display:inline-block;margin-top:4px}
-  .mm-score.live{color:#ff6b6b;background:rgba(255,107,107,.10);border-color:rgba(255,107,107,.3)}
+  /* Modal match score — color-coded by result */
+  .mm-score{font-family:'Cairo';font-weight:900;font-size:18px;color:var(--gold-soft);background:rgba(205,171,87,.10);border:1px solid rgba(205,171,87,.25);padding:3px 14px;border-radius:8px;display:inline-block;margin-top:4px}
+  .mm-score.win{background:rgba(30,196,106,.15);border-color:rgba(30,196,106,.5);color:#7ef0ad}
+  .mm-score.loss{background:rgba(255,107,107,.12);border-color:rgba(255,107,107,.45);color:#ff8a8a}
+  .mm-score.draw{background:rgba(205,171,87,.10);border-color:rgba(205,171,87,.3);color:var(--gold-soft)}
+  .mm-score.live{background:rgba(255,107,107,.10);border-color:rgba(255,107,107,.3);color:#ff6b6b}
+  .mm-result{display:inline-block;font-family:'Cairo';font-weight:800;font-size:12px;letter-spacing:1px;padding:2px 10px;border-radius:999px;margin-inline-start:8px;vertical-align:middle}
+  .mm-result.win{color:#7ef0ad;background:rgba(30,196,106,.12);border:1px solid rgba(30,196,106,.4)}
+  .mm-result.loss{color:#ff8a8a;background:rgba(255,107,107,.10);border:1px solid rgba(255,107,107,.4)}
+  .mm-result.draw{color:var(--gold-soft);background:rgba(205,171,87,.10);border:1px solid rgba(205,171,87,.3)}
   .mm-status{font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.5px}
   .mm-status.live{color:#ff6b6b}
 
@@ -165,7 +191,7 @@
   .day-head .ddate{color:var(--gold);font-weight:700;font-size:14px}
   .today-pill{display:inline-block;font-size:11px;font-weight:800;background:var(--gold);color:#1a1205;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-inline-start:10px;vertical-align:middle}
   .matches{padding:8px 10px 12px;display:flex;flex-direction:column}
-  .m{display:grid;grid-template-columns:56px 1fr;align-items:center;gap:12px;padding:11px 10px;border-radius:12px;transition:background .2s}
+  .m{display:flex;flex-direction:column;align-items:stretch;gap:6px;padding:10px 12px;border-radius:12px;transition:background .2s}
   .m + .m{border-top:1px solid rgba(255,255,255,.045)}
   .m:hover{background:rgba(255,255,255,.03)}
   .m .time{font-family:'Tajawal';font-weight:800;font-size:15px;color:var(--gold-soft);text-align:center;line-height:1.15}
@@ -498,21 +524,33 @@ function renderKSACards(){
   kg.innerHTML='';
   KSA_CARDS.forEach(k=>{
     const r = resultFor(k.a, k.b);
-    let vs = `<em>×</em>`;
-    let when = `${k.day} ${k.date}<b>${k.time}</b>`;
+    const isFinished = r && DONE_STATUSES.has(r.status);
+    const isLive = r && LIVE_STATUSES.has(r.status);
+    const showScores = isFinished || isLive;
+
+    // Build each team row (with score box only if we have one)
+    const renderTeam = (code, score) => `
+      <div class="ksa-team-row">
+        <span class="fl">${flag(code)}</span>
+        <span class="ksa-tn">${tname(code)}</span>
+        ${showScores ? `<span class="ksa-score">${score}</span>` : ''}
+      </div>`;
+
     let badge = '';
-    if (r && DONE_STATUSES.has(r.status)){
-      vs = `<em class="score-em">${r.homeScore} - ${r.awayScore}</em>`;
-      when = `<div class="finished">${k.day} ${k.date}<b>${k.time}</b></div>`;
-      badge = `<div class="status-badge finished">انتهت</div>`;
-    } else if (r && LIVE_STATUSES.has(r.status)){
-      vs = `<em class="score-em">${r.homeScore} - ${r.awayScore}</em>`;
-      badge = `<div class="status-badge live">مباشر${r.minute?` · ${r.minute}'`:''}</div>`;
-    }
+    if (isFinished) badge = `<div class="status-badge finished">انتهت</div>`;
+    else if (isLive) badge = `<div class="status-badge live">مباشر${r.minute?` · ${r.minute}'`:''}</div>`;
+
     kg.insertAdjacentHTML('beforeend',`
-      <div class="ksa-card"><div class="tag">${k.tag} · الأخضر</div>
-        <div class="vs"><span class="fl">${flag(k.a)}</span> ${tname(k.a)} ${vs} ${tname(k.b)} <span class="fl">${flag(k.b)}</span></div>
-        <div class="when">${when}</div><div class="meta">${k.meta}</div>${badge}</div>`);
+      <div class="ksa-card">
+        <div class="tag">${k.tag} · الأخضر</div>
+        <div style="margin:14px 0 4px">
+          ${renderTeam(k.a, r ? r.homeScore : '')}
+          ${renderTeam(k.b, r ? r.awayScore : '')}
+        </div>
+        <div class="when">${k.day} ${k.date}<b>${k.time}</b></div>
+        <div class="meta">${k.meta}</div>
+        ${badge}
+      </div>`);
   });
 }
 
@@ -534,25 +572,37 @@ function renderDays(containerId, matches, opts){
     arr.forEach(mt=>{
       const[num,per]=period(mt.t);
       const mk = mkMark(mt.tier);
-      const groupRow = showGroup ? `<div class="g-row"><span class="gpill">المجموعة ${mt.g}</span></div>` : '';
-      const trail = showGroup ? '' : mk;
-      const tA = `<span class="t"><span class="fl">${flag(mt.a)}</span> ${tname(mt.a)}</span>`;
-      const tB = `<span class="t"><span class="fl">${flag(mt.b)}</span> ${tname(mt.b)}</span>`;
-
       const r = resultFor(mt.a, mt.b);
-      let middle = `<span class="x">×</span>`;
-      let timeBlock = `<div class="time">${num}<small>${per}</small></div>`;
-      if (r && DONE_STATUSES.has(r.status)){
-        middle = `<span class="score">${r.homeScore} - ${r.awayScore}</span>`;
-        timeBlock = `<div class="time status-finished">انتهت</div>`;
-      } else if (r && LIVE_STATUSES.has(r.status)){
-        middle = `<span class="score live">${r.homeScore} - ${r.awayScore}</span>`;
-        timeBlock = `<div class="time status-live">مباشر${r.minute?`<small>${r.minute}'</small>`:''}</div>`;
-      }
+      const isFinished = r && DONE_STATUSES.has(r.status);
+      const isLive     = r && LIVE_STATUSES.has(r.status);
+      const showScores = isFinished || isLive;
 
-      rows+=`<div class="m ${mt.tier}">${timeBlock}
-        <div class="info">${groupRow}<div class="teams">${tA}${middle}${tB}${trail}</div>
-        ${(!showGroup && mt.n)?`<div class="note">${mt.n}</div>`:''}</div></div>`;
+      // Status / time pill on the LEFT of the head row
+      let status;
+      if (isFinished) status = `<span class="m-status">انتهت</span>`;
+      else if (isLive) status = `<span class="m-status live">مباشر${r.minute?`<span class="small">${r.minute}'</span>`:''}</span>`;
+      else status = `<span class="m-status">${num}<span class="small">${per}</span></span>`;
+
+      // Meta (right side) — group pill OR star mark for important view
+      const meta = showGroup
+        ? `<span class="gpill">المجموعة ${mt.g}</span>`
+        : (mk || '');
+
+      // Determine which team won, for visual emphasis
+      let aWin = false, bWin = false;
+      if (isFinished){
+        if (r.homeScore > r.awayScore) aWin = true;
+        else if (r.awayScore > r.homeScore) bWin = true;
+      }
+      const aScore = showScores ? `<span class="gscore${isLive?' live':''}">${r.homeScore}</span>` : '';
+      const bScore = showScores ? `<span class="gscore${isLive?' live':''}">${r.awayScore}</span>` : '';
+
+      rows+=`<div class="m ${mt.tier}">
+        <div class="m-head">${meta}${status}</div>
+        <div class="m-team${aWin?' winner':''}"><span class="fl">${flag(mt.a)}</span><span class="name">${tname(mt.a)}</span>${aScore}</div>
+        <div class="m-team${bWin?' winner':''}"><span class="fl">${flag(mt.b)}</span><span class="name">${tname(mt.b)}</span>${bScore}</div>
+        ${(!showGroup && mt.n)?`<div class="note">${mt.n}</div>`:''}
+      </div>`;
     });
     cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
       <div class="day-head"><span class="dname">${day.d}${isToday?'<span class="today-pill">اليوم</span>':''}</span><span class="ddate">${day.dt}</span></div>
@@ -695,7 +745,12 @@ function openTeam(code, groupKey){
       if (r && DONE_STATUSES.has(r.status)){
         const myScore  = (mt.a===code) ? r.homeScore : r.awayScore;
         const oppScore = (mt.a===code) ? r.awayScore : r.homeScore;
-        scoreBlock = `<div class="mm-score">${myScore} - ${oppScore}</div>`;
+        // Win / Draw / Loss colour coding (perspective of the team whose modal is open)
+        let cls, label;
+        if (myScore > oppScore){ cls = 'win';  label = 'فوز'; }
+        else if (myScore < oppScore){ cls = 'loss'; label = 'خسارة'; }
+        else { cls = 'draw'; label = 'تعادل'; }
+        scoreBlock = `<div class="mm-score ${cls}">${myScore} - ${oppScore}<span class="mm-result ${cls}">${label}</span></div>`;
         statusBlock = `<span class="mm-status">انتهت</span>`;
       } else if (r && LIVE_STATUSES.has(r.status)){
         const myScore  = (mt.a===code) ? r.homeScore : r.awayScore;
