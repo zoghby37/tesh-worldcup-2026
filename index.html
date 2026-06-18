@@ -16,6 +16,7 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{background:var(--bg);color:var(--ink);font-family:'Tajawal','Cairo',sans-serif}
+  html{scroll-behavior:smooth}
   body{min-height:100vh;background:
       radial-gradient(1200px 600px at 50% -10%, rgba(44,107,107,.30), transparent 60%),
       radial-gradient(900px 500px at 85% 0%, rgba(205,171,87,.12), transparent 55%),
@@ -110,8 +111,8 @@
   .m-side.right{text-align:right}
   .m-side.left{text-align:left}
   .m-side.winner{color:#fff;font-weight:900}
-  .m-flag{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.05);font-size:18px;line-height:1;flex-shrink:0}
-  .m-flag svg{width:24px;height:15px;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.15)}
+  .m-flag{display:flex;align-items:center;justify-content:center;width:30px;height:30px;font-size:22px;line-height:1;flex-shrink:0}
+  .m-flag svg{width:26px;height:17px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
   .m-center{display:flex;flex-direction:column;align-items:center;gap:2px;padding:0}
   .m-status{font-family:'Tajawal';font-weight:800;font-size:10.5px;color:var(--muted);letter-spacing:.3px;text-align:center;white-space:nowrap}
   .m-status.live{color:#ff6b6b;animation:livePulse 1.6s ease-in-out infinite}
@@ -123,7 +124,6 @@
   .m .note{font-size:11px;color:var(--muted);font-weight:600;padding:2px 2px 0;text-align:center}
   .m.ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
   .m.ksa .m-side{color:#fff;font-weight:900}
-  .m.ksa .m-flag{background:rgba(30,196,106,.18)}
 
   /* KSA highlight card — stacked layout with per-team score */
   .ksa-team-row{display:flex;align-items:center;gap:12px;padding:6px 0}
@@ -160,6 +160,17 @@
 
   /* Last updated footer */
   .updated{text-align:center;color:var(--muted);font-size:11.5px;font-weight:600;margin:14px 0 -6px;font-family:'Tajawal';letter-spacing:.3px}
+
+  /* "Jump to today" button */
+  .today-jump{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 18px;padding:10px 22px;
+    background:linear-gradient(180deg,rgba(205,171,87,.15),rgba(205,171,87,.05));border:1px solid var(--gold);border-radius:999px;
+    color:var(--gold-soft);font-family:'Cairo',sans-serif;font-weight:800;font-size:14px;cursor:pointer;transition:all .2s;
+    box-shadow:0 4px 14px rgba(205,171,87,.15)}
+  .today-jump:hover{background:linear-gradient(180deg,rgba(205,171,87,.25),rgba(205,171,87,.10));transform:translateY(-1px);box-shadow:0 6px 18px rgba(205,171,87,.25);color:#fff}
+  .today-jump svg{width:14px;height:14px;flex-shrink:0}
+  .today-jump[hidden]{display:none}
+  @keyframes todayPing{0%,100%{box-shadow:0 0 0 2px rgba(205,171,87,.4),var(--shadow)}50%{box-shadow:0 0 0 6px rgba(205,171,87,.7),0 0 28px rgba(205,171,87,.4),var(--shadow)}}
+  .day.is-today.ping{animation:todayPing 1.2s ease-out}
 
   /* Hint banner */
   .hint{display:flex;align-items:center;gap:10px;justify-content:center;max-width:560px;margin:0 auto 18px;
@@ -236,6 +247,8 @@
   .mm-when{font-family:'Cairo';font-weight:800;font-size:13.5px;color:var(--gold-soft)}
   .mm-time{font-weight:900;color:#fff;font-size:15px}
   .mm-time small{color:var(--muted);font-weight:600;margin-inline-start:4px;font-size:11px}
+  .mm-time.mm-finished{color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.5px}
+  .mm-time.mm-live{color:#ff6b6b;font-size:12px;font-weight:800;letter-spacing:.5px;animation:livePulse 1.6s ease-in-out infinite}
   .mm-opp{font-family:'Cairo';font-weight:800;font-size:16px;display:flex;align-items:center;gap:9px}
   .mm-opp .vs{color:var(--muted);font-weight:700;font-size:13px}
   .mm-opp .fl{font-size:22px;line-height:1}
@@ -282,6 +295,10 @@
 
   <div id="view-important" class="view">
     <div class="feature-title">الجدول الكامل لأهم المباريات</div>
+    <button class="today-jump" data-target="impDays" hidden>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-6-6h12l-6 6z"/></svg>
+      <span>اذهب لمباريات اليوم</span>
+    </button>
     <div class="days" id="impDays"></div>
   </div>
 
@@ -292,6 +309,10 @@
     </div>
     <div id="sub-matches" class="view active">
       <div class="feature-title">كل مباريات <span>دور المجموعات</span></div>
+      <button class="today-jump" data-target="allDays" hidden>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-6-6h12l-6 6z"/></svg>
+        <span>اذهب لمباريات اليوم</span>
+      </button>
       <div class="days" id="allDays"></div>
     </div>
     <div id="sub-groups" class="view">
@@ -623,7 +644,7 @@ function renderDays(containerId, matches, opts){
         ${(!showGroup && mt.n)?`<div class="note">${mt.n}</div>`:''}
       </div>`;
     });
-    cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
+    cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}" data-iso="${iso}">
       <div class="day-head"><span class="dname">${day.d}${isToday?'<span class="today-pill">اليوم</span>':''}</span><span class="ddate">${day.dt}</span></div>
       <div class="matches">${rows}</div></div>`);
   });
@@ -684,8 +705,16 @@ function renderUpdatedFooter(){
   }
   if (RESULTS.lastUpdated){
     const d = new Date(RESULTS.lastUpdated);
-    const opts = { hour:'2-digit', minute:'2-digit', day:'2-digit', month:'2-digit', timeZone:'Asia/Riyadh' };
-    el.textContent = `آخر تحديث للنتائج: ${d.toLocaleString('ar-SA', opts)} (بتوقيت السعودية)`;
+    // Force Gregorian (ميلادي) calendar and Latin digits so we don't get Hijri dates
+    const dateStr = d.toLocaleDateString('ar', {
+      day:'numeric', month:'long', year:'numeric',
+      calendar:'gregory', numberingSystem:'latn', timeZone:'Asia/Riyadh'
+    });
+    const timeStr = d.toLocaleTimeString('ar', {
+      hour:'2-digit', minute:'2-digit',
+      numberingSystem:'latn', timeZone:'Asia/Riyadh'
+    });
+    el.textContent = `آخر تحديث للنتائج: ${dateStr} · ${timeStr} (بتوقيت السعودية)`;
   } else {
     el.textContent = '';
   }
@@ -698,6 +727,32 @@ function renderAll(){
   renderDays('allDays', M, {showGroup:true});
   renderGroups();
   renderUpdatedFooter();
+  syncTodayJump();
+}
+
+// Show the "اذهب لمباريات اليوم" button only if there's actually a today card
+// in the matching container. Lookup uses the date stamp (data-iso) so it stays
+// valid across re-renders. Scroll uses absolute Y calculation for reliability.
+function syncTodayJump(){
+  const today = new Date().toISOString().slice(0,10);
+  document.querySelectorAll('.today-jump').forEach(btn => {
+    const target = document.getElementById(btn.dataset.target);
+    const hasToday = target && target.querySelector(`.day[data-iso="${today}"]`);
+    btn.hidden = !hasToday;
+    btn.onclick = () => {
+      const cont = document.getElementById(btn.dataset.target);
+      const card = cont ? cont.querySelector(`.day[data-iso="${today}"]`) : null;
+      if (!card) return;
+      // Calculate absolute Y position and offset a bit so the card isn't flush
+      // against the top edge (gives space for the sticky pill if added later).
+      const y = card.getBoundingClientRect().top + window.scrollY - 20;
+      window.scrollTo({top:y, behavior:'smooth'});
+      card.classList.remove('ping');
+      void card.offsetWidth;            // force reflow so animation re-triggers
+      card.classList.add('ping');
+      setTimeout(()=>card.classList.remove('ping'), 1300);
+    };
+  });
 }
 
 renderAll();
@@ -760,7 +815,8 @@ function openTeam(code, groupKey){
       const r = resultFor(mt.a, mt.b);
       // The user's team's score depends on whether they're the "home" (mt.a)
       let scoreBlock = '';
-      let statusBlock = '';
+      // Default: show the kickoff time. Replace with status text once the match is live or finished.
+      let timeBlock = `<div class="mm-time">${num}<small>${per}</small></div>`;
       if (r && DONE_STATUSES.has(r.status)){
         const myScore  = (mt.a===code) ? r.homeScore : r.awayScore;
         const oppScore = (mt.a===code) ? r.awayScore : r.homeScore;
@@ -770,17 +826,17 @@ function openTeam(code, groupKey){
         else if (myScore < oppScore){ cls = 'loss'; label = 'خسارة'; }
         else { cls = 'draw'; label = 'تعادل'; }
         scoreBlock = `<div class="mm-score ${cls}">${myScore} - ${oppScore}<span class="mm-result ${cls}">${label}</span></div>`;
-        statusBlock = `<span class="mm-status">انتهت</span>`;
+        timeBlock = `<div class="mm-time mm-finished">انتهت</div>`;
       } else if (r && LIVE_STATUSES.has(r.status)){
         const myScore  = (mt.a===code) ? r.homeScore : r.awayScore;
         const oppScore = (mt.a===code) ? r.awayScore : r.homeScore;
         scoreBlock = `<div class="mm-score live">${myScore} - ${oppScore}</div>`;
-        statusBlock = `<span class="mm-status live">مباشر${r.minute?` · ${r.minute}'`:''}</span>`;
+        timeBlock = `<div class="mm-time mm-live">مباشر${r.minute?` ${r.minute}'`:''}</div>`;
       }
       return `<div class="mm">
         <div class="mm-top">
-          <div class="mm-when">${mt.d} · ${mt.dt} ${statusBlock}</div>
-          <div class="mm-time">${num}<small>${per}</small></div>
+          <div class="mm-when">${mt.d} · ${mt.dt}</div>
+          ${timeBlock}
         </div>
         <div class="mm-opp"><span class="vs">ضد</span><span class="fl">${flag(opp)}</span>${tname(opp)}</div>
         ${scoreBlock}
