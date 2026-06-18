@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T17:45:29+00:00",
+  "lastUpdated": "2026-06-18T18:15:31+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -148,9 +148,9 @@
       "minute": null
     },
     "cze_rsa": {
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "minute": null
     },
     "sui_bih": {
@@ -463,24 +463,24 @@
       {
         "team": "cze",
         "played": 2,
-        "won": 1,
-        "drawn": 0,
+        "won": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 3
+        "ga": 3,
+        "gd": -1,
+        "pts": 1
       },
       {
         "team": "rsa",
         "played": 2,
         "won": 0,
-        "drawn": 0,
-        "lost": 2,
-        "gf": 0,
+        "drawn": 1,
+        "lost": 1,
+        "gf": 1,
         "ga": 3,
-        "gd": -3,
-        "pts": 0
+        "gd": -2,
+        "pts": 1
       }
     ],
     "B": [
