@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T23:26:44+00:00",
+  "lastUpdated": "2026-06-18T02:01:17+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -136,8 +136,8 @@
       "minute": null
     },
     "gha_pan": {
-      "status": "IN_PLAY",
-      "homeScore": 0,
+      "status": "FINISHED",
+      "homeScore": 1,
       "awayScore": 0,
       "minute": null
     },
@@ -922,25 +922,25 @@
       },
       {
         "team": "col",
-        "played": 0,
+        "played": 1,
         "won": 0,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 0,
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       },
       {
         "team": "uzb",
-        "played": 0,
+        "played": 1,
         "won": 0,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 0,
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "pts": 0
+        "pts": 1
       }
     ],
     "L": [
@@ -958,24 +958,24 @@
       {
         "team": "gha",
         "played": 1,
-        "won": 0,
-        "drawn": 1,
+        "won": 1,
+        "drawn": 0,
         "lost": 0,
-        "gf": 0,
+        "gf": 1,
         "ga": 0,
-        "gd": 0,
-        "pts": 1
+        "gd": 1,
+        "pts": 3
       },
       {
         "team": "pan",
         "played": 1,
         "won": 0,
-        "drawn": 1,
-        "lost": 0,
+        "drawn": 0,
+        "lost": 1,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 1
+        "ga": 1,
+        "gd": -1,
+        "pts": 0
       },
       {
         "team": "cro",
