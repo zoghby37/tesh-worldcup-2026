@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T23:15:29+00:00",
+  "lastUpdated": "2026-06-18T23:30:34+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -485,6 +485,17 @@
     ],
     "B": [
       {
+        "team": "can",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 5,
+        "ga": 1,
+        "gd": 4,
+        "pts": 4
+      },
+      {
         "team": "sui",
         "played": 2,
         "won": 1,
@@ -492,17 +503,6 @@
         "lost": 0,
         "gf": 5,
         "ga": 2,
-        "gd": 3,
-        "pts": 4
-      },
-      {
-        "team": "can",
-        "played": 2,
-        "won": 1,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 4,
-        "ga": 1,
         "gd": 3,
         "pts": 4
       },
@@ -524,8 +524,8 @@
         "drawn": 1,
         "lost": 1,
         "gf": 1,
-        "ga": 4,
-        "gd": -3,
+        "ga": 5,
+        "gd": -4,
         "pts": 1
       }
     ],
