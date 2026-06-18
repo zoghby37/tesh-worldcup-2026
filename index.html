@@ -125,11 +125,14 @@
   .m.ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
   .m.ksa .m-side{color:#fff;font-weight:900}
 
-  /* KSA highlight card — horizontal (Team × Team) with score box under each */
-  .ksa-card .vs-side{display:flex;flex-direction:column;align-items:center;gap:10px;flex:1;min-width:0}
-  .ksa-card .vs-row{display:flex;align-items:center;gap:8px;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(17px,1.95vw,22px);color:#fff;white-space:nowrap;justify-content:center}
-  .ksa-card .vs-row .fl{font-size:1.3em;line-height:1}
-  .ksa-card .vs-score{display:inline-block;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(22px,2.4vw,28px);color:#fff;min-width:42px;text-align:center;background:rgba(30,196,106,.22);border:1.5px solid rgba(30,196,106,.6);padding:4px 14px;border-radius:10px}
+  /* KSA highlight card — finished match: big score replaces date+time */
+  .ksa-card .when.finished{margin-top:14px;color:#fff}
+  .ksa-card .when.finished .score-big{display:block;font-family:'Cairo',sans-serif;font-weight:900;
+    font-size:clamp(30px,3.8vw,44px);letter-spacing:3px;line-height:1.1;
+    background:linear-gradient(180deg,#7ef0ad,var(--ksa) 60%,#0c8a45);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 2px 8px rgba(30,196,106,.3))}
+  .ksa-card .when.live .score-big{background:linear-gradient(180deg,#ffb3b3,#ff6b6b);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 8px rgba(255,107,107,.3))}
   .ksa-card .status-badge{display:inline-block;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-top:6px;font-family:'Tajawal'}
   .ksa-card .status-badge.finished{background:rgba(255,255,255,.08);color:var(--muted);border:1px solid rgba(255,255,255,.1)}
   .ksa-card .status-badge.live{background:rgba(255,107,107,.15);color:#ff6b6b;border:1px solid rgba(255,107,107,.4);animation:livePulse 1.6s ease-in-out infinite}
@@ -550,19 +553,22 @@ function renderKSACards(){
     const r = resultFor(k.a, k.b);
     const isFinished = r && DONE_STATUSES.has(r.status);
     const isLive = r && LIVE_STATUSES.has(r.status);
-    const showScores = isFinished || isLive;
 
-    // Each team is a vertical column: row (flag+name) on top, score box under.
-    // Side="right" puts flag on outer right; side="left" puts flag on outer left.
-    const renderSide = (code, score, side) => {
-      const row = side === 'right'
-        ? `<span class="fl">${flag(code)}</span><span>${tname(code)}</span>`
-        : `<span>${tname(code)}</span><span class="fl">${flag(code)}</span>`;
-      return `<div class="vs-side">
-        <div class="vs-row">${row}</div>
-        ${showScores ? `<span class="vs-score">${score}</span>` : ''}
-      </div>`;
-    };
+    // Original side-by-side layout: flag-A team-A × team-B flag-B
+    const vs = `<div class="vs">
+      <span class="fl">${flag(k.a)}</span> ${tname(k.a)} <em>×</em> ${tname(k.b)} <span class="fl">${flag(k.b)}</span>
+    </div>`;
+
+    // When played: replace the date+time block with the big score.
+    // Otherwise: keep the original date + time display.
+    let when;
+    if (isFinished){
+      when = `<div class="when finished"><span class="score-big">${r.homeScore} - ${r.awayScore}</span></div>`;
+    } else if (isLive){
+      when = `<div class="when live"><span class="score-big">${r.homeScore} - ${r.awayScore}</span></div>`;
+    } else {
+      when = `<div class="when">${k.day} ${k.date}<b>${k.time}</b></div>`;
+    }
 
     let badge = '';
     if (isFinished) badge = `<div class="status-badge finished">انتهت</div>`;
@@ -571,12 +577,8 @@ function renderKSACards(){
     kg.insertAdjacentHTML('beforeend',`
       <div class="ksa-card">
         <div class="tag">${k.tag} · الأخضر</div>
-        <div class="vs">
-          ${renderSide(k.a, r ? r.homeScore : '', 'right')}
-          <em>×</em>
-          ${renderSide(k.b, r ? r.awayScore : '', 'left')}
-        </div>
-        <div class="when">${k.day} ${k.date}<b>${k.time}</b></div>
+        ${vs}
+        ${when}
         <div class="meta">${k.meta}</div>
         ${badge}
       </div>`);
