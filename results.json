@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T22:45:29+00:00",
+  "lastUpdated": "2026-06-18T23:00:42+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -160,8 +160,8 @@
       "minute": null
     },
     "can_qat": {
-      "status": "IN_PLAY",
-      "homeScore": 2,
+      "status": "PAUSED",
+      "homeScore": 3,
       "awayScore": 0,
       "minute": null
     },
@@ -501,9 +501,9 @@
         "won": 1,
         "drawn": 1,
         "lost": 0,
-        "gf": 2,
+        "gf": 4,
         "ga": 1,
-        "gd": 1,
+        "gd": 3,
         "pts": 4
       },
       {
@@ -524,8 +524,8 @@
         "drawn": 1,
         "lost": 1,
         "gf": 1,
-        "ga": 2,
-        "gd": -1,
+        "ga": 4,
+        "gd": -3,
         "pts": 1
       }
     ],
