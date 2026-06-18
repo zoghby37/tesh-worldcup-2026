@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T22:00:40+00:00",
+  "lastUpdated": "2026-06-18T22:15:33+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -160,9 +160,9 @@
       "minute": null
     },
     "can_qat": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "IN_PLAY",
+      "homeScore": 0,
+      "awayScore": 0,
       "minute": null
     },
     "mex_kor": {
