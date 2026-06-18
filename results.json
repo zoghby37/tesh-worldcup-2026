@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T21:45:32+00:00",
+  "lastUpdated": "2026-06-18T22:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -497,14 +497,25 @@
       },
       {
         "team": "can",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "pts": 1
+        "pts": 2
+      },
+      {
+        "team": "qat",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 2
       },
       {
         "team": "bih",
@@ -515,17 +526,6 @@
         "gf": 2,
         "ga": 5,
         "gd": -3,
-        "pts": 1
-      },
-      {
-        "team": "qat",
-        "played": 1,
-        "won": 0,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
         "pts": 1
       }
     ],
