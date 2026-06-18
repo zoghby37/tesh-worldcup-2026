@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T18:45:31+00:00",
+  "lastUpdated": "2026-06-18T19:00:42+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -17,8 +17,8 @@
     },
     "can_bih": {
       "status": "FINISHED",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "minute": null
     },
     "usa_par": {
@@ -486,14 +486,25 @@
     "B": [
       {
         "team": "sui",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "pts": 1
+        "pts": 2
+      },
+      {
+        "team": "bih",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "pts": 2
       },
       {
         "team": "can",
@@ -508,17 +519,6 @@
       },
       {
         "team": "qat",
-        "played": 1,
-        "won": 0,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 1
-      },
-      {
-        "team": "bih",
         "played": 1,
         "won": 0,
         "drawn": 1,
