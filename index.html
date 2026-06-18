@@ -125,12 +125,11 @@
   .m.ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
   .m.ksa .m-side{color:#fff;font-weight:900}
 
-  /* KSA highlight card — stacked layout with per-team score */
-  .ksa-team-row{display:flex;align-items:center;gap:12px;padding:6px 0}
-  .ksa-team-row + .ksa-team-row{border-top:1px solid rgba(255,255,255,.06)}
-  .ksa-team-row .fl{font-size:28px;line-height:1;flex-shrink:0}
-  .ksa-team-row .ksa-tn{flex:1;text-align:right;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(18px,2.1vw,24px);color:#fff}
-  .ksa-team-row .ksa-score{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(22px,2.4vw,28px);color:#fff;min-width:40px;text-align:center;background:rgba(30,196,106,.22);border:1px solid rgba(30,196,106,.5);padding:4px 12px;border-radius:10px}
+  /* KSA highlight card — horizontal (Team × Team) with score box under each */
+  .ksa-card .vs-side{display:flex;flex-direction:column;align-items:center;gap:10px;flex:1;min-width:0}
+  .ksa-card .vs-row{display:flex;align-items:center;gap:8px;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(17px,1.95vw,22px);color:#fff;white-space:nowrap;justify-content:center}
+  .ksa-card .vs-row .fl{font-size:1.3em;line-height:1}
+  .ksa-card .vs-score{display:inline-block;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(22px,2.4vw,28px);color:#fff;min-width:42px;text-align:center;background:rgba(30,196,106,.22);border:1.5px solid rgba(30,196,106,.6);padding:4px 14px;border-radius:10px}
   .ksa-card .status-badge{display:inline-block;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-top:6px;font-family:'Tajawal'}
   .ksa-card .status-badge.finished{background:rgba(255,255,255,.08);color:var(--muted);border:1px solid rgba(255,255,255,.1)}
   .ksa-card .status-badge.live{background:rgba(255,107,107,.15);color:#ff6b6b;border:1px solid rgba(255,107,107,.4);animation:livePulse 1.6s ease-in-out infinite}
@@ -553,13 +552,17 @@ function renderKSACards(){
     const isLive = r && LIVE_STATUSES.has(r.status);
     const showScores = isFinished || isLive;
 
-    // Build each team row (with score box only if we have one)
-    const renderTeam = (code, score) => `
-      <div class="ksa-team-row">
-        <span class="fl">${flag(code)}</span>
-        <span class="ksa-tn">${tname(code)}</span>
-        ${showScores ? `<span class="ksa-score">${score}</span>` : ''}
+    // Each team is a vertical column: row (flag+name) on top, score box under.
+    // Side="right" puts flag on outer right; side="left" puts flag on outer left.
+    const renderSide = (code, score, side) => {
+      const row = side === 'right'
+        ? `<span class="fl">${flag(code)}</span><span>${tname(code)}</span>`
+        : `<span>${tname(code)}</span><span class="fl">${flag(code)}</span>`;
+      return `<div class="vs-side">
+        <div class="vs-row">${row}</div>
+        ${showScores ? `<span class="vs-score">${score}</span>` : ''}
       </div>`;
+    };
 
     let badge = '';
     if (isFinished) badge = `<div class="status-badge finished">انتهت</div>`;
@@ -568,9 +571,10 @@ function renderKSACards(){
     kg.insertAdjacentHTML('beforeend',`
       <div class="ksa-card">
         <div class="tag">${k.tag} · الأخضر</div>
-        <div style="margin:14px 0 4px">
-          ${renderTeam(k.a, r ? r.homeScore : '')}
-          ${renderTeam(k.b, r ? r.awayScore : '')}
+        <div class="vs">
+          ${renderSide(k.a, r ? r.homeScore : '', 'right')}
+          <em>×</em>
+          ${renderSide(k.b, r ? r.awayScore : '', 'left')}
         </div>
         <div class="when">${k.day} ${k.date}<b>${k.time}</b></div>
         <div class="meta">${k.meta}</div>
