@@ -1,10 +1,9 @@
 name: Fetch live scores
 
 on:
-  schedule:
-    # Every 15 minutes. GitHub Actions cron is best-effort, may drift a few minutes.
-    - cron: "*/15 * * * *"
-  workflow_dispatch:   # lets you run it manually from the Actions tab
+  # Triggered externally by cron-job.org via the workflow_dispatch API
+  # (more reliable than GitHub Actions' own schedule, which can drift heavily).
+  workflow_dispatch:
 
 permissions:
   contents: write   # needed so the workflow can push the updated JSON back
