@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T15:45:43+00:00",
+  "lastUpdated": "2026-06-18T16:01:07+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -462,25 +462,25 @@
       },
       {
         "team": "cze",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 1,
         "ga": 2,
         "gd": -1,
-        "pts": 0
+        "pts": 1
       },
       {
         "team": "rsa",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 0,
         "ga": 2,
         "gd": -2,
-        "pts": 0
+        "pts": 1
       }
     ],
     "B": [
