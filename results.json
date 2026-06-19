@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T19:00:45+00:00",
+  "lastUpdated": "2026-06-19T19:15:27+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -172,9 +172,9 @@
       "minute": null
     },
     "usa_aus": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "IN_PLAY",
+      "homeScore": 0,
+      "awayScore": 0,
       "minute": null
     },
     "sco_mar": {
