@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T00:00:44+00:00",
+  "lastUpdated": "2026-06-19T00:15:27+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -160,8 +160,8 @@
       "minute": null
     },
     "can_qat": {
-      "status": "IN_PLAY",
-      "homeScore": 5,
+      "status": "FINISHED",
+      "homeScore": 6,
       "awayScore": 0,
       "minute": null
     },
