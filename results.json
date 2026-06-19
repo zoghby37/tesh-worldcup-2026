@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T22:15:30+00:00",
+  "lastUpdated": "2026-06-19T22:30:36+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -531,26 +531,26 @@
     ],
     "C": [
       {
-        "team": "sco",
+        "team": "mar",
         "played": 2,
         "won": 1,
         "drawn": 1,
         "lost": 0,
-        "gf": 1,
-        "ga": 0,
+        "gf": 2,
+        "ga": 1,
         "gd": 1,
         "pts": 4
       },
       {
-        "team": "mar",
+        "team": "sco",
         "played": 2,
-        "won": 0,
-        "drawn": 2,
-        "lost": 0,
+        "won": 1,
+        "drawn": 0,
+        "lost": 1,
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "pts": 2
+        "pts": 3
       },
       {
         "team": "bra",
