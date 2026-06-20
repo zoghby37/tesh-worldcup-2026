@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T17:15:29+00:00",
+  "lastUpdated": "2026-06-20T17:30:42+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -197,7 +197,7 @@
     },
     "ned_swe": {
       "status": "IN_PLAY",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0,
       "minute": null
     },
@@ -669,26 +669,26 @@
     ],
     "F": [
       {
-        "team": "swe",
+        "team": "ned",
         "played": 2,
         "won": 1,
         "drawn": 1,
         "lost": 0,
-        "gf": 5,
-        "ga": 1,
-        "gd": 4,
+        "gf": 4,
+        "ga": 2,
+        "gd": 2,
         "pts": 4
       },
       {
-        "team": "ned",
+        "team": "swe",
         "played": 2,
-        "won": 0,
-        "drawn": 2,
-        "lost": 0,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 2
+        "won": 1,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 5,
+        "ga": 3,
+        "gd": 2,
+        "pts": 3
       },
       {
         "team": "jpn",
