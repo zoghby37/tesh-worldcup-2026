@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T02:15:28+00:00",
+  "lastUpdated": "2026-06-20T02:30:35+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -531,17 +531,6 @@
     ],
     "C": [
       {
-        "team": "mar",
-        "played": 2,
-        "won": 1,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 2,
-        "ga": 1,
-        "gd": 1,
-        "pts": 4
-      },
-      {
         "team": "bra",
         "played": 2,
         "won": 1,
@@ -550,6 +539,17 @@
         "gf": 4,
         "ga": 1,
         "gd": 3,
+        "pts": 4
+      },
+      {
+        "team": "mar",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
         "pts": 4
       },
       {
