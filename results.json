@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T19:00:50+00:00",
+  "lastUpdated": "2026-06-20T19:15:29+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -196,7 +196,7 @@
       "minute": null
     },
     "ned_swe": {
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeScore": 5,
       "awayScore": 1,
       "minute": null
