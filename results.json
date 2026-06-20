@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T03:15:26+00:00",
+  "lastUpdated": "2026-06-20T03:30:36+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -599,26 +599,26 @@
         "pts": 3
       },
       {
+        "team": "par",
+        "played": 2,
+        "won": 1,
+        "drawn": 0,
+        "lost": 1,
+        "gf": 2,
+        "ga": 4,
+        "gd": -2,
+        "pts": 3
+      },
+      {
         "team": "tur",
         "played": 2,
         "won": 0,
-        "drawn": 1,
-        "lost": 1,
+        "drawn": 0,
+        "lost": 2,
         "gf": 0,
-        "ga": 2,
-        "gd": -2,
-        "pts": 1
-      },
-      {
-        "team": "par",
-        "played": 2,
-        "won": 0,
-        "drawn": 1,
-        "lost": 1,
-        "gf": 1,
-        "ga": 4,
+        "ga": 3,
         "gd": -3,
-        "pts": 1
+        "pts": 0
       }
     ],
     "E": [
