@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T21:30:36+00:00",
+  "lastUpdated": "2026-06-20T21:45:29+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -17,8 +17,8 @@
     },
     "can_bih": {
       "status": "FINISHED",
-      "homeScore": 1,
-      "awayScore": 1,
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "usa_par": {
@@ -203,7 +203,7 @@
     },
     "ger_civ": {
       "status": "IN_PLAY",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
       "minute": null
     },
