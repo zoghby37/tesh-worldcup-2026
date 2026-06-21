@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T05:30:34+00:00",
+  "lastUpdated": "2026-06-21T05:45:26+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -216,7 +216,7 @@
     "tun_jpn": {
       "status": "IN_PLAY",
       "homeScore": 0,
-      "awayScore": 2,
+      "awayScore": 3,
       "minute": null
     },
     "esp_ksa": {
