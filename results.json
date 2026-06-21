@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T03:45:25+00:00",
+  "lastUpdated": "2026-06-21T04:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -692,25 +692,25 @@
       },
       {
         "team": "jpn",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       },
       {
         "team": "tun",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 1,
         "ga": 5,
         "gd": -4,
-        "pts": 0
+        "pts": 1
       }
     ],
     "G": [
