@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T17:15:25+00:00",
+  "lastUpdated": "2026-06-21T17:30:36+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -221,7 +221,7 @@
     },
     "esp_ksa": {
       "status": "IN_PLAY",
-      "homeScore": 3,
+      "homeScore": 4,
       "awayScore": 0,
       "minute": null
     },
@@ -766,9 +766,9 @@
         "won": 1,
         "drawn": 1,
         "lost": 0,
-        "gf": 3,
+        "gf": 4,
         "ga": 0,
-        "gd": 3,
+        "gd": 4,
         "pts": 4
       },
       {
@@ -789,8 +789,8 @@
         "drawn": 1,
         "lost": 1,
         "gf": 1,
-        "ga": 4,
-        "gd": -3,
+        "ga": 5,
+        "gd": -4,
         "pts": 1
       },
       {
