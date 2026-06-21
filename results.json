@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T16:15:27+00:00",
+  "lastUpdated": "2026-06-21T16:30:37+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -221,7 +221,7 @@
     },
     "esp_ksa": {
       "status": "IN_PLAY",
-      "homeScore": 0,
+      "homeScore": 2,
       "awayScore": 0,
       "minute": null
     },
@@ -761,26 +761,15 @@
     ],
     "H": [
       {
-        "team": "ksa",
-        "played": 2,
-        "won": 0,
-        "drawn": 2,
-        "lost": 0,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 2
-      },
-      {
         "team": "esp",
         "played": 2,
-        "won": 0,
-        "drawn": 2,
+        "won": 1,
+        "drawn": 1,
         "lost": 0,
-        "gf": 0,
+        "gf": 3,
         "ga": 0,
-        "gd": 0,
-        "pts": 2
+        "gd": 3,
+        "pts": 4
       },
       {
         "team": "uru",
@@ -791,6 +780,17 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
+        "pts": 1
+      },
+      {
+        "team": "ksa",
+        "played": 2,
+        "won": 0,
+        "drawn": 1,
+        "lost": 1,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
         "pts": 1
       },
       {
