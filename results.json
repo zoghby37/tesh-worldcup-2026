@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T21:45:29+00:00",
+  "lastUpdated": "2026-06-21T22:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -773,14 +773,25 @@
       },
       {
         "team": "uru",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "pts": 1
+        "pts": 2
+      },
+      {
+        "team": "cpv",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "pts": 2
       },
       {
         "team": "ksa",
@@ -791,17 +802,6 @@
         "gf": 1,
         "ga": 5,
         "gd": -4,
-        "pts": 1
-      },
-      {
-        "team": "cpv",
-        "played": 1,
-        "won": 0,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
         "pts": 1
       }
     ],
