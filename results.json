@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T23:30:34+00:00",
+  "lastUpdated": "2026-06-21T23:45:27+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -234,7 +234,7 @@
     "uru_cpv": {
       "status": "IN_PLAY",
       "homeScore": 2,
-      "awayScore": 1,
+      "awayScore": 2,
       "minute": null
     },
     "nzl_egy": {
