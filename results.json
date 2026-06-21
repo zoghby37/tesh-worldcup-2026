@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T06:00:41+00:00",
+  "lastUpdated": "2026-06-21T06:15:28+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -214,7 +214,7 @@
       "minute": null
     },
     "tun_jpn": {
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 4,
       "minute": null
