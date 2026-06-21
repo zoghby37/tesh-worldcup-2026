@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T19:45:30+00:00",
+  "lastUpdated": "2026-06-21T20:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -226,9 +226,9 @@
       "minute": null
     },
     "bel_irn": {
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 0,
       "minute": null
     },
     "uru_cpv": {
