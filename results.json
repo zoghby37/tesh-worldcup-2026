@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T22:45:26+00:00",
+  "lastUpdated": "2026-06-21T23:00:41+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -232,8 +232,8 @@
       "minute": null
     },
     "uru_cpv": {
-      "status": "IN_PLAY",
-      "homeScore": 0,
+      "status": "PAUSED",
+      "homeScore": 2,
       "awayScore": 1,
       "minute": null
     },
@@ -761,6 +761,17 @@
     ],
     "H": [
       {
+        "team": "uru",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 3,
+        "ga": 2,
+        "gd": 1,
+        "pts": 4
+      },
+      {
         "team": "esp",
         "played": 2,
         "won": 1,
@@ -772,28 +783,6 @@
         "pts": 4
       },
       {
-        "team": "cpv",
-        "played": 2,
-        "won": 1,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
-        "pts": 4
-      },
-      {
-        "team": "uru",
-        "played": 2,
-        "won": 0,
-        "drawn": 1,
-        "lost": 1,
-        "gf": 1,
-        "ga": 2,
-        "gd": -1,
-        "pts": 1
-      },
-      {
         "team": "ksa",
         "played": 2,
         "won": 0,
@@ -802,6 +791,17 @@
         "gf": 1,
         "ga": 5,
         "gd": -4,
+        "pts": 1
+      },
+      {
+        "team": "cpv",
+        "played": 2,
+        "won": 0,
+        "drawn": 1,
+        "lost": 1,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
         "pts": 1
       }
     ],
