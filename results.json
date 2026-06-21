@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T17:00:40+00:00",
+  "lastUpdated": "2026-06-21T17:15:25+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -220,7 +220,7 @@
       "minute": null
     },
     "esp_ksa": {
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "homeScore": 3,
       "awayScore": 0,
       "minute": null
