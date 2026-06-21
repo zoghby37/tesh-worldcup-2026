@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T22:15:26+00:00",
+  "lastUpdated": "2026-06-21T22:30:34+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -234,7 +234,7 @@
     "uru_cpv": {
       "status": "IN_PLAY",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "minute": null
     },
     "nzl_egy": {
@@ -772,26 +772,26 @@
         "pts": 4
       },
       {
+        "team": "cpv",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "pts": 4
+      },
+      {
         "team": "uru",
         "played": 2,
         "won": 0,
-        "drawn": 2,
-        "lost": 0,
+        "drawn": 1,
+        "lost": 1,
         "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 2
-      },
-      {
-        "team": "cpv",
-        "played": 2,
-        "won": 0,
-        "drawn": 2,
-        "lost": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "pts": 2
+        "ga": 2,
+        "gd": -1,
+        "pts": 1
       },
       {
         "team": "ksa",
