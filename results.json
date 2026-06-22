@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T02:15:28+00:00",
+  "lastUpdated": "2026-06-22T02:30:37+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -240,7 +240,7 @@
     "nzl_egy": {
       "status": "IN_PLAY",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "minute": null
     },
     "arg_aut": {
@@ -715,7 +715,7 @@
     ],
     "G": [
       {
-        "team": "nzl",
+        "team": "egy",
         "played": 2,
         "won": 1,
         "drawn": 1,
@@ -748,13 +748,13 @@
         "pts": 2
       },
       {
-        "team": "egy",
+        "team": "nzl",
         "played": 2,
         "won": 0,
         "drawn": 1,
         "lost": 1,
-        "gf": 1,
-        "ga": 2,
+        "gf": 3,
+        "ga": 4,
         "gd": -1,
         "pts": 1
       }
