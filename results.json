@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T17:45:30+00:00",
+  "lastUpdated": "2026-06-22T18:00:47+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -244,7 +244,7 @@
       "minute": null
     },
     "arg_aut": {
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "homeScore": 1,
       "awayScore": 0,
       "minute": null
@@ -855,24 +855,24 @@
       {
         "team": "arg",
         "played": 2,
-        "won": 1,
-        "drawn": 1,
+        "won": 2,
+        "drawn": 0,
         "lost": 0,
-        "gf": 3,
+        "gf": 4,
         "ga": 0,
-        "gd": 3,
-        "pts": 4
+        "gd": 4,
+        "pts": 6
       },
       {
         "team": "aut",
         "played": 2,
         "won": 1,
-        "drawn": 1,
-        "lost": 0,
+        "drawn": 0,
+        "lost": 1,
         "gf": 3,
-        "ga": 1,
-        "gd": 2,
-        "pts": 4
+        "ga": 2,
+        "gd": 1,
+        "pts": 3
       },
       {
         "team": "jor",
