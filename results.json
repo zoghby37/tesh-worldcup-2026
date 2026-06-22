@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T16:45:37+00:00",
+  "lastUpdated": "2026-06-22T17:00:45+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -854,25 +854,25 @@
     "J": [
       {
         "team": "arg",
-        "played": 1,
+        "played": 2,
         "won": 1,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 0,
         "gf": 3,
         "ga": 0,
         "gd": 3,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "aut",
-        "played": 1,
+        "played": 2,
         "won": 1,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 0,
         "gf": 3,
         "ga": 1,
         "gd": 2,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "jor",
