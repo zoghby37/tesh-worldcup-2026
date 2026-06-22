@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T18:45:34+00:00",
+  "lastUpdated": "2026-06-22T19:00:51+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -858,9 +858,9 @@
         "won": 2,
         "drawn": 0,
         "lost": 0,
-        "gf": 4,
+        "gf": 5,
         "ga": 0,
-        "gd": 4,
+        "gd": 5,
         "pts": 6
       },
       {
@@ -870,8 +870,8 @@
         "drawn": 0,
         "lost": 1,
         "gf": 3,
-        "ga": 2,
-        "gd": 1,
+        "ga": 3,
+        "gd": 0,
         "pts": 3
       },
       {
