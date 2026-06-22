@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T00:45:27+00:00",
+  "lastUpdated": "2026-06-22T01:00:43+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -715,6 +715,17 @@
     ],
     "G": [
       {
+        "team": "nzl",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "pts": 2
+      },
+      {
         "team": "irn",
         "played": 2,
         "won": 0,
@@ -737,26 +748,15 @@
         "pts": 2
       },
       {
-        "team": "nzl",
-        "played": 1,
-        "won": 0,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 1
-      },
-      {
         "team": "egy",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "pts": 1
+        "pts": 2
       }
     ],
     "H": [
