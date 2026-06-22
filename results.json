@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T01:00:43+00:00",
+  "lastUpdated": "2026-06-22T01:15:26+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -238,9 +238,9 @@
       "minute": null
     },
     "nzl_egy": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "IN_PLAY",
+      "homeScore": 0,
+      "awayScore": 0,
       "minute": null
     },
     "arg_aut": {
