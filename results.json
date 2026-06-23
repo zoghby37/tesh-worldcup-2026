@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T01:45:30+00:00",
+  "lastUpdated": "2026-06-23T02:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -258,7 +258,7 @@
     "nor_sen": {
       "status": "IN_PLAY",
       "homeScore": 3,
-      "awayScore": 1,
+      "awayScore": 2,
       "minute": null
     },
     "jor_alg": {
@@ -807,17 +807,6 @@
     ],
     "I": [
       {
-        "team": "nor",
-        "played": 2,
-        "won": 2,
-        "drawn": 0,
-        "lost": 0,
-        "gf": 7,
-        "ga": 2,
-        "gd": 5,
-        "pts": 6
-      },
-      {
         "team": "fra",
         "played": 2,
         "won": 2,
@@ -829,14 +818,25 @@
         "pts": 6
       },
       {
+        "team": "nor",
+        "played": 2,
+        "won": 2,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 7,
+        "ga": 3,
+        "gd": 4,
+        "pts": 6
+      },
+      {
         "team": "sen",
         "played": 2,
         "won": 0,
         "drawn": 0,
         "lost": 2,
-        "gf": 2,
+        "gf": 3,
         "ga": 6,
-        "gd": -4,
+        "gd": -3,
         "pts": 0
       },
       {
