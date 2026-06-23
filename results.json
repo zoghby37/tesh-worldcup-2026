@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T23:45:26+00:00",
+  "lastUpdated": "2026-06-23T00:00:43+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -819,25 +819,25 @@
       },
       {
         "team": "nor",
-        "played": 1,
+        "played": 2,
         "won": 1,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 0,
         "gf": 4,
         "ga": 1,
         "gd": 3,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "sen",
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 1,
         "ga": 3,
         "gd": -2,
-        "pts": 0
+        "pts": 1
       },
       {
         "team": "irq",
