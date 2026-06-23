@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T03:30:37+00:00",
+  "lastUpdated": "2026-06-23T03:45:31+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -263,7 +263,7 @@
     },
     "jor_alg": {
       "status": "IN_PLAY",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "minute": null
     },
