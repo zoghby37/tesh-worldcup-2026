@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T01:30:35+00:00",
+  "lastUpdated": "2026-06-24T01:45:29+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -286,7 +286,7 @@
       "minute": null
     },
     "col_cod": {
-      "status": "SCHEDULED",
+      "status": "TIMED",
       "homeScore": null,
       "awayScore": null,
       "minute": null
