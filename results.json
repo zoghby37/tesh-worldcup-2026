@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T22:45:26+00:00",
+  "lastUpdated": "2026-06-24T23:00:42+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -304,13 +304,13 @@
       "minute": null
     },
     "mar_hai": {
-      "status": "LIVE",
-      "homeScore": 1,
-      "awayScore": 1,
+      "status": "PAUSED",
+      "homeScore": 2,
+      "awayScore": 2,
       "minute": null
     },
     "sco_bra": {
-      "status": "LIVE",
+      "status": "PAUSED",
       "homeScore": 0,
       "awayScore": 2,
       "minute": null
@@ -536,21 +536,21 @@
         "won": 2,
         "drawn": 1,
         "lost": 0,
-        "gf": 5,
+        "gf": 6,
         "ga": 1,
-        "gd": 4,
+        "gd": 5,
         "pts": 7
       },
       {
         "team": "mar",
         "played": 3,
         "won": 1,
-        "drawn": 1,
-        "lost": 1,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 4
+        "drawn": 2,
+        "lost": 0,
+        "gf": 4,
+        "ga": 3,
+        "gd": 1,
+        "pts": 5
       },
       {
         "team": "sco",
@@ -559,20 +559,20 @@
         "drawn": 0,
         "lost": 2,
         "gf": 1,
-        "ga": 2,
-        "gd": -1,
+        "ga": 3,
+        "gd": -2,
         "pts": 3
       },
       {
         "team": "hai",
         "played": 3,
-        "won": 1,
-        "drawn": 0,
+        "won": 0,
+        "drawn": 1,
         "lost": 2,
-        "gf": 1,
-        "ga": 4,
-        "gd": -3,
-        "pts": 3
+        "gf": 2,
+        "ga": 6,
+        "gd": -4,
+        "pts": 1
       }
     ],
     "D": [
