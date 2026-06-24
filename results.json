@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T22:15:30+00:00",
+  "lastUpdated": "2026-06-24T22:30:38+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -306,13 +306,13 @@
     "mar_hai": {
       "status": "LIVE",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "minute": null
     },
     "sco_bra": {
       "status": "LIVE",
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "minute": null
     },
     "cze_mex": {
@@ -533,46 +533,46 @@
       {
         "team": "bra",
         "played": 3,
-        "won": 1,
-        "drawn": 2,
+        "won": 2,
+        "drawn": 1,
         "lost": 0,
-        "gf": 4,
+        "gf": 5,
         "ga": 1,
-        "gd": 3,
-        "pts": 5
+        "gd": 4,
+        "pts": 7
       },
       {
         "team": "mar",
         "played": 3,
         "won": 1,
-        "drawn": 2,
-        "lost": 0,
+        "drawn": 1,
+        "lost": 1,
         "gf": 2,
-        "ga": 1,
-        "gd": 1,
-        "pts": 5
+        "ga": 2,
+        "gd": 0,
+        "pts": 4
       },
       {
         "team": "sco",
         "played": 3,
         "won": 1,
-        "drawn": 1,
-        "lost": 1,
+        "drawn": 0,
+        "lost": 2,
         "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 4
+        "ga": 2,
+        "gd": -1,
+        "pts": 3
       },
       {
         "team": "hai",
         "played": 3,
-        "won": 0,
-        "drawn": 1,
+        "won": 1,
+        "drawn": 0,
         "lost": 2,
-        "gf": 0,
+        "gf": 1,
         "ga": 4,
-        "gd": -4,
-        "pts": 1
+        "gd": -3,
+        "pts": 3
       }
     ],
     "D": [
