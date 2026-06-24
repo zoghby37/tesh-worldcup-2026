@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T03:45:27+00:00",
+  "lastUpdated": "2026-06-24T04:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -899,6 +899,17 @@
     ],
     "K": [
       {
+        "team": "col",
+        "played": 2,
+        "won": 2,
+        "drawn": 0,
+        "lost": 0,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "pts": 6
+      },
+      {
         "team": "por",
         "played": 2,
         "won": 1,
@@ -910,26 +921,15 @@
         "pts": 4
       },
       {
-        "team": "col",
-        "played": 2,
-        "won": 1,
-        "drawn": 1,
-        "lost": 0,
-        "gf": 3,
-        "ga": 1,
-        "gd": 2,
-        "pts": 4
-      },
-      {
         "team": "cod",
         "played": 2,
         "won": 0,
-        "drawn": 2,
-        "lost": 0,
+        "drawn": 1,
+        "lost": 1,
         "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "pts": 2
+        "ga": 2,
+        "gd": -1,
+        "pts": 1
       },
       {
         "team": "uzb",
