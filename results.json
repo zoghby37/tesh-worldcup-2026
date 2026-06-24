@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T22:00:47+00:00",
+  "lastUpdated": "2026-06-24T22:15:30+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -304,15 +304,15 @@
       "minute": null
     },
     "mar_hai": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0,
       "minute": null
     },
     "sco_bra": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 1,
       "minute": null
     },
     "cze_mex": {
