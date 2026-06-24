@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T23:30:39+00:00",
+  "lastUpdated": "2026-06-24T23:45:26+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -305,12 +305,12 @@
     },
     "mar_hai": {
       "status": "IN_PLAY",
-      "homeScore": 2,
+      "homeScore": 3,
       "awayScore": 2,
       "minute": null
     },
     "sco_bra": {
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "homeScore": 0,
       "awayScore": 3,
       "minute": null
