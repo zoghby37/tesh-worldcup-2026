@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T22:45:28+00:00",
+  "lastUpdated": "2026-06-25T23:00:41+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -17,8 +17,8 @@
     },
     "can_bih": {
       "status": "FINISHED",
-      "homeScore": 1,
-      "awayScore": 1,
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "usa_par": {
@@ -670,47 +670,47 @@
     "F": [
       {
         "team": "ned",
-        "played": 2,
+        "played": 3,
         "won": 1,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "gf": 7,
         "ga": 3,
         "gd": 4,
-        "pts": 4
+        "pts": 5
       },
       {
         "team": "jpn",
-        "played": 2,
+        "played": 3,
         "won": 1,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "gf": 6,
         "ga": 2,
         "gd": 4,
-        "pts": 4
+        "pts": 5
       },
       {
         "team": "swe",
-        "played": 2,
+        "played": 3,
         "won": 1,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 6,
         "ga": 6,
         "gd": 0,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "tun",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 2,
         "gf": 1,
         "ga": 9,
         "gd": -8,
-        "pts": 0
+        "pts": 1
       }
     ],
     "G": [
