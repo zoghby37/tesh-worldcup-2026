@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T19:45:29+00:00",
+  "lastUpdated": "2026-06-25T20:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -624,47 +624,47 @@
     "E": [
       {
         "team": "ger",
-        "played": 2,
+        "played": 3,
         "won": 2,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 0,
         "gf": 9,
         "ga": 2,
         "gd": 7,
-        "pts": 6
+        "pts": 7
       },
       {
         "team": "civ",
-        "played": 2,
+        "played": 3,
         "won": 1,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "ecu",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 1,
         "gf": 0,
         "ga": 1,
         "gd": -1,
-        "pts": 1
+        "pts": 2
       },
       {
         "team": "cuw",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 1,
         "gf": 1,
         "ga": 7,
         "gd": -6,
-        "pts": 1
+        "pts": 2
       }
     ],
     "F": [
