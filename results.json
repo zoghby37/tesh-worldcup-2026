@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T23:45:26+00:00",
+  "lastUpdated": "2026-06-25T00:00:42+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -305,7 +305,7 @@
     },
     "mar_hai": {
       "status": "IN_PLAY",
-      "homeScore": 3,
+      "homeScore": 4,
       "awayScore": 2,
       "minute": null
     },
@@ -544,13 +544,13 @@
       {
         "team": "mar",
         "played": 3,
-        "won": 1,
-        "drawn": 2,
+        "won": 2,
+        "drawn": 1,
         "lost": 0,
-        "gf": 4,
+        "gf": 6,
         "ga": 3,
-        "gd": 1,
-        "pts": 5
+        "gd": 3,
+        "pts": 7
       },
       {
         "team": "sco",
@@ -567,12 +567,12 @@
         "team": "hai",
         "played": 3,
         "won": 0,
-        "drawn": 1,
-        "lost": 2,
+        "drawn": 0,
+        "lost": 3,
         "gf": 2,
-        "ga": 6,
-        "gd": -4,
-        "pts": 1
+        "ga": 8,
+        "gd": -6,
+        "pts": 0
       }
     ],
     "D": [
