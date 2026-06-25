@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T21:00:38+00:00",
+  "lastUpdated": "2026-06-25T21:15:30+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -328,15 +328,15 @@
       "minute": null
     },
     "ecu_ger": {
-      "status": "PAUSED",
-      "homeScore": 1,
-      "awayScore": 1,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "cuw_civ": {
-      "status": "PAUSED",
-      "homeScore": 0,
-      "awayScore": 1,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "tun_ned": {
