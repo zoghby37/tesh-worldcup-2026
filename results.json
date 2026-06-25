@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T02:15:29+00:00",
+  "lastUpdated": "2026-06-25T02:30:37+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -318,12 +318,12 @@
     "cze_mex": {
       "status": "IN_PLAY",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 2,
       "minute": null
     },
     "rsa_kor": {
       "status": "IN_PLAY",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "minute": null
     },
@@ -441,46 +441,46 @@
       {
         "team": "mex",
         "played": 3,
-        "won": 2,
-        "drawn": 1,
+        "won": 3,
+        "drawn": 0,
         "lost": 0,
-        "gf": 3,
+        "gf": 5,
         "ga": 0,
-        "gd": 3,
-        "pts": 7
+        "gd": 5,
+        "pts": 9
       },
       {
-        "team": "kor",
+        "team": "rsa",
         "played": 3,
         "won": 1,
         "drawn": 1,
         "lost": 1,
         "gf": 2,
-        "ga": 2,
-        "gd": 0,
+        "ga": 3,
+        "gd": -1,
         "pts": 4
+      },
+      {
+        "team": "kor",
+        "played": 3,
+        "won": 1,
+        "drawn": 0,
+        "lost": 2,
+        "gf": 2,
+        "ga": 3,
+        "gd": -1,
+        "pts": 3
       },
       {
         "team": "cze",
         "played": 3,
         "won": 0,
-        "drawn": 2,
-        "lost": 1,
+        "drawn": 1,
+        "lost": 2,
         "gf": 2,
-        "ga": 3,
-        "gd": -1,
-        "pts": 2
-      },
-      {
-        "team": "rsa",
-        "played": 3,
-        "won": 0,
-        "drawn": 2,
-        "lost": 1,
-        "gf": 1,
-        "ga": 3,
-        "gd": -2,
-        "pts": 2
+        "ga": 5,
+        "gd": -3,
+        "pts": 1
       }
     ],
     "B": [
