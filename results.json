@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T02:45:31+00:00",
+  "lastUpdated": "2026-06-25T03:00:41+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -318,7 +318,7 @@
     "cze_mex": {
       "status": "IN_PLAY",
       "homeScore": 0,
-      "awayScore": 2,
+      "awayScore": 3,
       "minute": null
     },
     "rsa_kor": {
@@ -444,9 +444,9 @@
         "won": 3,
         "drawn": 0,
         "lost": 0,
-        "gf": 5,
+        "gf": 6,
         "ga": 0,
-        "gd": 5,
+        "gd": 6,
         "pts": 9
       },
       {
@@ -478,8 +478,8 @@
         "drawn": 1,
         "lost": 2,
         "gf": 2,
-        "ga": 5,
-        "gd": -3,
+        "ga": 6,
+        "gd": -4,
         "pts": 1
       }
     ],
