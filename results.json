@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T00:45:28+00:00",
+  "lastUpdated": "2026-06-25T01:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -17,8 +17,8 @@
     },
     "can_bih": {
       "status": "FINISHED",
-      "homeScore": 1,
-      "awayScore": 1,
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "usa_par": {
@@ -440,47 +440,47 @@
     "A": [
       {
         "team": "mex",
-        "played": 2,
+        "played": 3,
         "won": 2,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 0,
         "gf": 3,
         "ga": 0,
         "gd": 3,
-        "pts": 6
+        "pts": 7
       },
       {
         "team": "kor",
-        "played": 2,
+        "played": 3,
         "won": 1,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 1,
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "cze",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 1,
         "gf": 2,
         "ga": 3,
         "gd": -1,
-        "pts": 1
+        "pts": 2
       },
       {
         "team": "rsa",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 1,
         "gf": 1,
         "ga": 3,
         "gd": -2,
-        "pts": 1
+        "pts": 2
       }
     ],
     "B": [
