@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T04:00:40+00:00",
+  "lastUpdated": "2026-06-26T04:15:25+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -352,13 +352,13 @@
       "minute": null
     },
     "tur_usa": {
-      "status": "IN_PLAY",
-      "homeScore": 2,
+      "status": "FINISHED",
+      "homeScore": 3,
       "awayScore": 2,
       "minute": null
     },
     "par_aus": {
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 0,
       "minute": null
