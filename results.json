@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T19:45:25+00:00",
+  "lastUpdated": "2026-06-26T20:00:37+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -364,7 +364,7 @@
       "minute": null
     },
     "nor_fra": {
-      "status": "LIVE",
+      "status": "PAUSED",
       "homeScore": 1,
       "awayScore": 3,
       "minute": null
@@ -812,9 +812,9 @@
         "won": 3,
         "drawn": 0,
         "lost": 0,
-        "gf": 8,
+        "gf": 9,
         "ga": 2,
-        "gd": 6,
+        "gd": 7,
         "pts": 9
       },
       {
@@ -824,8 +824,8 @@
         "drawn": 0,
         "lost": 1,
         "gf": 8,
-        "ga": 5,
-        "gd": 3,
+        "ga": 6,
+        "gd": 2,
         "pts": 6
       },
       {
