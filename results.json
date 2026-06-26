@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T02:45:24+00:00",
+  "lastUpdated": "2026-06-26T03:00:40+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -352,13 +352,13 @@
       "minute": null
     },
     "tur_usa": {
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "homeScore": 2,
       "awayScore": 1,
       "minute": null
     },
     "par_aus": {
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "homeScore": 0,
       "awayScore": 0,
       "minute": null
@@ -580,12 +580,12 @@
         "team": "usa",
         "played": 3,
         "won": 2,
-        "drawn": 1,
-        "lost": 0,
+        "drawn": 0,
+        "lost": 1,
         "gf": 7,
-        "ga": 2,
-        "gd": 5,
-        "pts": 7
+        "ga": 3,
+        "gd": 4,
+        "pts": 6
       },
       {
         "team": "aus",
@@ -612,13 +612,13 @@
       {
         "team": "tur",
         "played": 3,
-        "won": 0,
-        "drawn": 1,
+        "won": 1,
+        "drawn": 0,
         "lost": 2,
-        "gf": 1,
+        "gf": 2,
         "ga": 4,
-        "gd": -3,
-        "pts": 1
+        "gd": -2,
+        "pts": 3
       }
     ],
     "E": [
