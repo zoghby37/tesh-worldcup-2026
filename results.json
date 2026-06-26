@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T13:15:30+00:00",
+  "lastUpdated": "2026-06-26T13:30:37+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -316,39 +316,39 @@
       "minute": null
     },
     "cze_mex": {
-      "status": "FINISHED",
-      "homeScore": 0,
-      "awayScore": 3,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "rsa_kor": {
-      "status": "FINISHED",
-      "homeScore": 1,
-      "awayScore": 0,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "ecu_ger": {
-      "status": "FINISHED",
-      "homeScore": 2,
-      "awayScore": 1,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "cuw_civ": {
-      "status": "FINISHED",
-      "homeScore": 0,
-      "awayScore": 2,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "tun_ned": {
-      "status": "FINISHED",
-      "homeScore": 1,
-      "awayScore": 3,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "jpn_swe": {
-      "status": "FINISHED",
-      "homeScore": 1,
-      "awayScore": 1,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "tur_usa": {
