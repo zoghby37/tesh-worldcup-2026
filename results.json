@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T19:00:38+00:00",
+  "lastUpdated": "2026-06-26T19:15:26+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -364,15 +364,15 @@
       "minute": null
     },
     "nor_fra": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 1,
       "minute": null
     },
     "sen_irq": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 1,
+      "awayScore": 0,
       "minute": null
     },
     "uru_esp": {
