@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T00:15:27+00:00",
+  "lastUpdated": "2026-06-26T00:30:35+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -341,14 +341,14 @@
     },
     "tun_ned": {
       "status": "IN_PLAY",
-      "homeScore": 0,
-      "awayScore": 2,
+      "homeScore": 1,
+      "awayScore": 3,
       "minute": null
     },
     "jpn_swe": {
       "status": "IN_PLAY",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": 1,
+      "awayScore": 1,
       "minute": null
     },
     "tur_usa": {
@@ -674,8 +674,8 @@
         "won": 2,
         "drawn": 1,
         "lost": 0,
-        "gf": 9,
-        "ga": 3,
+        "gf": 10,
+        "ga": 4,
         "gd": 6,
         "pts": 7
       },
@@ -685,8 +685,8 @@
         "won": 1,
         "drawn": 2,
         "lost": 0,
-        "gf": 6,
-        "ga": 2,
+        "gf": 7,
+        "ga": 3,
         "gd": 4,
         "pts": 5
       },
@@ -696,8 +696,8 @@
         "won": 1,
         "drawn": 1,
         "lost": 1,
-        "gf": 6,
-        "ga": 6,
+        "gf": 7,
+        "ga": 7,
         "gd": 0,
         "pts": 4
       },
@@ -707,8 +707,8 @@
         "won": 0,
         "drawn": 0,
         "lost": 3,
-        "gf": 1,
-        "ga": 11,
+        "gf": 2,
+        "ga": 12,
         "gd": -10,
         "pts": 0
       }
