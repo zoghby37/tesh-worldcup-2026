@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T05:15:26+00:00",
+  "lastUpdated": "2026-06-27T05:30:37+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -364,15 +364,15 @@
       "minute": null
     },
     "nor_fra": {
-      "status": "FINISHED",
-      "homeScore": 1,
-      "awayScore": 4,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "sen_irq": {
-      "status": "FINISHED",
-      "homeScore": 5,
-      "awayScore": 0,
+      "status": "TIMED",
+      "homeScore": null,
+      "awayScore": null,
       "minute": null
     },
     "uru_esp": {
@@ -726,26 +726,26 @@
         "pts": 5
       },
       {
-        "team": "irn",
+        "team": "egy",
         "played": 3,
         "won": 1,
         "drawn": 2,
         "lost": 0,
-        "gf": 4,
+        "gf": 5,
         "ga": 3,
-        "gd": 1,
+        "gd": 2,
         "pts": 5
       },
       {
-        "team": "egy",
+        "team": "irn",
         "played": 3,
-        "won": 1,
-        "drawn": 1,
-        "lost": 1,
-        "gf": 5,
-        "ga": 4,
-        "gd": 1,
-        "pts": 4
+        "won": 0,
+        "drawn": 3,
+        "lost": 0,
+        "gf": 3,
+        "ga": 3,
+        "gd": 0,
+        "pts": 3
       },
       {
         "team": "nzl",
