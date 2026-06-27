@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T02:00:46+00:00",
+  "lastUpdated": "2026-06-27T02:15:25+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -376,13 +376,13 @@
       "minute": null
     },
     "uru_esp": {
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 1,
       "minute": null
     },
     "cpv_ksa": {
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 0,
       "minute": null
