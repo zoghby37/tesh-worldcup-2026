@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T00:00:45+00:00",
+  "lastUpdated": "2026-06-27T00:15:29+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -376,15 +376,15 @@
       "minute": null
     },
     "uru_esp": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0,
       "minute": null
     },
     "cpv_ksa": {
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0,
       "minute": null
     },
     "nzl_bel": {
