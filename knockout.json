@@ -1,0 +1,42 @@
+{
+  "_README": "Edit 'winners' to record results. Format: \"<matchId>\": \"<teamCode>\" (e.g. \"73\": \"rsa\"). For TBD R32 slots, fill 'bPh' (placeholder text) and replace with a team code when known. Times are Saudi Arabia time (UTC+3).",
+  "winners": {},
+  "matches": [
+    { "id": 73, "round": "r32", "iso": "2026-06-28", "time": "10:00م", "venue": "إنغلوود",     "a": "rsa", "b": "can" },
+    { "id": 76, "round": "r32", "iso": "2026-06-29", "time": "8:00م",  "venue": "هيوستن",      "a": "bra", "b": "jpn" },
+    { "id": 74, "round": "r32", "iso": "2026-06-30", "time": "1:30ف",  "venue": "فوكسبورو",    "a": "ger", "b": "par" },
+    { "id": 75, "round": "r32", "iso": "2026-06-30", "time": "3:00ف",  "venue": "مونتيري",     "a": "ned", "b": "mar" },
+    { "id": 78, "round": "r32", "iso": "2026-06-30", "time": "8:00م",  "venue": "أرلينغتون",   "a": "civ", "b": "nor" },
+    { "id": 77, "round": "r32", "iso": "2026-07-01", "time": "1:00ف",  "venue": "إيست رذرفورد","a": "fra", "b": "swe" },
+    { "id": 79, "round": "r32", "iso": "2026-07-01", "time": "3:00ف",  "venue": "مكسيكو سيتي", "a": "mex", "bPh": "الثالث C/E" },
+    { "id": 80, "round": "r32", "iso": "2026-07-01", "time": "8:00م",  "venue": "أتلانتا",     "aPh": "متصدر L", "bPh": "الثالث I/J/K" },
+    { "id": 81, "round": "r32", "iso": "2026-07-01", "time": "11:00م", "venue": "سانتا كلارا", "a": "usa", "b": "bih" },
+    { "id": 82, "round": "r32", "iso": "2026-07-01", "time": "11:00م", "venue": "سياتل",       "a": "bel", "bPh": "الثالث A/I/J" },
+    { "id": 84, "round": "r32", "iso": "2026-07-02", "time": "10:00م", "venue": "إنغلوود",     "a": "esp", "bPh": "وصيف J" },
+    { "id": 83, "round": "r32", "iso": "2026-07-03", "time": "3:00ف",  "venue": "تورنتو",      "aPh": "وصيف K", "bPh": "وصيف L" },
+    { "id": 85, "round": "r32", "iso": "2026-07-03", "time": "3:00ف",  "venue": "فانكوفر",     "a": "sui", "bPh": "الثالث G/J" },
+    { "id": 88, "round": "r32", "iso": "2026-07-03", "time": "8:00م",  "venue": "أرلينغتون",   "a": "aus", "b": "egy" },
+    { "id": 86, "round": "r32", "iso": "2026-07-04", "time": "1:00ف",  "venue": "ميامي",       "a": "arg", "b": "cpv" },
+    { "id": 87, "round": "r32", "iso": "2026-07-04", "time": "3:30ف",  "venue": "كانساس سيتي", "aPh": "متصدر K", "bPh": "الثالث E/I/L" },
+
+    { "id": 90, "round": "r16", "iso": "2026-07-04", "time": "7:00م",  "venue": "هيوستن",      "aFrom": 73, "bFrom": 75 },
+    { "id": 89, "round": "r16", "iso": "2026-07-05", "time": "12:00ص", "venue": "فيلادلفيا",   "aFrom": 74, "bFrom": 77 },
+    { "id": 91, "round": "r16", "iso": "2026-07-05", "time": "11:00م", "venue": "إيست رذرفورد","aFrom": 76, "bFrom": 78 },
+    { "id": 92, "round": "r16", "iso": "2026-07-06", "time": "2:00ف",  "venue": "مكسيكو سيتي", "aFrom": 79, "bFrom": 80 },
+    { "id": 93, "round": "r16", "iso": "2026-07-06", "time": "9:00م",  "venue": "أرلينغتون",   "aFrom": 83, "bFrom": 84 },
+    { "id": 94, "round": "r16", "iso": "2026-07-07", "time": "12:00ص", "venue": "سياتل",       "aFrom": 81, "bFrom": 82 },
+    { "id": 95, "round": "r16", "iso": "2026-07-07", "time": "7:00م",  "venue": "أتلانتا",     "aFrom": 86, "bFrom": 88 },
+    { "id": 96, "round": "r16", "iso": "2026-07-07", "time": "8:00م",  "venue": "فانكوفر",     "aFrom": 85, "bFrom": 87 },
+
+    { "id": 97,  "round": "qf", "iso": "2026-07-09", "time": "11:00م", "venue": "فوكسبورو",    "aFrom": 89, "bFrom": 90 },
+    { "id": 98,  "round": "qf", "iso": "2026-07-10", "time": "7:00م",  "venue": "إنغلوود",     "aFrom": 93, "bFrom": 94 },
+    { "id": 99,  "round": "qf", "iso": "2026-07-12", "time": "12:00ص", "venue": "ميامي",       "aFrom": 91, "bFrom": 92 },
+    { "id": 100, "round": "qf", "iso": "2026-07-12", "time": "3:00ف",  "venue": "كانساس سيتي", "aFrom": 95, "bFrom": 96 },
+
+    { "id": 101, "round": "sf", "iso": "2026-07-14", "time": "9:00م",  "venue": "أرلينغتون",   "aFrom": 97, "bFrom": 98 },
+    { "id": 102, "round": "sf", "iso": "2026-07-15", "time": "10:00م", "venue": "أتلانتا",     "aFrom": 99, "bFrom": 100 },
+
+    { "id": 103, "round": "3rd",   "iso": "2026-07-19", "time": "12:00ص", "venue": "ميامي",       "aLoserFrom": 101, "bLoserFrom": 102 },
+    { "id": 104, "round": "final", "iso": "2026-07-19", "time": "10:00م", "venue": "إيست رذرفورد","aFrom": 101, "bFrom": 102 }
+  ]
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تِش · كأس العالم 2026 — أهم المباريات</title>
+<title>تِش · كأس العالم 2026 — الأدوار الإقصائية</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -36,33 +36,9 @@
   header.hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;z-index:2;pointer-events:none;
     background:linear-gradient(90deg,transparent 0%,var(--gold) 50%,transparent 100%);
     box-shadow:0 0 14px rgba(205,171,87,.45)}
-  .brand-badge{display:inline-block;margin:0 auto 8px;}
-  .brand-badge img{height: 140px; width: auto; display: block;}
-  .present{font-family:'Tajawal';font-weight:700;font-size:12px;letter-spacing:4px;color:var(--muted);margin:6px 0 14px}
-  .kicker{font-family:'Tajawal';font-weight:800;letter-spacing:6px;font-size:13px;color:var(--gold);text-transform:uppercase;opacity:.92;margin-bottom:4px}
-  .hero h1{font-family:'Rakkas',serif;font-weight:400;line-height:1.18;padding:0.1em 0;font-size:clamp(46px,6.5vw,96px);
-    background:linear-gradient(180deg,#fff 0%,var(--gold-soft) 55%,var(--gold) 100%);
-    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
-    filter:drop-shadow(0 6px 24px rgba(205,171,87,.25))}
-
-  .slogan{margin:18px auto 4px}
-  .slogan .main{font-family:'Rakkas',serif;font-size:clamp(34px,5vw,62px);line-height:1.25;padding:0.12em 0;
-    background:linear-gradient(180deg,#7ef0ad,var(--ksa) 60%,#0c8a45);
-    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
-    filter:drop-shadow(0 4px 18px rgba(30,196,106,.3))}
-  .slogan .sub2{margin-top:12px;font-family:'Cairo';font-weight:900;font-size:clamp(18px,2.3vw,28px);color:var(--gold-soft)}
-  .slogan .sub2 b{color:var(--teal-soft);font-weight:900}
-  .hero .meta-line{margin-top:14px;font-size:clamp(14px,1.5vw,18px);font-weight:700;color:var(--ink)}
-  .hero .meta-line b{color:var(--teal-soft)}
-  .hero .host{margin-top:4px;color:var(--muted);font-size:14px;font-weight:500}
-
-  .legend{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:22px 0 6px}
-  .lg{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;background:rgba(255,255,255,.04);border:1px solid var(--line);padding:7px 14px;border-radius:999px}
-  .dot{width:12px;height:12px;border-radius:50%}
-  .dot.ksa{background:var(--ksa);box-shadow:0 0 12px var(--ksa)}.dot.top{background:var(--gold)}.dot.arab{background:var(--teal-soft)}
 
   .feature-title{text-align:center;margin:30px 0 16px;font-family:'Cairo';font-weight:900;font-size:clamp(22px,3vw,34px)}
-  .feature-title span{color:var(--ksa)}
+  .feature-title span{color:var(--gold)}
 
   /* Booking CTA */
   .cta-wrap{display:flex;justify-content:center;margin:36px 20px 10px}
@@ -73,57 +49,23 @@
     transition:transform .2s ease, box-shadow .2s ease;letter-spacing:.5px}
   .cta-book:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(205,171,87,.45),0 0 0 1px rgba(205,171,87,.7)}
   .cta-book svg{width:22px;height:22px;flex-shrink:0}
-  .ksa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .ksa-card{position:relative;border-radius:20px;padding:26px 20px;text-align:center;overflow:hidden;
-    background:linear-gradient(160deg,rgba(30,196,106,.16),rgba(12,138,69,.05));
-    border:1.5px solid rgba(30,196,106,.45);box-shadow:0 0 0 1px rgba(30,196,106,.08),var(--shadow)}
-  .ksa-card::after{content:"";position:absolute;inset:0;border-radius:20px;background:radial-gradient(400px 160px at 50% -20%,rgba(30,196,106,.32),transparent 70%);pointer-events:none}
-  .ksa-card .tag{font-family:'Cairo','Tajawal',sans-serif;font-weight:800;font-size:13px;color:var(--ksa);position:relative;z-index:1}
-  .ksa-card .vs{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px 0 4px;font-family:'Cairo';font-weight:900;font-size:clamp(19px,2.2vw,27px);position:relative;z-index:1;flex-wrap:nowrap}
-  .ksa-card .vs .fl{font-size:1.4em;line-height:1}
-  .ksa-card .vs em{color:var(--gold);font-style:normal;font-size:.55em;font-weight:700;margin:0 2px}
-  .ksa-card .when{margin-top:12px;font-weight:800;font-size:clamp(15px,1.7vw,20px);color:#fff;position:relative;z-index:1}
-  .ksa-card .when b{color:var(--ksa);font-size:1.3em;display:block;margin-top:8px}
-  .ksa-card .meta{margin-top:8px;color:var(--muted);font-size:12.5px;font-weight:600;position:relative;z-index:1}
 
   /* Tabs */
   .tabs{display:flex;justify-content:center;margin:28px auto 6px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:5px;max-width:520px;gap:4px}
-  .tab{flex:1;padding:11px 22px;border-radius:999px;font-family:'Cairo';font-weight:800;font-size:15px;color:var(--muted);background:transparent;border:0;cursor:pointer;transition:all .25s;font-family:'Cairo',sans-serif}
+  .tab{flex:1;padding:11px 22px;border-radius:999px;font-family:'Cairo';font-weight:800;font-size:15px;color:var(--muted);background:transparent;border:0;cursor:pointer;transition:all .25s}
   .tab.active{background:linear-gradient(180deg,var(--gold),#a78a3e);color:#1a1205;box-shadow:0 4px 14px rgba(205,171,87,.35)}
   .tab:hover:not(.active){color:var(--gold-soft)}
-  .subtabs{display:flex;justify-content:center;margin:22px auto 18px;gap:10px;max-width:420px}
-  .subtab{flex:1;padding:9px 18px;border-radius:12px;font-family:'Cairo',sans-serif;font-weight:700;font-size:14px;color:var(--gold-soft);background:rgba(205,171,87,.06);border:1px solid var(--line);cursor:pointer;transition:all .25s}
-  .subtab.active{background:linear-gradient(180deg,rgba(44,107,107,.32),rgba(44,107,107,.10));border-color:var(--teal-soft);color:#fff;box-shadow:0 4px 14px rgba(44,107,107,.25)}
   .view{display:none}
   .view.active{display:block}
 
   /* Hint banner */
-  .hint{display:flex;align-items:center;gap:10px;justify-content:center;max-width:560px;margin:0 auto 18px;
+  .hint{display:flex;align-items:center;gap:10px;justify-content:center;max-width:620px;margin:0 auto 18px;
     padding:11px 18px;border-radius:12px;background:rgba(205,171,87,.08);border:1px solid var(--line);
     color:var(--gold-soft);font-family:'Cairo',sans-serif;font-weight:700;font-size:13.5px;text-align:center}
   .hint svg{width:18px;height:18px;flex-shrink:0;color:var(--gold)}
 
-  /* Groups */
-  .groups-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:6px}
-  .group-card{background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.7));border:1px solid var(--panel-edge);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
-  .group-card.has-ksa{border-color:rgba(30,196,106,.55);box-shadow:0 0 0 1px rgba(30,196,106,.18),var(--shadow)}
-  .group-head{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;background:linear-gradient(90deg,rgba(44,107,107,.22),transparent);border-bottom:1px solid var(--line)}
-  .group-head .gname{font-family:'Cairo';font-weight:900;font-size:17px}
-  .group-head .glabel{color:var(--gold);font-family:'Rakkas',serif;font-size:26px;line-height:1}
-  .group-teams{padding:6px 8px 12px;display:flex;flex-direction:column}
-  .gt{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;cursor:pointer;transition:background .2s,transform .15s;background:transparent;border:0;color:var(--ink);width:100%;text-align:right;font-family:inherit}
-  .gt + .gt{border-top:1px solid rgba(255,255,255,.045)}
-  .gt:hover{background:rgba(205,171,87,.08);transform:translateX(-2px)}
-  .gt .fl{font-size:22px;line-height:1}
-  .gt .fl svg{width:26px;height:17px;border-radius:2px;vertical-align:-3px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
-  .gt .tn{font-family:'Cairo';font-weight:800;font-size:15.5px;flex:1}
-  .gt .arrow{color:var(--gold);opacity:.5;font-size:14px}
-  .gt:hover .arrow{opacity:1}
-  .gt.is-ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
-  .gt.is-ksa .tn{color:#fff;font-weight:900}
-  .gt.tbd{opacity:.4;cursor:default;pointer-events:none}
-
-  .days{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px;margin-top:14px}
+  /* Day list */
+  .days{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px;margin-top:14px}
   .day{background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.7));border:1px solid var(--panel-edge);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
   .day.is-today{border-color:var(--gold);box-shadow:0 0 0 2px rgba(205,171,87,.4),var(--shadow)}
   .day-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:14px 18px;background:linear-gradient(90deg,rgba(44,107,107,.22),transparent);border-bottom:1px solid var(--line)}
@@ -131,67 +73,70 @@
   .day-head .ddate{color:var(--gold);font-weight:700;font-size:14px}
   .today-pill{display:inline-block;font-size:11px;font-weight:800;background:var(--gold);color:#1a1205;padding:2px 9px;border-radius:999px;letter-spacing:1px;margin-inline-start:10px;vertical-align:middle}
   .matches{padding:8px 10px 12px;display:flex;flex-direction:column}
-  .m{display:grid;grid-template-columns:56px 1fr;align-items:center;gap:12px;padding:11px 10px;border-radius:12px;transition:background .2s}
+  .m{display:grid;grid-template-columns:60px 1fr;align-items:center;gap:12px;padding:11px 10px;border-radius:12px;transition:background .2s}
   .m + .m{border-top:1px solid rgba(255,255,255,.045)}
   .m:hover{background:rgba(255,255,255,.03)}
   .m .time{font-family:'Tajawal';font-weight:800;font-size:15px;color:var(--gold-soft);text-align:center;line-height:1.15}
   .m .time small{display:block;font-size:10px;color:var(--muted);font-weight:600;white-space:nowrap}
-  .m .info{min-width:0;display:flex;flex-direction:column;gap:3px}
+  .m .info{min-width:0;display:flex;flex-direction:column;gap:4px}
+  .m .rpill{font-size:10.5px;font-weight:800;color:var(--gold);background:rgba(205,171,87,.10);border:1px solid var(--line);padding:2px 8px;border-radius:999px;letter-spacing:.5px;display:inline-block}
+  .m .r-row{display:flex;justify-content:flex-start;gap:6px;margin-bottom:2px;align-items:center}
+  .m .mid{font-size:10.5px;color:var(--muted);font-weight:700}
   .m .teams{font-family:'Cairo';font-weight:700;font-size:15.5px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .m .teams .t{display:inline-flex;align-items:center;gap:6px;flex-shrink:0}
   .m .teams .fl{font-size:19px;line-height:1}
   .m .teams .fl svg{width:23px;height:15px;border-radius:2px;vertical-align:-2px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+  .m .teams .fl img{width:22px;height:22px;vertical-align:-6px;opacity:.85}
   .m .teams .x{color:var(--muted);font-weight:700;font-size:13px;margin:0 1px}
-  .m .teams .mk{margin-inline-start:auto;font-size:14px;padding-inline-start:6px}
-  .m .gpill{font-size:10.5px;font-weight:800;color:var(--gold);background:rgba(205,171,87,.10);border:1px solid var(--line);padding:2px 8px;border-radius:999px;letter-spacing:1px;display:inline-block}
-  .m .g-row{display:flex;justify-content:flex-start;margin-bottom:4px}
-  .m .note{font-size:11.5px;color:var(--muted);font-weight:600}
-  .m.ksa{background:linear-gradient(90deg,rgba(30,196,106,.20),rgba(30,196,106,.03));box-shadow:inset 3px 0 0 var(--ksa)}
-  .m.ksa .time{color:#bdfcd8}.m.ksa .teams{color:#fff;font-weight:900}
-  .mk.star{color:var(--gold)}.mk.kstar{color:var(--ksa)}.mk.cres{color:var(--teal-soft)}
+  .m .teams .ph{color:var(--gold-soft);opacity:.85;font-weight:700;font-size:14px}
+  .m .venue{font-size:11.5px;color:var(--muted);font-weight:600}
+  .m.r32{} .m.r16{box-shadow:inset 3px 0 0 rgba(205,171,87,.5)}
+  .m.qf{box-shadow:inset 3px 0 0 var(--teal-soft)}
+  .m.sf{box-shadow:inset 3px 0 0 var(--gold)}
+  .m.final{background:linear-gradient(90deg,rgba(205,171,87,.16),rgba(205,171,87,.02));box-shadow:inset 3px 0 0 var(--gold)}
+  .m.thirdplace{box-shadow:inset 3px 0 0 var(--teal)}
 
-  /* Modal */
-  .modal{display:none;position:fixed;inset:0;z-index:50;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);animation:fadeIn .2s ease}
-  .modal.open{display:flex}
-  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-  @keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
-  .modal-card{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1.5px solid var(--gold);border-radius:22px;max-width:540px;width:100%;max-height:85vh;overflow:auto;box-shadow:var(--shadow);position:relative;animation:slideUp .25s ease}
-  .modal-card.ksa{border-color:var(--ksa);box-shadow:0 0 0 2px rgba(30,196,106,.25),var(--shadow)}
-  .modal-head{padding:26px 22px 18px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(205,171,87,.10),transparent)}
-  .modal-card.ksa .modal-head{background:linear-gradient(180deg,rgba(30,196,106,.14),transparent)}
-  .modal-head .fl{font-size:58px;line-height:1;display:inline-block;margin-bottom:8px}
-  .modal-head .fl svg{width:78px;height:52px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
-  .modal-head .mn{font-family:'Rakkas',serif;font-size:34px;background:linear-gradient(180deg,#fff,var(--gold-soft) 60%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
-  .modal-card.ksa .modal-head .mn{background:linear-gradient(180deg,#fff,#7ef0ad 55%,var(--ksa));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .modal-head .mg{margin-top:6px;color:var(--gold-soft);font-weight:800;font-size:12.5px;letter-spacing:3px;font-family:'Tajawal'}
-  .modal-close{position:absolute;top:12px;left:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid var(--line);color:var(--gold-soft);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:2}
-  .modal-close:hover{background:rgba(205,171,87,.15);color:#fff}
-  .modal-brand{position:absolute;top:14px;right:16px;height:48px;width:auto;z-index:2;filter:drop-shadow(0 3px 8px rgba(205,171,87,.4));pointer-events:none}
-  .modal-matches{padding:14px 16px 20px;display:flex;flex-direction:column;gap:10px}
-  .mm{padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.025);border:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:6px}
-  .mm-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}
-  .mm-when{font-family:'Cairo';font-weight:800;font-size:13.5px;color:var(--gold-soft)}
-  .mm-time{font-weight:900;color:#fff;font-size:15px}
-  .mm-time small{color:var(--muted);font-weight:600;margin-inline-start:4px;font-size:11px}
-  .mm-opp{font-family:'Cairo';font-weight:800;font-size:16px;display:flex;align-items:center;gap:9px}
-  .mm-opp .vs{color:var(--muted);font-weight:700;font-size:13px}
-  .mm-opp .fl{font-size:22px;line-height:1}
-  .mm-opp .fl svg{width:26px;height:17px;border-radius:2px;vertical-align:-3px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
-  .mm-venue{color:var(--muted);font-size:12px;font-weight:600}
+  /* Bracket view */
+  .bracket{display:flex;flex-direction:column;gap:28px;margin-top:8px}
+  .round{position:relative}
+  .round-head{display:flex;align-items:center;gap:14px;margin:0 6px 14px}
+  .round-head .rn{font-family:'Rakkas',serif;font-size:clamp(22px,2.6vw,30px);background:linear-gradient(180deg,#fff,var(--gold-soft) 60%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+  .round-head .cnt{font-family:'Cairo';font-weight:700;color:var(--muted);font-size:13px}
+  .round-head .ln{flex:1;height:1px;background:linear-gradient(90deg,var(--gold) 0%,transparent 100%);opacity:.5}
+  .round.r-final .round-head .ln{background:linear-gradient(90deg,var(--gold) 0%,transparent 100%)}
+  .round-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .round.r-final .round-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .bc{background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.7));border:1px solid var(--panel-edge);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;position:relative}
+  .round.r-final .bc{border-color:var(--gold);background:linear-gradient(180deg,rgba(205,171,87,.10),rgba(6,18,14,.7))}
+  .round.r-3rd .bc{border-color:var(--teal-soft)}
+  .bc-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11.5px;color:var(--muted);font-weight:700}
+  .bc-top .mn{color:var(--gold);font-family:'Cairo';font-weight:800}
+  .bc-when{font-family:'Cairo';font-weight:800;font-size:14px;color:var(--gold-soft);text-align:center;padding:6px 0;border-top:1px dashed rgba(205,171,87,.2);border-bottom:1px dashed rgba(205,171,87,.2)}
+  .bc-when b{color:#fff;margin-inline-start:6px}
+  .bc-teams{display:flex;flex-direction:column;gap:6px;padding:2px 0}
+  .bc-row{display:flex;align-items:center;gap:8px;font-family:'Cairo';font-weight:700;font-size:14.5px;padding:4px 2px;border-radius:8px;transition:background .2s}
+  .bc-row.win{background:rgba(30,196,106,.10);box-shadow:inset 2px 0 0 var(--ksa)}
+  .bc-row .fl{font-size:18px;line-height:1;width:24px;text-align:center}
+  .bc-row .fl svg{width:22px;height:14px;border-radius:2px;vertical-align:-2px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+  .bc-row .fl img{width:18px;height:18px;vertical-align:-4px;opacity:.8}
+  .bc-row .nm{flex:1}
+  .bc-row.ph .nm{color:var(--gold-soft);opacity:.8;font-weight:700;font-size:13.5px}
+  .bc-venue{font-size:11px;color:var(--muted);font-weight:600;text-align:center}
+  .bc-venue::before{content:"📍 "}
 
-  .signoff{margin-top:40px;text-align:center}
-  .signoff .chip{display: inline-block;}
-  .signoff .chip img{height: 52px; display: block;}
-  .signoff .tag{margin-top:14px;font-family:'Rakkas',serif;font-size:clamp(20px,2.6vw,30px);color:var(--ksa)}
+  .signoff{margin-top:48px;text-align:center}
+  .signoff .chip{display:inline-block}
+  .signoff .chip img{height:52px;display:block}
+  .signoff .tag{margin-top:14px;font-family:'Rakkas',serif;font-size:clamp(20px,2.6vw,30px);color:var(--gold)}
   .signoff .tag2{margin-top:4px;font-family:'Cairo';font-weight:800;font-size:14px;color:var(--gold-soft);letter-spacing:1px}
 
-  @media print{body{background:#fff;color:#111}.day,.ksa-card,.brand-badge,.signoff .chip,.group-card{box-shadow:none}.hero h1{-webkit-text-fill-color:#0c8a45}.tabs,.subtabs,.modal{display:none}}
   @media (max-width:760px){
-    .ksa-grid{grid-template-columns:1fr}
+    .wrap{padding:0 16px}
     .days{grid-template-columns:1fr}
     .tabs{max-width:100%}
     .tab{padding:10px 12px;font-size:14px}
+    .round-grid{grid-template-columns:1fr}
   }
-  .m .teams .t{display:inline-flex;align-items:center;gap:6px;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -202,351 +147,201 @@
   <div class="cta-wrap">
     <a class="cta-book" href="https://wa.me/966559973180" target="_blank" rel="noopener" aria-label="احجز معنا عبر واتساب">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-      أحجز معنا
+      احجز معنا
     </a>
   </div>
-
-  <div class="feature-title">مباريات <span>الأخضر</span> — لا تفوّتها</div>
-  <div class="ksa-grid" id="ksaGrid"></div>
 
   <div class="divider"><span class="ln"></span><svg class="motif" viewBox="0 0 120 30" aria-hidden="true"><g fill="var(--gold)"><path d="M60 1 L69 9 L60 17 L51 9 Z"/><path d="M49 14 L57 21 L49 28 L41 21 Z" opacity=".85"/><path d="M71 14 L79 21 L71 28 L63 21 Z" opacity=".85"/></g></svg><span class="ln r"></span></div>
 
   <div class="tabs" role="tablist">
-    <button class="tab" data-view="important" role="tab">أهم المباريات</button>
-    <button class="tab active" data-view="all" role="tab">كل المباريات</button>
+    <button class="tab active" data-view="list" role="tab">المباريات</button>
+    <button class="tab" data-view="bracket" role="tab">خروج المغلوب</button>
   </div>
 
-  <div id="view-important" class="view">
-    <div class="feature-title">الجدول الكامل لأهم المباريات</div>
-    <div class="days" id="impDays"></div>
+  <div id="view-list" class="view active">
+    <div class="feature-title">مباريات <span>الأدوار الإقصائية</span></div>
+    <div class="hint">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      <span>الأوقات بتوقيت السعودية. خانات الفرق غير المحسومة تظهر مع شعار تِش حتى يتم تأكيدها.</span>
+    </div>
+    <div class="days" id="listDays"></div>
   </div>
 
-  <div id="view-all" class="view active">
-    <div class="subtabs" role="tablist">
-      <button class="subtab active" data-sub="matches" role="tab">المباريات</button>
-      <button class="subtab" data-sub="groups" role="tab">المجموعات</button>
+  <div id="view-bracket" class="view">
+    <div class="feature-title">شجرة <span>الأدوار الإقصائية</span></div>
+    <div class="hint">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      <span>تحديث الفائزين يظهر تلقائياً في الدور التالي.</span>
     </div>
-    <div id="sub-matches" class="view active">
-      <div class="feature-title">كل مباريات <span>دور المجموعات</span></div>
-      <div class="days" id="allDays"></div>
-    </div>
-    <div id="sub-groups" class="view">
-      <div class="feature-title">مجموعات <span>كأس العالم</span></div>
-      <div class="hint">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-        <span>اضغط على أي منتخب لعرض مبارياته في دور المجموعات</span>
-      </div>
-      <div class="groups-grid" id="groupsGrid"></div>
-    </div>
+    <div class="bracket" id="bracket"></div>
   </div>
 
   <div class="signoff">
     <div class="chip"><img src="Tesh_logo.png" alt="تِش"></div>
-    <div class="tag">قلوبنا مع الأخضر</div>
+    <div class="tag">قلوبنا مع المونديال</div>
     <div class="tag2">مقصورة تِش الرئيسية</div>
-  </div>
-</div>
-
-<div class="modal" id="teamModal" role="dialog" aria-modal="true" aria-labelledby="mTeamName">
-  <div class="modal-card" id="modalCard">
-    <button class="modal-close" id="modalClose" aria-label="إغلاق">✕</button>
-    <img class="modal-brand" src="Tesh_logo.png" alt="تِش" aria-hidden="true">
-    <div class="modal-head">
-      <span class="fl" id="mTeamFlag"></span>
-      <div class="mn" id="mTeamName"></div>
-      <div class="mg" id="mTeamGroup"></div>
-    </div>
-    <div class="modal-matches" id="mTeamMatches"></div>
   </div>
 </div>
 
 <script>
 /* ========= Flags ========= */
 const ENG='<svg viewBox="0 0 5 3"><rect width="5" height="3" fill="#fff"/><rect x="2" width="1" height="3" fill="#ce1124"/><rect y="1" width="5" height="1" fill="#ce1124"/></svg>';
-const SCO='<svg viewBox="0 0 5 3"><rect width="5" height="3" fill="#0065bd"/><path d="M0 0 L5 3 M5 0 L0 3" stroke="#fff" stroke-width="0.55"/></svg>';
-const F={ksa:'🇸🇦',bra:'🇧🇷',mar:'🇲🇦',qat:'🇶🇦',sui:'🇨🇭',egy:'🇪🇬',bel:'🇧🇪',uru:'🇺🇾',
-esp:'🇪🇸',cpv:'🇨🇻',fra:'🇫🇷',sen:'🇸🇳',irq:'🇮🇶',nor:'🇳🇴',arg:'🇦🇷',alg:'🇩🇿',aut:'🇦🇹',
-jor:'🇯🇴',por:'🇵🇹',cod:'🇨🇩',eng:ENG,cro:'🇭🇷',gha:'🇬🇭',ger:'🇩🇪',ned:'🇳🇱',jpn:'🇯🇵',
-swe:'🇸🇪',tun:'🇹🇳',mex:'🇲🇽',kor:'🇰🇷',can:'🇨🇦',irn:'🇮🇷',nzl:'🇳🇿',col:'🇨🇴',uzb:'🇺🇿',
-pan:'🇵🇦',rsa:'🇿🇦',sco:SCO,hai:'🇭🇹',ecu:'🇪🇨',civ:'🇨🇮',cuw:'🇨🇼',bih:'🇧🇦',
-cze:'🇨🇿',usa:'🇺🇸',par:'🇵🇾',aus:'🇦🇺',tur:'🇹🇷',tbd:'⚪'};
+const F={ksa:'🇸🇦',bra:'🇧🇷',mar:'🇲🇦',sui:'🇨🇭',egy:'🇪🇬',bel:'🇧🇪',
+esp:'🇪🇸',cpv:'🇨🇻',fra:'🇫🇷',nor:'🇳🇴',arg:'🇦🇷',
+por:'🇵🇹',eng:ENG,ger:'🇩🇪',ned:'🇳🇱',jpn:'🇯🇵',
+swe:'🇸🇪',mex:'🇲🇽',can:'🇨🇦',
+rsa:'🇿🇦',civ:'🇨🇮',bih:'🇧🇦',
+usa:'🇺🇸',par:'🇵🇾',aus:'🇦🇺'};
 
-/* ========= Team Arabic names ========= */
-const TN={ksa:'السعودية',bra:'البرازيل',mar:'المغرب',qat:'قطر',sui:'سويسرا',egy:'مصر',
-bel:'بلجيكا',uru:'أوروغواي',esp:'إسبانيا',cpv:'الرأس الأخضر',fra:'فرنسا',sen:'السنغال',
-irq:'العراق',nor:'النرويج',arg:'الأرجنتين',alg:'الجزائر',aut:'النمسا',jor:'الأردن',
-por:'البرتغال',cod:'الكونغو الد.',eng:'إنجلترا',cro:'كرواتيا',gha:'غانا',ger:'ألمانيا',
-ned:'هولندا',tun:'تونس',mex:'المكسيك',can:'كندا',irn:'إيران',nzl:'نيوزيلندا',
-col:'كولومبيا',uzb:'أوزبكستان',pan:'بنما',rsa:'جنوب أفريقيا',sco:'اسكتلندا',hai:'هايتي',
-ecu:'الإكوادور',civ:'ساحل العاج',cuw:'كوراساو',bih:'البوسنة',
-cze:'التشيك',usa:'الولايات المتحدة',par:'باراغواي',aus:'أستراليا',tur:'تركيا',
-kor:'كوريا الجنوبية',jpn:'اليابان',swe:'السويد',tbd:'يحدد لاحقاً'};
+const TN={ksa:'السعودية',bra:'البرازيل',mar:'المغرب',sui:'سويسرا',egy:'مصر',
+bel:'بلجيكا',esp:'إسبانيا',cpv:'الرأس الأخضر',fra:'فرنسا',
+nor:'النرويج',arg:'الأرجنتين',por:'البرتغال',eng:'إنجلترا',ger:'ألمانيا',
+ned:'هولندا',mex:'المكسيك',can:'كندا',rsa:'جنوب أفريقيا',
+civ:'ساحل العاج',bih:'البوسنة',usa:'الولايات المتحدة',par:'باراغواي',
+aus:'أستراليا',jpn:'اليابان',swe:'السويد'};
 
-/* ========= Groups (key = group letter, teams = 4 codes) =========
-   Group H confirmed from official meta. Other groupings inferred from
-   match pairings; team-to-letter assignment should be verified vs fifa.com. */
-const GROUPS=[
-  {key:'A', name:'الأولى',     teams:['mex','rsa','kor','cze']},
-  {key:'B', name:'الثانية',    teams:['can','bih','qat','sui']},
-  {key:'C', name:'الثالثة',    teams:['bra','mar','hai','sco']},
-  {key:'D', name:'الرابعة',    teams:['usa','par','aus','tur']},
-  {key:'E', name:'الخامسة',    teams:['ger','cuw','civ','ecu']},
-  {key:'F', name:'السادسة',    teams:['ned','jpn','swe','tun']},
-  {key:'G', name:'السابعة',    teams:['bel','egy','irn','nzl']},
-  {key:'H', name:'الثامنة',    teams:['ksa','esp','uru','cpv']},
-  {key:'I', name:'التاسعة',    teams:['fra','sen','irq','nor']},
-  {key:'J', name:'العاشرة',    teams:['arg','alg','aut','jor']},
-  {key:'K', name:'الحادية عشرة',teams:['por','cod','uzb','col']},
-  {key:'L', name:'الثانية عشرة',teams:['eng','cro','gha','pan']}
-];
+const ROUND_LABEL={r32:'دور الـ32',r16:'دور الـ16',qf:'ربع النهائي',sf:'نصف النهائي','3rd':'مباراة المركز الثالث',final:'النهائي'};
+const ROUND_ORDER=['r32','r16','qf','sf','3rd','final'];
+const WEEKDAYS=['الأحد','الإثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+const MONTHS={'06':'يونيو','07':'يوليو'};
 
-/* ========= All group-stage matches =========
-   imp:1 = appears in "أهم المباريات" view (curated highlights with notes)
-   Times are Saudi Arabia time. Venues from FIFA published schedule. */
-const M=[
- // ===== Group A =====
- {iso:'2026-06-11',d:'الخميس',dt:'11 يونيو',t:'10:00م',a:'mex',b:'rsa',g:'A',tier:'top',imp:1,n:'مباراة الافتتاح',v:'مكسيكو سيتي'},
- {iso:'2026-06-12',d:'الجمعة',dt:'12 يونيو',t:'5:00ص',a:'kor',b:'cze',g:'A',tier:'norm',v:'غوادالاخارا'},
- {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'7:00م',a:'cze',b:'rsa',g:'A',tier:'norm',v:'أتلانتا'},
- {iso:'2026-06-19',d:'الجمعة',dt:'19 يونيو',t:'4:00ف',a:'mex',b:'kor',g:'A',tier:'norm',v:'غوادالاخارا'},
- {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'4:00ف',a:'cze',b:'mex',g:'A',tier:'norm',v:'مكسيكو سيتي'},
- {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'4:00ف',a:'rsa',b:'kor',g:'A',tier:'norm',v:'مونتيري'},
-
- // ===== Group B =====
- {iso:'2026-06-12',d:'الجمعة',dt:'12 يونيو',t:'10:00م',a:'can',b:'bih',g:'B',tier:'norm',v:'تورنتو'},
- {iso:'2026-06-13',d:'السبت',dt:'13 يونيو',t:'10:00م',a:'qat',b:'sui',g:'B',tier:'arab',imp:1,n:'أولى مباريات المنتخب العنابي',v:'سانتا كلارا'},
- {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'10:00م',a:'sui',b:'bih',g:'B',tier:'norm',v:'إنغلوود'},
- {iso:'2026-06-19',d:'الجمعة',dt:'19 يونيو',t:'1:00ف',a:'can',b:'qat',g:'B',tier:'arab',imp:1,v:'فانكوفر'},
- {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'10:00م',a:'sui',b:'can',g:'B',tier:'norm',v:'فانكوفر'},
- {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'10:00م',a:'bih',b:'qat',g:'B',tier:'arab',imp:1,v:'سياتل'},
-
- // ===== Group C =====
- {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'1:00ف',a:'bra',b:'mar',g:'C',tier:'top',imp:1,n:'قمة المجموعة السيليساو مع أسود الأطلس',v:'إيست رذرفورد'},
- {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'4:00ف',a:'hai',b:'sco',g:'C',tier:'norm',v:'فوكسبورو'},
- {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'1:00ف',a:'sco',b:'mar',g:'C',tier:'arab',imp:1,v:'فوكسبورو'},
- {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'3:30ف',a:'bra',b:'hai',g:'C',tier:'top',imp:1,v:'فيلادلفيا'},
- {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'1:00ف',a:'sco',b:'bra',g:'C',tier:'top',imp:1,v:'ميامي'},
- {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'1:00ف',a:'mar',b:'hai',g:'C',tier:'arab',imp:1,v:'أتلانتا'},
-
- // ===== Group D =====
- {iso:'2026-06-13',d:'السبت',dt:'13 يونيو',t:'4:00ف',a:'usa',b:'par',g:'D',tier:'norm',v:'إنغلوود'},
- {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'7:00ص',a:'aus',b:'tur',g:'D',tier:'norm',v:'فانكوفر'},
- {iso:'2026-06-19',d:'الجمعة',dt:'19 يونيو',t:'10:00م',a:'usa',b:'aus',g:'D',tier:'norm',v:'سياتل'},
- {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'6:00ص',a:'tur',b:'par',g:'D',tier:'norm',v:'سانتا كلارا'},
- {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'5:00ص',a:'tur',b:'usa',g:'D',tier:'norm',v:'إنغلوود'},
- {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'5:00ص',a:'par',b:'aus',g:'D',tier:'norm',v:'سانتا كلارا'},
-
- // ===== Group E =====
- {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'8:00م',a:'ger',b:'cuw',g:'E',tier:'top',imp:1,v:'هيوستن'},
- {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'2:00ف',a:'civ',b:'ecu',g:'E',tier:'norm',v:'فيلادلفيا'},
- {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'11:00م',a:'ger',b:'civ',g:'E',tier:'top',imp:1,v:'تورنتو'},
- {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'3:00ف',a:'ecu',b:'cuw',g:'E',tier:'norm',v:'كانساس سيتي'},
- {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'11:00م',a:'cuw',b:'civ',g:'E',tier:'norm',v:'فيلادلفيا'},
- {iso:'2026-06-25',d:'الخميس',dt:'25 يونيو',t:'11:00م',a:'ecu',b:'ger',g:'E',tier:'top',imp:1,v:'إيست رذرفورد'},
-
- // ===== Group F =====
- {iso:'2026-06-14',d:'الأحد',dt:'14 يونيو',t:'11:00م',a:'ned',b:'jpn',g:'F',tier:'norm',v:'أرلينغتون'},
- {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'5:00ص',a:'swe',b:'tun',g:'F',tier:'arab',v:'مونتيري'},
- {iso:'2026-06-20',d:'السبت',dt:'20 يونيو',t:'8:00م',a:'ned',b:'swe',g:'F',tier:'norm',v:'هيوستن'},
- {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'7:00ص',a:'tun',b:'jpn',g:'F',tier:'arab',v:'مونتيري'},
- {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'2:00ف',a:'jpn',b:'swe',g:'F',tier:'norm',v:'أرلينغتون'},
- {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'2:00ف',a:'tun',b:'ned',g:'F',tier:'arab',imp:1,v:'كانساس سيتي'},
-
- // ===== Group G =====
- {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'10:00م',a:'bel',b:'egy',g:'G',tier:'arab',imp:1,n:'أولى مباريات الفراعنة',v:'سياتل'},
- {iso:'2026-06-16',d:'الثلاثاء',dt:'16 يونيو',t:'4:00ف',a:'irn',b:'nzl',g:'G',tier:'norm',v:'إنغلوود'},
- {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'10:00م',a:'bel',b:'irn',g:'G',tier:'top',imp:1,v:'إنغلوود'},
- {iso:'2026-06-22',d:'الإثنين',dt:'22 يونيو',t:'4:00ف',a:'nzl',b:'egy',g:'G',tier:'arab',imp:1,v:'فانكوفر'},
- {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'6:00ص',a:'egy',b:'irn',g:'G',tier:'arab',imp:1,v:'سياتل'},
- {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'6:00ص',a:'nzl',b:'bel',g:'G',tier:'norm',v:'فانكوفر'},
-
- // ===== Group H (مجموعة الأخضر) =====
- {iso:'2026-06-15',d:'الإثنين',dt:'15 يونيو',t:'7:00م',a:'esp',b:'cpv',g:'H',tier:'top',imp:1,v:'أتلانتا'},
- {iso:'2026-06-16',d:'الثلاثاء',dt:'16 يونيو',t:'1:00ف',a:'ksa',b:'uru',g:'H',tier:'ksa',imp:1,n:'أولى مباريات الأخضر',v:'ميامي'},
- {iso:'2026-06-21',d:'الأحد',dt:'21 يونيو',t:'7:00م',a:'esp',b:'ksa',g:'H',tier:'ksa',imp:1,n:'مبارة القمة للأخضر',v:'أتلانتا'},
- {iso:'2026-06-22',d:'الإثنين',dt:'22 يونيو',t:'1:00ف',a:'uru',b:'cpv',g:'H',tier:'norm',v:'ميامي'},
- {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'3:00ف',a:'cpv',b:'ksa',g:'H',tier:'ksa',imp:1,n:'الجولة الحاسمة للتأهل',v:'هيوستن'},
- {iso:'2026-06-27',d:'السبت',dt:'27 يونيو',t:'3:00ف',a:'uru',b:'esp',g:'H',tier:'top',imp:1,n:'مجموعة الأخضر',v:'غوادالاخارا'},
-
- // ===== Group I =====
- {iso:'2026-06-16',d:'الثلاثاء',dt:'16 يونيو',t:'10:00م',a:'fra',b:'sen',g:'I',tier:'top',imp:1,v:'إيست رذرفورد'},
- {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'1:00ف',a:'irq',b:'nor',g:'I',tier:'arab',imp:1,v:'فوكسبورو'},
- {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'12:00ص',a:'fra',b:'irq',g:'I',tier:'top',imp:1,n:'منتخب الديوك بقيادة امبابي في مواجهة أسود الرافدين',v:'فيلادلفيا'},
- {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'3:00ف',a:'nor',b:'sen',g:'I',tier:'norm',v:'إيست رذرفورد'},
- {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'10:00م',a:'nor',b:'fra',g:'I',tier:'top',imp:1,v:'فوكسبورو'},
- {iso:'2026-06-26',d:'الجمعة',dt:'26 يونيو',t:'10:00م',a:'sen',b:'irq',g:'I',tier:'arab',imp:1,v:'تورنتو'},
-
- // ===== Group J =====
- {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'4:00ف',a:'arg',b:'alg',g:'J',tier:'top',imp:1,n:'راقصو التانجو بقيادة ميسي في مواجهة محاربو الصحراء',v:'كانساس سيتي'},
- {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'7:00ص',a:'aut',b:'jor',g:'J',tier:'arab',v:'سانتا كلارا'},
- {iso:'2026-06-22',d:'الإثنين',dt:'22 يونيو',t:'8:00م',a:'arg',b:'aut',g:'J',tier:'top',imp:1,n:'راقصو التانجو بقيادة ميسي',v:'أرلينغتون'},
- {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'6:00ص',a:'jor',b:'alg',g:'J',tier:'arab',imp:1,n:'ديربي عربي بين النشامى و محاربو الصحراء',v:'سانتا كلارا'},
- {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'5:00ص',a:'jor',b:'arg',g:'J',tier:'top',imp:1,n:'ميسي في مواجهة النشامى',v:'أرلينغتون'},
- {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'5:00ص',a:'alg',b:'aut',g:'J',tier:'arab',v:'كانساس سيتي'},
-
- // ===== Group K =====
- {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'8:00م',a:'por',b:'cod',g:'K',tier:'top',imp:1,n:'سيليساو أوروبا بقيادة رونالدو',v:'هيوستن'},
- {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'5:00ص',a:'uzb',b:'col',g:'K',tier:'norm',v:'مكسيكو سيتي'},
- {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'8:00م',a:'por',b:'uzb',g:'K',tier:'top',imp:1,n:'سيليساو أوروبا بقيادة رونالدو',v:'هيوستن'},
- {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'5:00ص',a:'col',b:'cod',g:'K',tier:'norm',v:'غوادالاخارا'},
- {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'2:30ف',a:'col',b:'por',g:'K',tier:'top',imp:1,n:'سيليساو أوروبا بقيادة رونالدو',v:'ميامي'},
- {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'2:30ف',a:'cod',b:'uzb',g:'K',tier:'norm',v:'أتلانتا'},
-
- // ===== Group L =====
- {iso:'2026-06-17',d:'الأربعاء',dt:'17 يونيو',t:'11:00م',a:'eng',b:'cro',g:'L',tier:'top',imp:1,v:'أرلينغتون'},
- {iso:'2026-06-18',d:'الخميس',dt:'18 يونيو',t:'2:00ف',a:'gha',b:'pan',g:'L',tier:'norm',v:'فيلادلفيا'},
- {iso:'2026-06-23',d:'الثلاثاء',dt:'23 يونيو',t:'11:00م',a:'eng',b:'gha',g:'L',tier:'top',imp:1,v:'بوسطن'},
- {iso:'2026-06-24',d:'الأربعاء',dt:'24 يونيو',t:'2:00ف',a:'pan',b:'cro',g:'L',tier:'norm',v:'تورنتو'},
- {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'12:00ص',a:'pan',b:'eng',g:'L',tier:'top',imp:1,v:'إيست رذرفورد'},
- {iso:'2026-06-28',d:'الأحد',dt:'28 يونيو',t:'12:00ص',a:'cro',b:'gha',g:'L',tier:'norm',v:'فيلادلفيا'}
-];
-
-/* ========= KSA highlight cards ========= */
-const KSA_CARDS=[
- {tag:'الجولة 1',a:'ksa',b:'uru',day:'الثلاثاء',date:'16 يونيو',time:'1:00 فجراً',meta:'ميامي · المجموعة الثامنة'},
- {tag:'الجولة 2',a:'ksa',b:'esp',day:'الأحد',date:'21 يونيو',time:'7:00 مساءً',meta:'أتلانتا · قمة المجموعة'},
- {tag:'الجولة 3',a:'ksa',b:'cpv',day:'السبت',date:'27 يونيو',time:'3:00 فجراً',meta:'هيوستن · الجولة الحاسمة'}];
-
-/* ========= Helpers ========= */
-function flag(c){return F[c]||F.tbd;}
+function flag(c){return F[c]||`<img src="Tesh_logo.png" alt="">`;}
 function tname(c){return TN[c]||'—';}
+function isoToDay(iso){const d=new Date(iso+'T12:00:00');return WEEKDAYS[d.getDay()];}
+function isoToDate(iso){const[y,m,da]=iso.split('-');return `${parseInt(da,10)} ${MONTHS[m]||m}`;}
 function period(t){
   if(t==='12:00ص')return['12:00','منتصف الليل'];
   const num=t.replace(/[فمص]$/,''),s=t.slice(-1);
   return [num, s==='ف'?'فجراً':s==='ص'?'صباحاً':s==='م'?'مساءً':''];
 }
 function timeKey(t){
-  // For sorting: convert to 24h-ish key. ف=after midnight (00-06), ص=morning, م=evening
   const num=t.replace(/[فمص]$/,'');const s=t.slice(-1);
   const[h,m]=num.split(':').map(Number);
   let H=h;
-  if(s==='ف')H=h===12?0:h;       // فجر: 12=midnight, 1-6 early morning
-  else if(s==='ص')H=h;            // morning 6-11
-  else if(s==='م')H=h<12?h+12:h;  // evening 12-11pm
+  if(s==='ف')H=h===12?0:h;
+  else if(s==='ص')H=h===12?0:h;
+  else if(s==='م')H=h<12?h+12:h;
   return H*60+(m||0);
 }
-function mkMark(tier){
-  return tier==='ksa'?'<span class="mk kstar">★</span>':
-         tier==='top'?'<span class="mk star">★</span>':
-         tier==='arab'?'<span class="mk cres">★</span>':'';
+
+/* ========= Resolve dynamic team slots ========= */
+function resolveSlot(slot, byId, winners){
+  // slot is "a"/"b" key prefix; we read raw fields from match
+  return slot;
+}
+function teamA(match, byId, winners){
+  if(match.a) return {team:match.a};
+  if(match.aPh) return {ph:match.aPh};
+  if(match.aFrom){
+    const w=winners[match.aFrom];
+    return w ? {team:w} : {ph:`فائز م-${match.aFrom}`};
+  }
+  if(match.aLoserFrom){
+    const src=byId[match.aLoserFrom];
+    const w=winners[match.aLoserFrom];
+    if(src && w){
+      const loser = (src.a===w)?src.b:(src.b===w)?src.a:null;
+      if(loser) return {team:loser};
+    }
+    return {ph:`خاسر م-${match.aLoserFrom}`};
+  }
+  return {ph:'—'};
+}
+function teamB(match, byId, winners){
+  const tmp = {a:match.b, aPh:match.bPh, aFrom:match.bFrom, aLoserFrom:match.bLoserFrom};
+  return teamA(tmp, byId, winners);
+}
+function teamCell(slot){
+  if(slot.team) return `<span class="t"><span class="fl">${flag(slot.team)}</span> ${tname(slot.team)}</span>`;
+  return `<span class="t"><span class="fl"><img src="Tesh_logo.png" alt=""></span><span class="ph">${slot.ph}</span></span>`;
+}
+function bracketRow(slot, winner){
+  const isWin = slot.team && slot.team===winner;
+  if(slot.team) return `<div class="bc-row ${isWin?'win':''}"><span class="fl">${flag(slot.team)}</span><span class="nm">${tname(slot.team)}</span></div>`;
+  return `<div class="bc-row ph"><span class="fl"><img src="Tesh_logo.png" alt=""></span><span class="nm">${slot.ph}</span></div>`;
 }
 
-/* ========= Render KSA cards ========= */
-const kg=document.getElementById('ksaGrid');
-KSA_CARDS.forEach(k=>{kg.insertAdjacentHTML('beforeend',`
-  <div class="ksa-card"><div class="tag">${k.tag} · الأخضر</div>
-    <div class="vs"><span class="fl">${flag(k.a)}</span> ${tname(k.a)} <em>×</em> ${tname(k.b)} <span class="fl">${flag(k.b)}</span></div>
-    <div class="when">${k.day} ${k.date}<b>${k.time}</b></div><div class="meta">${k.meta}</div></div>`);});
-
-/* ========= Render day-by-day matches ========= */
+/* ========= Render ========= */
 const today=new Date().toISOString().slice(0,10);
 
-function renderDays(containerId, matches, opts){
-  const showGroup = !!(opts&&opts.showGroup);
-  const cont = document.getElementById(containerId);
+function renderList(data){
+  const byId={}; data.matches.forEach(m=>byId[m.id]=m);
+  const winners=data.winners||{};
+  const cont=document.getElementById('listDays');
   cont.innerHTML='';
-  // group by iso
   const byDay={};
-  matches.forEach(m=>{(byDay[m.iso]=byDay[m.iso]||[]).push(m);});
-  const isos = Object.keys(byDay).sort();
+  data.matches.forEach(m=>{(byDay[m.iso]=byDay[m.iso]||[]).push(m);});
+  const isos=Object.keys(byDay).sort();
   isos.forEach(iso=>{
-    const arr = byDay[iso].sort((x,y)=>timeKey(x.t)-timeKey(y.t));
-    const day = arr[0];
-    const isToday = iso===today;
+    const arr=byDay[iso].slice().sort((x,y)=>timeKey(x.t||x.time)-timeKey(y.t||y.time));
+    const isToday=iso===today;
+    const dname=isoToDay(iso), ddate=isoToDate(iso);
     let rows='';
     arr.forEach(mt=>{
-      const[num,per]=period(mt.t);
-      const mk = mkMark(mt.tier);
-      const groupRow = showGroup ? `<div class="g-row"><span class="gpill">المجموعة ${mt.g}</span></div>` : '';
-      const trail = showGroup ? '' : mk;
-      const tA = `<span class="t"><span class="fl">${flag(mt.a)}</span> ${tname(mt.a)}</span>`;
-      const tB = `<span class="t"><span class="fl">${flag(mt.b)}</span> ${tname(mt.b)}</span>`;
-      rows+=`<div class="m ${mt.tier}"><div class="time">${num}<small>${per}</small></div>
-        <div class="info">${groupRow}<div class="teams">${tA}<span class="x">×</span>${tB}${trail}</div>
-        ${(!showGroup && mt.n)?`<div class="note">${mt.n}</div>`:''}</div></div>`;
+      const[num,per]=period(mt.time);
+      const a=teamA(mt,byId,winners), b=teamB(mt,byId,winners);
+      const roundLabel=ROUND_LABEL[mt.round]||'';
+      rows+=`<div class="m ${mt.round==='3rd'?'thirdplace':mt.round}">
+        <div class="time">${num}<small>${per}</small></div>
+        <div class="info">
+          <div class="r-row"><span class="rpill">${roundLabel}</span><span class="mid">م-${mt.id}</span></div>
+          <div class="teams">${teamCell(a)}<span class="x">×</span>${teamCell(b)}</div>
+          <div class="venue">📍 ${mt.venue}</div>
+        </div>
+      </div>`;
     });
     cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
-      <div class="day-head"><span class="dname">${day.d}${isToday?'<span class="today-pill">اليوم</span>':''}</span><span class="ddate">${day.dt}</span></div>
+      <div class="day-head"><span class="dname">${dname}${isToday?'<span class="today-pill">اليوم</span>':''}</span><span class="ddate">${ddate}</span></div>
       <div class="matches">${rows}</div></div>`);
   });
 }
 
-renderDays('impDays', M.filter(m=>m.imp), {showGroup:false});
-renderDays('allDays', M, {showGroup:true});
+function renderBracket(data){
+  const byId={}; data.matches.forEach(m=>byId[m.id]=m);
+  const winners=data.winners||{};
+  const cont=document.getElementById('bracket');
+  cont.innerHTML='';
+  ROUND_ORDER.forEach(rk=>{
+    const arr=data.matches.filter(m=>m.round===rk).slice().sort((x,y)=>{
+      if(x.iso!==y.iso)return x.iso.localeCompare(y.iso);
+      return timeKey(x.time)-timeKey(y.time);
+    });
+    if(!arr.length)return;
+    let cards='';
+    arr.forEach(mt=>{
+      const a=teamA(mt,byId,winners), b=teamB(mt,byId,winners);
+      const w=winners[mt.id]||null;
+      const[num,per]=period(mt.time);
+      cards+=`<div class="bc">
+        <div class="bc-top"><span class="mn">م-${mt.id}</span><span>${isoToDay(mt.iso)} · ${isoToDate(mt.iso)}</span></div>
+        <div class="bc-when">${num} <small>${per}</small><b></b></div>
+        <div class="bc-teams">${bracketRow(a,w)}${bracketRow(b,w)}</div>
+        <div class="bc-venue">${mt.venue}</div>
+      </div>`;
+    });
+    const cls = rk==='final'?'r-final':rk==='3rd'?'r-3rd':'';
+    cont.insertAdjacentHTML('beforeend',`<div class="round ${cls}">
+      <div class="round-head"><span class="rn">${ROUND_LABEL[rk]}</span><span class="cnt">${arr.length} ${arr.length===1?'مباراة':'مباريات'}</span><span class="ln"></span></div>
+      <div class="round-grid">${cards}</div>
+    </div>`);
+  });
+}
 
-/* ========= Render Groups view ========= */
-const gg=document.getElementById('groupsGrid');
-GROUPS.forEach(G=>{
-  const hasKsa = G.teams.includes('ksa');
-  const rows = G.teams.map(c=>{
-    if(c==='tbd') return `<div class="gt tbd"><span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span></div>`;
-    const ksaCls = c==='ksa'?' is-ksa':'';
-    return `<button class="gt${ksaCls}" data-team="${c}" data-group="${G.key}">
-        <span class="fl">${flag(c)}</span><span class="tn">${tname(c)}</span><span class="arrow">←</span>
-      </button>`;
-  }).join('');
-  gg.insertAdjacentHTML('beforeend',`<div class="group-card ${hasKsa?'has-ksa':''}">
-    <div class="group-head"><span class="gname">المجموعة ${G.name}</span><span class="glabel">${G.key}</span></div>
-    <div class="group-teams">${rows}</div></div>`);
-});
-
-/* ========= Main + Sub tab switching ========= */
+/* ========= Tabs ========= */
 function switchView(name){
   document.querySelectorAll('.tabs .tab').forEach(b=>b.classList.toggle('active', b.dataset.view===name));
-  document.getElementById('view-important').classList.toggle('active', name==='important');
-  document.getElementById('view-all').classList.toggle('active', name==='all');
-}
-function switchSub(name){
-  document.querySelectorAll('.subtabs .subtab').forEach(b=>b.classList.toggle('active', b.dataset.sub===name));
-  document.getElementById('sub-matches').classList.toggle('active', name==='matches');
-  document.getElementById('sub-groups').classList.toggle('active', name==='groups');
+  document.getElementById('view-list').classList.toggle('active', name==='list');
+  document.getElementById('view-bracket').classList.toggle('active', name==='bracket');
 }
 document.querySelectorAll('.tabs .tab').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
-document.querySelectorAll('.subtabs .subtab').forEach(b=>b.addEventListener('click',()=>switchSub(b.dataset.sub)));
 
-/* ========= Team modal ========= */
-const modal=document.getElementById('teamModal');
-const mCard=document.getElementById('modalCard');
-const mFlag=document.getElementById('mTeamFlag');
-const mName=document.getElementById('mTeamName');
-const mGroup=document.getElementById('mTeamGroup');
-const mList=document.getElementById('mTeamMatches');
-
-function openTeam(code, groupKey){
-  const matches = M.filter(x=>x.a===code||x.b===code)
-                   .sort((x,y)=> x.iso===y.iso ? timeKey(x.t)-timeKey(y.t) : x.iso.localeCompare(y.iso));
-  mFlag.innerHTML = flag(code);
-  mName.textContent = tname(code);
-  mGroup.textContent = `المجموعة ${groupKey}`;
-  mCard.classList.toggle('ksa', code==='ksa');
-  if(!matches.length){
-    mList.innerHTML = `<div class="mm"><div class="mm-when">لم تُضف مباريات بعد</div></div>`;
-  }else{
-    mList.innerHTML = matches.map(mt=>{
-      const opp = (mt.a===code)?mt.b:mt.a;
-      const[num,per]=period(mt.t);
-      return `<div class="mm">
-        <div class="mm-top">
-          <div class="mm-when">${mt.d} · ${mt.dt}</div>
-          <div class="mm-time">${num}<small>${per}</small></div>
-        </div>
-        <div class="mm-opp"><span class="vs">ضد</span><span class="fl">${flag(opp)}</span>${tname(opp)}</div>
-        ${mt.v?`<div class="mm-venue">📍 ${mt.v}</div>`:''}
-      </div>`;
-    }).join('');
-  }
-  modal.classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeModal(){modal.classList.remove('open');document.body.style.overflow='';}
-
-document.getElementById('modalClose').addEventListener('click', closeModal);
-modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
-document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
-
-document.querySelectorAll('.gt[data-team]').forEach(btn=>{
-  btn.addEventListener('click',()=>openTeam(btn.dataset.team, btn.dataset.group));
-});
+/* ========= Load data ========= */
+fetch('knockout.json?v='+Date.now())
+  .then(r=>r.json())
+  .then(data=>{ renderList(data); renderBracket(data); })
+  .catch(err=>{
+    document.getElementById('listDays').innerHTML=`<div style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">تعذّر تحميل البيانات: ${err.message}</div>`;
+  });
 </script>
 </body>
 </html>
