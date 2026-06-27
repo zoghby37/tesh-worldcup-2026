@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T03:15:27+00:00",
+  "lastUpdated": "2026-06-27T03:30:37+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -396,7 +396,7 @@
     "egy_irn": {
       "status": "IN_PLAY",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "minute": null
     },
     "pan_eng": {
@@ -715,13 +715,24 @@
     ],
     "G": [
       {
+        "team": "bel",
+        "played": 3,
+        "won": 1,
+        "drawn": 2,
+        "lost": 0,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "pts": 5
+      },
+      {
         "team": "egy",
         "played": 3,
         "won": 1,
         "drawn": 2,
         "lost": 0,
-        "gf": 4,
-        "ga": 2,
+        "gf": 5,
+        "ga": 3,
         "gd": 2,
         "pts": 5
       },
@@ -731,19 +742,8 @@
         "won": 0,
         "drawn": 3,
         "lost": 0,
-        "gf": 2,
-        "ga": 2,
-        "gd": 0,
-        "pts": 3
-      },
-      {
-        "team": "bel",
-        "played": 3,
-        "won": 0,
-        "drawn": 3,
-        "lost": 0,
-        "gf": 1,
-        "ga": 1,
+        "gf": 3,
+        "ga": 3,
         "gd": 0,
         "pts": 3
       },
@@ -751,12 +751,12 @@
         "team": "nzl",
         "played": 3,
         "won": 0,
-        "drawn": 2,
-        "lost": 1,
+        "drawn": 1,
+        "lost": 2,
         "gf": 3,
-        "ga": 5,
-        "gd": -2,
-        "pts": 2
+        "ga": 6,
+        "gd": -3,
+        "pts": 1
       }
     ],
     "H": [
