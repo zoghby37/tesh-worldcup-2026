@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T04:15:25+00:00",
+  "lastUpdated": "2026-06-27T04:30:38+00:00",
   "source": "football-data.org",
   "competition": "FIFA World Cup 2026",
   "matches": {
@@ -390,11 +390,11 @@
     "nzl_bel": {
       "status": "IN_PLAY",
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "minute": null
     },
     "egy_irn": {
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "homeScore": 1,
       "awayScore": 1,
       "minute": null
@@ -720,9 +720,9 @@
         "won": 1,
         "drawn": 2,
         "lost": 0,
-        "gf": 2,
+        "gf": 4,
         "ga": 1,
-        "gd": 1,
+        "gd": 3,
         "pts": 5
       },
       {
@@ -754,8 +754,8 @@
         "drawn": 1,
         "lost": 2,
         "gf": 3,
-        "ga": 6,
-        "gd": -3,
+        "ga": 8,
+        "gd": -5,
         "pts": 1
       }
     ],
