@@ -96,33 +96,61 @@
   .m.final{background:linear-gradient(90deg,rgba(205,171,87,.16),rgba(205,171,87,.02));box-shadow:inset 3px 0 0 var(--gold)}
   .m.thirdplace{box-shadow:inset 3px 0 0 var(--teal)}
 
-  /* Bracket view */
-  .bracket{display:flex;flex-direction:column;gap:28px;margin-top:8px}
-  .round{position:relative}
-  .round-head{display:flex;align-items:center;gap:14px;margin:0 6px 14px}
-  .round-head .rn{font-family:'Rakkas',serif;font-size:clamp(22px,2.6vw,30px);background:linear-gradient(180deg,#fff,var(--gold-soft) 60%,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
-  .round-head .cnt{font-family:'Cairo';font-weight:700;color:var(--muted);font-size:13px}
-  .round-head .ln{flex:1;height:1px;background:linear-gradient(90deg,var(--gold) 0%,transparent 100%);opacity:.5}
-  .round.r-final .round-head .ln{background:linear-gradient(90deg,var(--gold) 0%,transparent 100%)}
-  .round-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-  .round.r-final .round-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
-  .bc{background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.7));border:1px solid var(--panel-edge);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;position:relative}
-  .round.r-final .bc{border-color:var(--gold);background:linear-gradient(180deg,rgba(205,171,87,.10),rgba(6,18,14,.7))}
-  .round.r-3rd .bc{border-color:var(--teal-soft)}
-  .bc-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11.5px;color:var(--muted);font-weight:700}
-  .bc-top .mn{color:var(--gold);font-family:'Cairo';font-weight:800}
-  .bc-when{font-family:'Cairo';font-weight:800;font-size:14px;color:var(--gold-soft);text-align:center;padding:6px 0;border-top:1px dashed rgba(205,171,87,.2);border-bottom:1px dashed rgba(205,171,87,.2)}
-  .bc-when b{color:#fff;margin-inline-start:6px}
-  .bc-teams{display:flex;flex-direction:column;gap:6px;padding:2px 0}
-  .bc-row{display:flex;align-items:center;gap:8px;font-family:'Cairo';font-weight:700;font-size:14.5px;padding:4px 2px;border-radius:8px;transition:background .2s}
-  .bc-row.win{background:rgba(30,196,106,.10);box-shadow:inset 2px 0 0 var(--ksa)}
-  .bc-row .fl{font-size:18px;line-height:1;width:24px;text-align:center}
-  .bc-row .fl svg{width:22px;height:14px;border-radius:2px;vertical-align:-2px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
-  .bc-row .fl img{width:18px;height:18px;vertical-align:-4px;opacity:.8}
-  .bc-row .nm{flex:1}
-  .bc-row.ph .nm{color:var(--gold-soft);opacity:.8;font-weight:700;font-size:13.5px}
-  .bc-venue{font-size:11px;color:var(--muted);font-weight:600;text-align:center}
-  .bc-venue::before{content:"📍 "}
+  /* Bracket tree — Draft A (top/bottom split with Final in middle) */
+  .tree-wrap{padding:30px 4px 28px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,.018),rgba(255,255,255,.005));margin-top:6px;overflow-x:auto}
+  .tree-wrap::-webkit-scrollbar{height:8px}
+  .tree-wrap::-webkit-scrollbar-thumb{background:rgba(205,171,87,.3);border-radius:4px}
+  .tree-top,.tree-bottom{display:flex;flex-direction:column;gap:48px;min-width:680px}
+  .tree-final{display:flex;justify-content:center;margin:48px 0;min-width:680px}
+  .round-row{display:grid;grid-template-columns:repeat(8,minmax(74px,1fr));column-gap:6px;position:relative;direction:ltr}
+  .round-label{position:absolute;top:-26px;right:8px;font-family:'Cairo',sans-serif;font-weight:800;font-size:11px;color:var(--gold);background:var(--bg2);padding:3px 10px;border-radius:8px;border:1px solid var(--line);letter-spacing:.3px;z-index:3;direction:rtl;white-space:nowrap}
+
+  .tm{position:relative;background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.78));border:1px solid var(--panel-edge);border-radius:8px;padding:14px 5px 5px;direction:rtl;display:flex;flex-direction:column;justify-content:space-between;min-height:62px;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+  .tm-num{position:absolute;top:3px;right:5px;font-size:9px;color:var(--gold);opacity:.6;font-weight:800;letter-spacing:.5px}
+  .tm-time{position:absolute;top:3px;left:5px;font-size:9px;color:var(--gold-soft);opacity:.7;font-weight:700}
+  .tm-side{display:flex;align-items:center;gap:5px;padding:3px 4px;border-radius:4px;font-family:'Cairo',sans-serif;font-weight:700;line-height:1.2;font-size:11.5px}
+  .tm-side + .tm-side{margin-top:2px;border-top:1px dashed rgba(255,255,255,.06)}
+  .tm-side.win{background:rgba(30,196,106,.14);box-shadow:inset 2px 0 0 var(--ksa)}
+  .tm-side.win .nm{color:#fff;font-weight:900}
+  .tm-side .fl{font-size:13px;line-height:1;flex-shrink:0;width:18px;text-align:center}
+  .tm-side .fl svg{width:15px;height:10px;border-radius:1px;vertical-align:-1px}
+  .tm-side .fl img{width:13px;height:13px;vertical-align:-3px;opacity:.75}
+  .tm-side .nm{flex:1;font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tm-side.ph .nm{color:var(--gold-soft);opacity:.85;font-size:10.5px;font-weight:700}
+
+  /* R32 cells very compact */
+  .round-row.r-row-r32 .tm{min-height:54px;padding:12px 3px 4px}
+  .round-row.r-row-r32 .tm-side{font-size:10.5px;padding:2px 3px;gap:4px}
+  .round-row.r-row-r32 .tm-side .fl{width:15px;font-size:11px}
+  .round-row.r-row-r32 .tm-num{font-size:8.5px;top:2px;right:3px}
+  .round-row.r-row-r32 .tm-time{font-size:8.5px;top:2px;left:3px}
+  .round-row.r-row-r32 .tm-side .nm{font-size:10px}
+
+  /* Wrapped cells (QF, SF, Final): grid cell keeps full span for alignment, visible card centered + narrow */
+  .tm.tm-wrapped{background:transparent;border:none;padding:0;box-shadow:none;min-height:0;display:flex;justify-content:center;align-items:flex-start}
+  .tm.tm-wrapped .tm-card{background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.78));border:1px solid var(--panel-edge);border-radius:8px;padding:12px 8px 5px;max-width:170px;width:100%;margin:0 auto;position:relative;box-shadow:0 2px 10px rgba(0,0,0,.35);min-height:58px}
+  .round-row.r-row-sf .tm.tm-wrapped .tm-card{max-width:190px}
+  .tm.tm-final .tm-card{border-color:var(--gold);background:linear-gradient(180deg,rgba(205,171,87,.16),rgba(6,18,14,.78));max-width:220px}
+
+  /* Connectors — top half: parents drop down, children join above */
+  .tree-top .tm.has-child::after{content:"";position:absolute;top:100%;left:50%;width:2px;height:48px;background:rgba(205,171,87,.7);transform:translateX(-1px);z-index:1}
+  .tree-top .tm.has-parents::before{content:"";position:absolute;bottom:100%;left:0;right:0;height:2px;background:rgba(205,171,87,.7);z-index:1}
+
+  /* Connectors — bottom half: mirror */
+  .tree-bottom .tm.has-child::after{content:"";position:absolute;bottom:100%;left:50%;width:2px;height:48px;background:rgba(205,171,87,.7);transform:translateX(-1px);z-index:1}
+  .tree-bottom .tm.has-parents::before{content:"";position:absolute;top:100%;left:0;right:0;height:2px;background:rgba(205,171,87,.7);z-index:1}
+
+  /* Third-place card (separate, below the tree) */
+  .third-strip{margin-top:28px;display:flex;justify-content:center}
+  .third-card{max-width:420px;width:100%;background:linear-gradient(180deg,var(--panel),rgba(6,18,14,.78));border:1px solid var(--teal-soft);border-radius:14px;padding:14px 16px}
+  .third-card .th-title{font-family:'Cairo';font-weight:900;font-size:14px;color:var(--teal-soft);text-align:center;margin-bottom:8px;letter-spacing:.5px}
+  .third-card .th-when{font-family:'Cairo';font-weight:800;font-size:13px;color:var(--gold-soft);text-align:center;margin-bottom:8px}
+  .third-card .th-rows{display:flex;flex-direction:column;gap:4px}
+  .third-card .th-row{display:flex;align-items:center;gap:8px;font-family:'Cairo';font-weight:700;font-size:13.5px;padding:4px 6px;border-radius:6px}
+  .third-card .th-row.ph .nm{color:var(--gold-soft);opacity:.85;font-size:12.5px}
+  .third-card .th-row .fl{font-size:16px;width:22px;text-align:center}
+  .third-card .th-row .fl svg{width:18px;height:12px;border-radius:1px}
+  .third-card .th-row .fl img{width:16px;height:16px;vertical-align:-3px;opacity:.75}
 
   .signoff{margin-top:48px;text-align:center}
   .signoff .chip{display:inline-block}
@@ -168,12 +196,17 @@
   </div>
 
   <div id="view-bracket" class="view">
-    <div class="feature-title">شجرة <span>الأدوار الإقصائية</span></div>
+    <div class="feature-title"><span>الأدوار الإقصائية</span></div>
     <div class="hint">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-      <span>تحديث الفائزين يظهر تلقائياً في الدور التالي.</span>
+      <span>تحديث الفائزين يظهر تلقائياً في الدور التالي. مرّر أفقياً لعرض الشجرة كاملة.</span>
     </div>
-    <div class="bracket" id="bracket"></div>
+    <div class="tree-wrap">
+      <div class="tree-top" id="treeTop"></div>
+      <div class="tree-final" id="treeFinal"></div>
+      <div class="tree-bottom" id="treeBottom"></div>
+    </div>
+    <div class="third-strip" id="thirdStrip"></div>
   </div>
 
   <div class="signoff">
@@ -191,14 +224,16 @@ esp:'🇪🇸',cpv:'🇨🇻',fra:'🇫🇷',nor:'🇳🇴',arg:'🇦🇷',
 por:'🇵🇹',eng:ENG,ger:'🇩🇪',ned:'🇳🇱',jpn:'🇯🇵',
 swe:'🇸🇪',mex:'🇲🇽',can:'🇨🇦',
 rsa:'🇿🇦',civ:'🇨🇮',bih:'🇧🇦',
-usa:'🇺🇸',par:'🇵🇾',aus:'🇦🇺'};
+usa:'🇺🇸',par:'🇵🇾',aus:'🇦🇺',
+ecu:'🇪🇨',cod:'🇨🇩',sen:'🇸🇳',aut:'🇦🇹',alg:'🇩🇿',gha:'🇬🇭',col:'🇨🇴',cro:'🇭🇷'};
 
 const TN={ksa:'السعودية',bra:'البرازيل',mar:'المغرب',sui:'سويسرا',egy:'مصر',
 bel:'بلجيكا',esp:'إسبانيا',cpv:'الرأس الأخضر',fra:'فرنسا',
 nor:'النرويج',arg:'الأرجنتين',por:'البرتغال',eng:'إنجلترا',ger:'ألمانيا',
 ned:'هولندا',mex:'المكسيك',can:'كندا',rsa:'جنوب أفريقيا',
 civ:'ساحل العاج',bih:'البوسنة',usa:'الولايات المتحدة',par:'باراغواي',
-aus:'أستراليا',jpn:'اليابان',swe:'السويد'};
+aus:'أستراليا',jpn:'اليابان',swe:'السويد',
+ecu:'الإكوادور',cod:'الكونغو الد.',sen:'السنغال',aut:'النمسا',alg:'الجزائر',gha:'غانا',col:'كولومبيا',cro:'كرواتيا'};
 
 const ROUND_LABEL={r32:'دور الـ32',r16:'دور الـ16',qf:'ربع النهائي',sf:'نصف النهائي','3rd':'مباراة المركز الثالث',final:'النهائي'};
 const ROUND_ORDER=['r32','r16','qf','sf','3rd','final'];
@@ -296,35 +331,112 @@ function renderList(data){
   });
 }
 
+/* Draft A — top/bottom split. Half-bracket order keeps each match centered over its feeders. */
+const TOP_HALF={
+  r32:[74,77,73,75,83,84,81,82],
+  r16:[89,90,93,94],
+  qf: [97,98],
+  sf: [101]
+};
+const BOTTOM_HALF={
+  sf: [102],
+  qf: [99,100],
+  r16:[91,92,95,96],
+  r32:[76,78,79,80,86,88,85,87]
+};
+const SPAN8={r32:1,r16:2,qf:4,sf:8};
+
+function treeSide(slot, winner){
+  const isWin = slot.team && slot.team===winner;
+  if(slot.team) return `<div class="tm-side ${isWin?'win':''}"><span class="fl">${flag(slot.team)}</span><span class="nm">${tname(slot.team)}</span></div>`;
+  return `<div class="tm-side ph"><span class="fl"><img src="Tesh_logo.png" alt=""></span><span class="nm">${slot.ph}</span></div>`;
+}
+
+function tmCard(mt, byId, winners, opts){
+  const a=teamA(mt,byId,winners), b=teamB(mt,byId,winners);
+  const w=winners[mt.id]||null;
+  const inner=`<span class="tm-num">م-${mt.id}</span><span class="tm-time">${mt.time}</span>${treeSide(a,w)}${treeSide(b,w)}`;
+  const span=opts.span||1;
+  const cls=['tm', opts.wrap?'tm-wrapped':'', opts.final?'tm-final':'', opts.hasChild?'has-child':'', opts.hasParents?'has-parents':''].filter(Boolean).join(' ');
+  if(opts.wrap){
+    return `<div class="${cls}" style="grid-column:span ${span}"><div class="tm-card">${inner}</div></div>`;
+  }
+  return `<div class="${cls}" style="grid-column:span ${span}">${inner}</div>`;
+}
+
 function renderBracket(data){
   const byId={}; data.matches.forEach(m=>byId[m.id]=m);
   const winners=data.winners||{};
-  const cont=document.getElementById('bracket');
-  cont.innerHTML='';
-  ROUND_ORDER.forEach(rk=>{
-    const arr=data.matches.filter(m=>m.round===rk).slice().sort((x,y)=>{
-      if(x.iso!==y.iso)return x.iso.localeCompare(y.iso);
-      return timeKey(x.time)-timeKey(y.time);
+
+  /* TOP HALF: R32 (no parents, has-child) → R16 → QF → SF (no child, has-parents) */
+  const top=document.getElementById('treeTop');
+  top.innerHTML='';
+  const topRounds=[
+    {rk:'r32', label:'دور الـ32 (المسار العلوي)', hasParents:false, hasChild:true},
+    {rk:'r16', label:'دور الـ16',                  hasParents:true,  hasChild:true},
+    {rk:'qf',  label:'ربع النهائي',                hasParents:true,  hasChild:true},
+    {rk:'sf',  label:'نصف النهائي',                hasParents:true,  hasChild:true}
+  ];
+  topRounds.forEach(({rk,label,hasParents,hasChild})=>{
+    const ids=TOP_HALF[rk]; if(!ids)return;
+    let cells='';
+    ids.forEach(id=>{
+      const mt=byId[id]; if(!mt)return;
+      const wrap=(rk==='qf' || rk==='sf');
+      cells+=tmCard(mt,byId,winners,{span:SPAN8[rk],hasParents,hasChild,wrap});
     });
-    if(!arr.length)return;
-    let cards='';
-    arr.forEach(mt=>{
-      const a=teamA(mt,byId,winners), b=teamB(mt,byId,winners);
-      const w=winners[mt.id]||null;
-      const[num,per]=period(mt.time);
-      cards+=`<div class="bc">
-        <div class="bc-top"><span class="mn">م-${mt.id}</span><span>${isoToDay(mt.iso)} · ${isoToDate(mt.iso)}</span></div>
-        <div class="bc-when">${num} <small>${per}</small><b></b></div>
-        <div class="bc-teams">${bracketRow(a,w)}${bracketRow(b,w)}</div>
-        <div class="bc-venue">${mt.venue}</div>
-      </div>`;
-    });
-    const cls = rk==='final'?'r-final':rk==='3rd'?'r-3rd':'';
-    cont.insertAdjacentHTML('beforeend',`<div class="round ${cls}">
-      <div class="round-head"><span class="rn">${ROUND_LABEL[rk]}</span><span class="cnt">${arr.length} ${arr.length===1?'مباراة':'مباريات'}</span><span class="ln"></span></div>
-      <div class="round-grid">${cards}</div>
-    </div>`);
+    top.insertAdjacentHTML('beforeend',
+      `<div class="round-row r-row-${rk}"><span class="round-label">${label}</span>${cells}</div>`);
   });
+
+  /* FINAL — centered between halves */
+  const final=byId[104];
+  const fcont=document.getElementById('treeFinal');
+  fcont.innerHTML='';
+  if(final){
+    fcont.insertAdjacentHTML('beforeend',
+      `<div class="round-row r-row-final"><span class="round-label">${ROUND_LABEL.final}</span>${tmCard(final,byId,winners,{span:8,wrap:true,final:true,hasParents:false,hasChild:false})}</div>`);
+  }
+
+  /* BOTTOM HALF: SF (has-parents from below) → QF → R16 → R32 (no parents) */
+  const bottom=document.getElementById('treeBottom');
+  bottom.innerHTML='';
+  const botRounds=[
+    {rk:'sf',  label:'نصف النهائي',                hasParents:true,  hasChild:true},
+    {rk:'qf',  label:'ربع النهائي',                hasParents:true,  hasChild:true},
+    {rk:'r16', label:'دور الـ16',                  hasParents:true,  hasChild:true},
+    {rk:'r32', label:'دور الـ32 (المسار السفلي)', hasParents:false, hasChild:true}
+  ];
+  botRounds.forEach(({rk,label,hasParents,hasChild})=>{
+    const ids=BOTTOM_HALF[rk]; if(!ids)return;
+    let cells='';
+    ids.forEach(id=>{
+      const mt=byId[id]; if(!mt)return;
+      const wrap=(rk==='qf' || rk==='sf');
+      cells+=tmCard(mt,byId,winners,{span:SPAN8[rk],hasParents,hasChild,wrap});
+    });
+    bottom.insertAdjacentHTML('beforeend',
+      `<div class="round-row r-row-${rk}"><span class="round-label">${label}</span>${cells}</div>`);
+  });
+
+  /* Third place — outside the tree */
+  const third=byId[103];
+  const tcont=document.getElementById('thirdStrip');
+  tcont.innerHTML='';
+  if(third){
+    const a=teamA(third,byId,winners), b=teamB(third,byId,winners);
+    const[num,per]=period(third.time);
+    const sideHTML=(slot)=>{
+      if(slot.team) return `<div class="th-row"><span class="fl">${flag(slot.team)}</span><span class="nm">${tname(slot.team)}</span></div>`;
+      return `<div class="th-row ph"><span class="fl"><img src="Tesh_logo.png" alt=""></span><span class="nm">${slot.ph}</span></div>`;
+    };
+    tcont.insertAdjacentHTML('beforeend',
+      `<div class="third-card">
+        <div class="th-title">${ROUND_LABEL['3rd']} · م-${third.id}</div>
+        <div class="th-when">${isoToDay(third.iso)} ${isoToDate(third.iso)} · ${num} ${per}</div>
+        <div class="th-rows">${sideHTML(a)}${sideHTML(b)}</div>
+      </div>`);
+  }
 }
 
 /* ========= Tabs ========= */
