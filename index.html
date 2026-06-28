@@ -132,13 +132,15 @@
   .round-row.r-row-sf .tm.tm-wrapped .tm-card{max-width:190px}
   .tm.tm-final .tm-card{border-color:var(--gold);background:linear-gradient(180deg,rgba(205,171,87,.16),rgba(6,18,14,.78));max-width:220px}
 
-  /* Connectors — top half: parents drop down, children join above */
+  /* Connectors — top half: parents drop down, children join above.
+     Joiner spans only the middle 50% of the child cell so its endpoints land
+     exactly under the parents' vertical drops (no overhanging lines). */
   .tree-top .tm.has-child::after{content:"";position:absolute;top:100%;left:50%;width:2px;height:48px;background:rgba(205,171,87,.7);transform:translateX(-1px);z-index:1}
-  .tree-top .tm.has-parents::before{content:"";position:absolute;bottom:100%;left:0;right:0;height:2px;background:rgba(205,171,87,.7);z-index:1}
+  .tree-top .tm.has-parents::before{content:"";position:absolute;bottom:100%;left:25%;right:25%;height:2px;background:rgba(205,171,87,.7);z-index:1}
 
   /* Connectors — bottom half: mirror */
   .tree-bottom .tm.has-child::after{content:"";position:absolute;bottom:100%;left:50%;width:2px;height:48px;background:rgba(205,171,87,.7);transform:translateX(-1px);z-index:1}
-  .tree-bottom .tm.has-parents::before{content:"";position:absolute;top:100%;left:0;right:0;height:2px;background:rgba(205,171,87,.7);z-index:1}
+  .tree-bottom .tm.has-parents::before{content:"";position:absolute;top:100%;left:25%;right:25%;height:2px;background:rgba(205,171,87,.7);z-index:1}
 
   /* Third-place card (separate, below the tree) */
   .third-strip{margin-top:28px;display:flex;justify-content:center}
