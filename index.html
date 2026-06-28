@@ -58,6 +58,17 @@
   .view{display:none}
   .view.active{display:block}
 
+  /* "Jump to today" button */
+  .today-jump{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto 18px;padding:10px 22px;
+    background:linear-gradient(180deg,rgba(205,171,87,.15),rgba(205,171,87,.05));border:1px solid var(--gold);border-radius:999px;
+    color:var(--gold-soft);font-family:'Cairo',sans-serif;font-weight:800;font-size:14px;cursor:pointer;transition:all .2s;
+    box-shadow:0 4px 14px rgba(205,171,87,.15)}
+  .today-jump:hover{background:linear-gradient(180deg,rgba(205,171,87,.25),rgba(205,171,87,.10));transform:translateY(-1px);box-shadow:0 6px 18px rgba(205,171,87,.25);color:#fff}
+  .today-jump svg{width:14px;height:14px;flex-shrink:0}
+  .today-jump[hidden]{display:none}
+  @keyframes todayPing{0%,100%{box-shadow:0 0 0 2px rgba(205,171,87,.4),var(--shadow)}50%{box-shadow:0 0 0 6px rgba(205,171,87,.7),0 0 28px rgba(205,171,87,.4),var(--shadow)}}
+  .day.is-today.ping{animation:todayPing 1.2s ease-out}
+
   /* Hint banner */
   .hint{display:flex;align-items:center;gap:10px;justify-content:center;max-width:620px;margin:0 auto 18px;
     padding:11px 18px;border-radius:12px;background:rgba(205,171,87,.08);border:1px solid var(--line);
@@ -185,7 +196,7 @@
 
   <div class="tabs" role="tablist">
     <button class="tab active" data-view="list" role="tab">المباريات</button>
-    <button class="tab" data-view="bracket" role="tab">خروج المغلوب</button>
+    <button class="tab" data-view="bracket" role="tab">مسار البطولة</button>
   </div>
 
   <div id="view-list" class="view active">
@@ -194,6 +205,10 @@
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
       <span>الأوقات بتوقيت السعودية. خانات الفرق غير المحسومة تظهر مع شعار تِش حتى يتم تأكيدها.</span>
     </div>
+    <button class="today-jump" data-target="listDays" hidden>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-6-6h12l-6 6z"/></svg>
+      <span>اذهب لمباريات اليوم</span>
+    </button>
     <div class="days" id="listDays"></div>
   </div>
 
@@ -201,7 +216,7 @@
     <div class="feature-title"><span>الأدوار الإقصائية</span></div>
     <div class="hint">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-      <span>تحديث الفائزين يظهر تلقائياً في الدور التالي. مرّر أفقياً لعرض الشجرة كاملة.</span>
+      <span>تحديث الفائزين يظهر تلقائياً في الدور التالي. مرّر أفقياً لعرض المسار كامل.</span>
     </div>
     <div class="tree-wrap">
       <div class="tree-top" id="treeTop"></div>
@@ -213,7 +228,6 @@
 
   <div class="signoff">
     <div class="chip"><img src="Tesh_logo.png" alt="تِش"></div>
-    <div class="tag">قلوبنا مع المونديال</div>
     <div class="tag2">مقصورة تِش الرئيسية</div>
   </div>
 </div>
@@ -327,9 +341,26 @@ function renderList(data){
         </div>
       </div>`;
     });
-    cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}">
+    cont.insertAdjacentHTML('beforeend',`<div class="day ${isToday?'is-today':''}" data-iso="${iso}">
       <div class="day-head"><span class="dname">${dname}${isToday?'<span class="today-pill">اليوم</span>':''}</span><span class="ddate">${ddate}</span></div>
       <div class="matches">${rows}</div></div>`);
+  });
+  syncTodayJump();
+}
+
+function syncTodayJump(){
+  const todayIso = new Date().toISOString().slice(0,10);
+  document.querySelectorAll('.today-jump').forEach(btn=>{
+    const target=document.getElementById(btn.dataset.target);
+    const card=target&&target.querySelector(`.day[data-iso="${todayIso}"]`);
+    btn.hidden=!card;
+    btn.onclick=()=>{
+      if(!card)return;
+      const y=card.getBoundingClientRect().top+window.scrollY-20;
+      window.scrollTo({top:y,behavior:'smooth'});
+      card.classList.remove('ping'); void card.offsetWidth; card.classList.add('ping');
+      setTimeout(()=>card.classList.remove('ping'),1300);
+    };
   });
 }
 
