@@ -1,7 +1,8 @@
 {
   "_README": "Edit 'winners' to record results. Format: \"<matchId>\": \"<teamCode>\" (e.g. \"73\": \"rsa\"). Times are Saudi Arabia time (UTC+3).",
   "winners": {
-    "73": "can"
+    "73": "can",
+    "76": "bra"
   },
   "matches": [
     { "id": 73, "round": "r32", "iso": "2026-06-28", "time": "10:00م", "venue": "لوس أنجلوس",  "a": "rsa", "b": "can" },
