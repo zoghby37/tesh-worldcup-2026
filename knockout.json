@@ -23,7 +23,9 @@
     "91": "nor",
     "92": "eng",
     "93": "esp",
-    "94": "bel"
+    "94": "bel",
+    "95": "arg",
+    "96": "sui"
   },
   "matches": [
     { "id": 73, "round": "r32", "iso": "2026-06-28", "time": "10:00م", "venue": "لوس أنجلوس",  "a": "rsa", "b": "can" },
@@ -53,11 +55,11 @@
     { "id": 96, "round": "r16", "iso": "2026-07-07", "time": "11:00م", "venue": "فانكوفر",     "aFrom": 85, "bFrom": 87 },
 
     { "id": 97,  "round": "qf", "iso": "2026-07-09", "time": "11:00م", "venue": "فوكسبورو",    "aFrom": 89, "bFrom": 90 },
-    { "id": 98,  "round": "qf", "iso": "2026-07-10", "time": "7:00م",  "venue": "لوس أنجلوس",  "aFrom": 93, "bFrom": 94 },
+    { "id": 98,  "round": "qf", "iso": "2026-07-10", "time": "10:00م", "venue": "لوس أنجلوس",  "aFrom": 93, "bFrom": 94 },
     { "id": 99,  "round": "qf", "iso": "2026-07-12", "time": "12:00ص", "venue": "ميامي",       "aFrom": 91, "bFrom": 92 },
-    { "id": 100, "round": "qf", "iso": "2026-07-12", "time": "3:00ف",  "venue": "كانساس سيتي", "aFrom": 95, "bFrom": 96 },
+    { "id": 100, "round": "qf", "iso": "2026-07-12", "time": "4:00ص",  "venue": "كانساس سيتي", "aFrom": 95, "bFrom": 96 },
 
-    { "id": 101, "round": "sf", "iso": "2026-07-14", "time": "9:00م",  "venue": "أرلينغتون",   "aFrom": 97, "bFrom": 98 },
+    { "id": 101, "round": "sf", "iso": "2026-07-14", "time": "10:00م", "venue": "أرلينغتون",   "aFrom": 97, "bFrom": 98 },
     { "id": 102, "round": "sf", "iso": "2026-07-15", "time": "10:00م", "venue": "أتلانتا",     "aFrom": 99, "bFrom": 100 },
 
     { "id": 103, "round": "3rd",   "iso": "2026-07-19", "time": "12:00ص", "venue": "ميامي",       "aLoserFrom": 101, "bLoserFrom": 102 },
