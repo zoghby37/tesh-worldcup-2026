@@ -291,8 +291,11 @@ function teamA(match, byId, winners){
     const src=byId[match.aLoserFrom];
     const w=winners[match.aLoserFrom];
     if(src && w){
-      const loser = (src.a===w)?src.b:(src.b===w)?src.a:null;
-      if(loser) return {team:loser};
+      const sA=teamA(src,byId,winners), sB=teamB(src,byId,winners);
+      if(sA.team && sB.team){
+        const loser=(sA.team===w)?sB.team:(sB.team===w)?sA.team:null;
+        if(loser) return {team:loser};
+      }
     }
     return {ph:`خاسر م-${match.aLoserFrom}`};
   }
